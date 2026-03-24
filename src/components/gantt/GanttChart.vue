@@ -6,14 +6,14 @@
         v-for="(mode, key) in options.view_modes"
         :key="key"
         class="mode-button"
-        :class="{ active: internalViewMode === key }"
+        :class="{ active: viewMode === key }"
         @click="changeViewMode(key)"
       >
         {{ mode.name }}
       </button>
     </div>
 
-    <div class="gantt-wrapper" ref="ganttWrapper" :style="{ '--tick-width': `${currentViewMode.tickWidth}px`, '--row-height': `${options.rowHeight}px` }">
+    <div class="gantt-wrapper" ref="ganttWrapper" :style="{ '--tick-width': `${viewModeConfig.tickWidth}px`, '--row-height': `${options.rowHeight}px` }">
       <div class="gantt-corner">资源 \ 时间</div>
 
       <div class="gantt-timeline">
@@ -23,7 +23,7 @@
           v-for="group in upperGroups"
           :key="group.key"
           class="time-group"
-          :style="{ width: `${group.span * currentViewMode.tickWidth}px` }"
+          :style="{ width: `${group.span * viewModeConfig.tickWidth}px` }"
         >
           {{ group.label }}
         </div>
@@ -47,12 +47,12 @@
         <defs>
           <pattern
             id="grid"
-            :width="currentViewMode.tickWidth"
+            :width="viewModeConfig.tickWidth"
             :height="options.rowHeight"
             patternUnits="userSpaceOnUse"
           >
             <path
-              :d="`M ${currentViewMode.tickWidth} 0 L ${currentViewMode.tickWidth} ${options.rowHeight} L 0 ${options.rowHeight}`"
+              :d="`M ${viewModeConfig.tickWidth} 0 L ${viewModeConfig.tickWidth} ${options.rowHeight} L 0 ${options.rowHeight}`"
               fill="none"
               stroke="#f1f5f9"
               stroke-width="1"
@@ -63,20 +63,16 @@
         <rect width="100%" height="100%" fill="url(#grid)" />
 
         <!-- 任务条 -->
-        <g
+        <GanttTask
           v-for="task in computedTasks"
           :key="task.id"
-          :transform="`translate(${task.x}, ${task.y + options.barPaddingY})`"
-        >
-          <rect
-            class="task-bar"
-            :width="task.width"
-            :height="task.height"
-            rx="4"
-            :fill="task.color"
-          />
-          <text class="task-text" x="10" :y="task.textY">{{ task.name }}</text>
-        </g>
+          :task="task"
+          :resources="resources"
+          :baseDate="baseDate"
+          :viewModeConfig="viewModeConfig"
+          :options="options"
+          @click="emit('task-click', task)"
+        />
 
         <!-- 当前时间线 -->
         <line
@@ -91,11 +87,13 @@
     </div>
   </div>
   </div>
+
 </template>
 
 <script setup>
 import { computed, ref, onMounted } from 'vue'
 import { DEFAULT_OPTIONS } from './defaults'
+import GanttTask from './GanttTask.vue'
 
 const props = defineProps({
   resources: {
@@ -121,14 +119,14 @@ const options = computed(() => ({
 }))
 
 // 内部视图模式状态（用于手动切换）
-const internalViewMode = ref(options.value.view_mode)
+const viewMode = ref(options.value.view_mode)
 
 // 获取当前视图模式配置
-const currentViewMode = computed(() => options.value.view_modes[internalViewMode.value])
+const viewModeConfig = computed(() => options.value.view_modes[viewMode.value])
 
 // 切换视图模式
 const changeViewMode = (mode) => {
-  internalViewMode.value = mode
+  viewMode.value = mode
 }
 
 // 生成时间刻度
@@ -137,7 +135,7 @@ const timeTicks = computed(() => {
   const today = new Date()
   today.setHours(0, 0, 0, 0)
 
-  const mode = currentViewMode.value
+  const mode = viewModeConfig.value
 
   if (mode.unit === 'hour') {
     // 小时模式
@@ -197,7 +195,7 @@ const timeTicks = computed(() => {
 const upperGroups = computed(() => {
   const groups = []
   const ticks = timeTicks.value
-  const mode = currentViewMode.value
+  const mode = viewModeConfig.value
 
   if (ticks.length === 0) return groups
 
@@ -245,56 +243,21 @@ const upperGroups = computed(() => {
   return groups
 })
 
-const svgWidth = computed(() => timeTicks.value.length * currentViewMode.value.tickWidth)
+const svgWidth = computed(() => timeTicks.value.length * viewModeConfig.value.tickWidth)
 
 const svgHeight = computed(() => props.resources.length * options.value.rowHeight)
 
-const computedTasks = computed(() => {
-  const mode = currentViewMode.value
-  const ticks = timeTicks.value
+const baseDate = computed(() =>
+  timeTicks.value.length ? new Date(timeTicks.value[0].date) : new Date()
+)
 
-  if (ticks.length === 0) return []
-
-  const baseDate = new Date(ticks[0].date)
-
-  return props.tasks.map(task => {
-    const taskStart = new Date(task.startDate)
-
-    let x, width
-
-    if (mode.unit === 'hour') {
-      const hoursDiff = (taskStart - baseDate) / 3600000
-      const durationInHours = task.duration / 60
-      x = (hoursDiff / mode.step) * mode.tickWidth
-      width = (durationInHours / mode.step) * mode.tickWidth
-    } else if (mode.unit === 'day') {
-      const daysDiff = (taskStart - baseDate) / 86400000
-      const durationInDays = task.duration / 1440
-      x = (daysDiff / mode.step) * mode.tickWidth
-      width = (durationInDays / mode.step) * mode.tickWidth
-    } else {
-      // month
-      const monthsDiff = (taskStart.getFullYear() - baseDate.getFullYear()) * 12 +
-                        (taskStart.getMonth() - baseDate.getMonth())
-      const durationInMonths = task.duration / (1440 * 30)
-      x = (monthsDiff / mode.step) * mode.tickWidth
-      width = (durationInMonths / mode.step) * mode.tickWidth
-    }
-
-    return {
-      ...task,
-      x,
-      y: task.resourceIndex * options.value.rowHeight,
-      width,
-      height: options.value.rowHeight - options.value.barPaddingY * 2,
-      textY: options.value.rowHeight / 2 - options.value.barPaddingY + 5
-    }
-  })
-})
+const computedTasks = computed(() =>
+  timeTicks.value.length ? props.tasks : []
+)
 
 // 计算当前时间线的位置
 const currentTimeLine = computed(() => {
-  const mode = currentViewMode.value
+  const mode = viewModeConfig.value
   const ticks = timeTicks.value
 
   if (ticks.length === 0) return null
@@ -322,10 +285,11 @@ const currentTimeLine = computed(() => {
   return x
 })
 
+const emit = defineEmits(['task-click'])
+
 // 滚动到当前时间
 onMounted(() => {
   if (ganttWrapper.value && currentTimeLine.value !== null) {
-    // 滚动到当前时间线位置，居中显示
     const scrollLeft = currentTimeLine.value - ganttWrapper.value.clientWidth / 2
     ganttWrapper.value.scrollLeft = Math.max(0, scrollLeft)
   }
@@ -479,22 +443,6 @@ onMounted(() => {
   grid-column: 2;
   grid-row: 2;
   line-height: 0;
-}
-
-.task-text {
-  font-size: 12px;
-  fill: #fff;
-  pointer-events: none;
-  user-select: none;
-}
-
-.task-bar {
-  cursor: pointer;
-  transition: filter 0.2s;
-}
-
-.task-bar:hover {
-  filter: brightness(1.1);
 }
 
 .current-time-line {

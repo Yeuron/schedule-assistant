@@ -143,4 +143,7 @@ export const DEFAULT_OPTIONS = {
 
   // 任务条垂直内边距（像素）- 任务条与行边界的上下间距
   barPaddingY: 5,
+
+  // 任务点击回调 - 传入函数则覆盖内置弹窗，参数为 (task, event)
+  on_task_click: null,
 };

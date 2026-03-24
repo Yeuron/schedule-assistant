@@ -1,53 +1,94 @@
 <template>
-  <div style="padding: 20px">
-    <GanttChart :resources="resources" :tasks="tasks" :options="options" style="width: 100%; height: 300px;" />
+  <div class="app">
+    <div class="sidebar">
+      <TaskEditForm
+        v-if="selectedTask"
+        :task="selectedTask"
+        @update-task="onUpdateTask"
+        @delete-task="onDeleteTask"
+        @close="selectedTask = null"
+      />
+      <TaskForm v-else @add-task="onAddTask" :tasks="tasks" />
+    </div>
+    <div class="main">
+      <GanttChart :resources="resources" :tasks="tasks" :options="options" @task-click="onTaskClick" style="width: 100%; height: 100%;" />
+    </div>
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
+import { ref, computed } from 'vue'
 import GanttChart from './components/gantt/GanttChart.vue'
+import TaskForm from './components/TaskForm.vue'
+import TaskEditForm from './components/TaskEditForm.vue'
+import { PRODUCT_MASTER } from './data/productMaster'
+import type { Task } from './models'
 
 const options = {
-  viewMode: 'HOUR_2', // 可选: 'HOUR', 'HOUR_2', 'DAY', 'WEEK', 'MONTH'
-  // rowHeight: 50
+  view_mode: 'HOUR_2',
+  show_current_time: true,
+  rowHeight: 80
 }
 
-const resources = [
-  'CNC 加工中心 A',
-  'CNC 加工中心 B',
-  '装配线 1',
-  '装配线 2',
-  '质检工位 1',
-  '质检工位 2',
-  '打包线 A',
-  '打包线 B'
-]
+// 从 PRODUCT_MASTER 提取唯一设备列表作为甘特图资源
+const resources = computed(() => {
+  const set = new Set(PRODUCT_MASTER.map(item => item.machine))
+  return Array.from(set).sort()
+})
 
-const today = new Date()
-today.setHours(0, 0, 0, 0)
+const tasks = ref<Task[]>([])
+const selectedTask = ref<Task | null>(null)
 
-const getDateISO = (daysOffset) => {
-  const date = new Date(today)
-  date.setDate(today.getDate() + daysOffset)
-  return date.toISOString()
+const onAddTask = (task: Task) => {
+  tasks.value.push({ ...task })
 }
 
-const tasks = [
-  { id: '1', name: '订单 PO-101 (粗加工)', resourceIndex: 0, startDate: getDateISO(-5), duration: 2880, color: '#3b82f6' },
-  { id: '2', name: '订单 PO-099 (延期)', resourceIndex: 0, startDate: getDateISO(-2), duration: 4320, color: '#ef4444' },
-  { id: '3', name: '订单 PO-102 (外壳打磨)', resourceIndex: 1, startDate: getDateISO(-4), duration: 4320, color: '#10b981' },
-  { id: '4', name: '设备保养维护', resourceIndex: 1, startDate: getDateISO(2), duration: 2880, color: '#f59e0b' },
-  { id: '5', name: '订单 PO-100 (总装)', resourceIndex: 2, startDate: getDateISO(-1), duration: 2880, color: '#6366f1' },
-  { id: '6', name: '订单 PO-101 (总装)', resourceIndex: 2, startDate: getDateISO(3), duration: 4320, color: '#8b5cf6' },
-  { id: '7', name: '订单 PO-103 (装配)', resourceIndex: 3, startDate: getDateISO(-6), duration: 5760, color: '#ec4899' },
-  { id: '8', name: '订单 PO-104 (装配)', resourceIndex: 3, startDate: getDateISO(1), duration: 4320, color: '#14b8a6' },
-  { id: '9', name: '订单 PO-105 (质检)', resourceIndex: 4, startDate: getDateISO(-3), duration: 2880, color: '#f97316' },
-  { id: '10', name: '订单 PO-106 (质检)', resourceIndex: 4, startDate: getDateISO(0), duration: 5760, color: '#06b6d4' },
-  { id: '11', name: '订单 PO-107 (质检)', resourceIndex: 5, startDate: getDateISO(-5), duration: 7200, color: '#84cc16' },
-  { id: '12', name: '订单 PO-108 (质检)', resourceIndex: 5, startDate: getDateISO(2), duration: 4320, color: '#a855f7' },
-  { id: '13', name: '订单 PO-109 (打包)', resourceIndex: 6, startDate: getDateISO(-2), duration: 4320, color: '#22c55e' },
-  { id: '14', name: '订单 PO-110 (打包)', resourceIndex: 6, startDate: getDateISO(4), duration: 2880, color: '#eab308' },
-  { id: '15', name: '订单 PO-111 (打包)', resourceIndex: 7, startDate: getDateISO(-4), duration: 4320, color: '#3b82f6' },
-  { id: '16', name: '订单 PO-112 (打包)', resourceIndex: 7, startDate: getDateISO(1), duration: 5760, color: '#f43f5e' }
-]
+const onTaskClick = (task: Task) => {
+  selectedTask.value = tasks.value.find(t => t.id === task.id) || null
+}
+
+const onUpdateTask = (changes: Pick<Task, 'id' | 'qty' | 'jobchange' | 'startDate' | 'duration' | 'display'>) => {
+  const task = tasks.value.find(t => t.id === changes.id)
+  if (!task) return
+  Object.assign(task, changes)
+  selectedTask.value = null
+}
+
+const onDeleteTask = (id: number) => {
+  tasks.value = tasks.value.filter(t => t.id !== id)
+  selectedTask.value = null
+}
 </script>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 360px;
+  flex-shrink: 0;
+  overflow-y: auto;
+  padding: 20px;
+  border-right: 1px solid #cbd5e1;
+  background: #f8fafc;
+}
+
+.main {
+  flex: 1;
+  overflow: hidden;
+  padding: 20px;
+}
+</style>

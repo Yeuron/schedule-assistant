@@ -7,22 +7,65 @@ This file provides guidance to Claude Code when working with this repository.
 Schedule-Assistant is a Vue3 Gantt chart component for production scheduling (排产甘特图).
 
 - GitHub: https://github.com/Yeuron/schedule-assistant.git
-- Stack: Vue3 + Vite
+- Stack: Vue3 + Vite + TypeScript
 - Run: `npm run dev`
 
 ## File Structure
 
 ```
 src/
-  App.vue                      # Demo entry
+  App.vue                      # Main app: manages tasks array, handles add/update/delete
   components/
+    TaskForm.vue               # New task creation form
+    TaskEditForm.vue           # Task editing form
     gantt/
-      GanttChart.vue           # Main Gantt component
+      GanttChart.vue           # Main Gantt component: renders timeline + tasks
+      GanttTask.vue            # Individual task bar component
       defaults.js              # DEFAULT_VIEW_MODES + DEFAULT_OPTIONS
+  models.ts                    # TypeScript interfaces (Task, etc.)
+  main.js                      # Vue app entry
 appendix/
   defaults.js                  # User's reference/scratch file
 gantt-chart.html               # Original HTML prototype
 ```
+
+## Core Components Logic
+
+### App.vue
+- Holds reactive `tasks` array (Task[])
+- Handles events: `add-task`, `update-task`, `delete-task`, `task-click`
+- Passes `tasks`, `resources`, `options` to GanttChart
+- Opens TaskForm/TaskEditForm modals
+
+### TaskForm.vue & TaskEditForm.vue
+- Use Naive UI forms (n-form, n-date-picker, n-input-number)
+- Emit Date objects directly (no ISO string conversion)
+- TaskForm: creates new task with default start time
+- TaskEditForm: initializes form from existing task.startDate
+
+### GanttChart.vue
+- Merges props.options with DEFAULT_OPTIONS
+- Manages `viewMode` ref (string key like 'DAY')
+- Computes `viewModeConfig` from options.view_modes[viewMode]
+- Generates `timeTicks` array based on view mode and date range
+- Computes `upperGroups` for timeline header grouping
+- Renders SVG with grid + GanttTask components
+- Handles view mode switching UI
+- Auto-scrolls to current time on mount
+
+### GanttTask.vue
+- Receives `task` (Task), `viewModeConfig` (object), `baseDate` (Date)
+- Computes x position: (task.startDate - baseDate) / timeUnit * tickWidth
+- Computes width: task.duration / timeUnit * tickWidth
+- Renders SVG rect with task color and padding
+- Emits 'click' event to parent
+
+## Data Flow
+
+1. User creates/edits task via forms → emit to App.vue → update tasks array
+2. App.vue passes tasks to GanttChart → renders GanttTask components
+3. GanttTask calculates positions using Date objects directly
+4. View mode changes → update viewMode → recompute timeTicks → re-render
 
 ## GanttChart Component API
 
@@ -31,9 +74,16 @@ Props:
 - `tasks`: Array (required) - task objects
 - `options`: Object - merged with DEFAULT_OPTIONS
 
-Task object shape:
-```js
-{ id, name, resourceIndex, startDate: 'ISO8601', duration: minutes, color }
+Task object shape (from models.ts):
+```ts
+interface Task {
+  id: string
+  name: string
+  resourceIndex: number
+  startDate: Date        // Date object, not ISO string
+  duration: number       // minutes
+  color: string
+}
 ```
 
 ## DEFAULT_OPTIONS
@@ -65,20 +115,32 @@ Each mode has:
 }
 ```
 
-## GanttChart Internal Logic
+## Timeline Generation Logic
 
-- `options` = computed merge of DEFAULT_OPTIONS + props.options
-- `internalViewMode` = ref, initialized from options.view_mode, changed by UI buttons
-- `currentViewMode` = options.view_modes[internalViewMode]
-- Timeline is 2-row: upper (grouped by upperFormat) + lower (per tick)
-- SVG renders: grid pattern + task bars + current time line
-- `ganttWrapper` ref used for auto-scroll to current time on mount
-- CSS variables: `--tick-width`, `--row-height` on `.gantt-wrapper`
+- `timeTicks`: Array of {date: Date, upperLabel: string, lowerLabel: string}
+- For hour modes: generate ticks every `step` hours, starting from `dayStartHour`
+- For day/month modes: generate ticks every `step` days/months
+- `upperGroups`: Merge consecutive ticks with same `upperLabel`
+- SVG width = timeTicks.length * viewModeConfig.tickWidth
+- SVG height = resources.length * options.rowHeight
+
+## Task Positioning Logic
+
+- Base date = timeTicks[0].date
+- Time unit conversion: hour=3600000ms, day=86400000ms, month=approx 30.44 days
+- X position = ((task.startDate - baseDate) / timeUnit) * tickWidth / step
+- Width = (task.duration / 60 / timeUnit) * tickWidth / step  // duration in minutes
+
+## Current Time Line
+
+- Calculates position relative to baseDate using same time unit logic
+- Only shows if within visible range (x >=0 && x <= svgWidth)
 
 ## Conventions
 
-- 日期使用 ISO 8601 字符串（如 `2026-03-17T06:00:00.000Z`）
+- 日期统一使用 Date 对象（不再是 ISO 字符串）
 - duration 单位为分钟
 - DEFAULT_OPTIONS 配置项用 snake_case
 - view mode 内部属性用 camelCase
+- 组件间传递 Date 对象，避免重复转换
 - 保持最小实现，不添加多余代码
