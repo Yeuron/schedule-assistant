@@ -33,9 +33,10 @@ gantt-chart.html               # Original HTML prototype
 
 ### App.vue
 - Holds reactive `tasks` array (Task[])
-- Handles events: `add-task`, `update-task`, `delete-task`, `task-click`
+- Handles events: `add-task`, `update-task`, `delete-task`, `task-click`, `task-move`
 - Passes `tasks`, `resources`, `options` to GanttChart
 - Opens TaskForm/TaskEditForm modals
+- On `task-move`, updates `task.startDate` only (end time is derived from duration)
 
 ### TaskForm.vue & TaskEditForm.vue
 - Use Naive UI forms (n-form, n-date-picker, n-input-number)
@@ -50,6 +51,7 @@ gantt-chart.html               # Original HTML prototype
 - Generates `timeTicks` array based on view mode and date range
 - Computes `upperGroups` for timeline header grouping
 - Renders SVG with grid + GanttTask components
+- Forwards child move event: `GanttTask@move` -> emit `task-move`
 - Handles view mode switching UI
 - Auto-scrolls to current time on mount
 
@@ -58,14 +60,19 @@ gantt-chart.html               # Original HTML prototype
 - Computes x position: (task.startDate - baseDate) / timeUnit * tickWidth
 - Computes width: task.duration / timeUnit * tickWidth
 - Renders SVG rect with task color and padding
-- Emits 'click' event to parent
+- Supports horizontal drag move with pointer events
+- Snap-to-grid at 30 minutes (minimum move unit)
+- Emits `move` with `{ id, startDate }` on drag end
+- Suppresses click after drag to avoid accidental edit popup
 
 ## Data Flow
 
 1. User creates/edits task via forms → emit to App.vue → update tasks array
 2. App.vue passes tasks to GanttChart → renders GanttTask components
-3. GanttTask calculates positions using Date objects directly
-4. View mode changes → update viewMode → recompute timeTicks → re-render
+3. User drags task bar in GanttTask → emit `move` (`id`, `startDate`) after 30-minute snapping
+4. GanttChart forwards `task-move` to App.vue
+5. App.vue updates matching task `startDate`; end time shifts accordingly via unchanged `duration`
+6. View mode changes → update viewMode → recompute timeTicks → re-render
 
 ## GanttChart Component API
 
@@ -77,12 +84,16 @@ Props:
 Task object shape (from models.ts):
 ```ts
 interface Task {
-  id: string
-  name: string
-  resourceIndex: number
+  id: number
+  display: string
+  product: string
+  machine: string
   startDate: Date        // Date object, not ISO string
   duration: number       // minutes
-  color: string
+  qty: number
+  tt: number             // seconds per piece
+  jobchange: number      // minutes
+  type: string           // '1' | '2' | '3'
 }
 ```
 
