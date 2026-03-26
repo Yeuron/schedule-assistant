@@ -1,5 +1,12 @@
 <template>
-  <g :transform="`translate(${x}, ${y})`" @click="$emit('click')">
+  <g
+    :transform="`translate(${x}, ${y})`"
+    :class="{ dragging: isDragging }"
+    @pointerdown="onPointerDown"
+    @pointermove="onPointerMove"
+    @pointerup="onPointerUp"
+    @click="onClick"
+  >
     <rect
       v-if="jobchangeWidth > 0"
       class="jobchange-bar"
@@ -20,7 +27,7 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 
 const props = defineProps({
   task:      { type: Object, required: true },
@@ -30,7 +37,7 @@ const props = defineProps({
   viewModeConfig:  { type: Object, required: true },
 })
 
-defineEmits(['click'])
+const emit = defineEmits(['click', 'move'])
 
 const resourceIndex = computed(() => props.resources.indexOf(props.task.machine))
 
@@ -44,7 +51,55 @@ function minutesToWidth(minutes) {
   return (minutes / (1440 * 30) / step) * tickWidth
 }
 
-const x = computed(() => {
+// 拖拽中的临时状态：实时预览位移，松手后再写回任务时间
+const isDragging = ref(false)
+const dragDeltaMinutes = ref(0)
+let dragStartClientX = 0
+let hasDragged = false
+
+function minutesPerPixel() {
+  const { unit, step, tickWidth } = props.viewModeConfig
+  if (unit === 'hour') return (step * 60) / tickWidth
+  if (unit === 'day')  return (step * 1440) / tickWidth
+  return (step * 1440 * 30) / tickWidth
+}
+
+function onPointerDown(event) {
+  if (event.button !== 0) return
+  isDragging.value = true
+  hasDragged = false
+  dragDeltaMinutes.value = 0
+  dragStartClientX = event.clientX
+  event.currentTarget.setPointerCapture(event.pointerId)
+}
+
+function onPointerMove(event) {
+  if (!isDragging.value) return
+  const deltaX = event.clientX - dragStartClientX
+  const rawMinutes = deltaX * minutesPerPixel()
+  // 最小粒度为30分钟，拖拽过程和最终落点都按该粒度吸附
+  const snapped = Math.round(rawMinutes / 30) * 30
+  if (snapped !== 0) hasDragged = true
+  dragDeltaMinutes.value = snapped
+}
+
+function onPointerUp() {
+  if (!isDragging.value) return
+  isDragging.value = false
+  if (hasDragged && dragDeltaMinutes.value !== 0) {
+    const newStartDate = new Date(props.task.startDate.getTime() + dragDeltaMinutes.value * 60000)
+    emit('move', { id: props.task.id, startDate: newStartDate })
+  }
+  dragDeltaMinutes.value = 0
+}
+
+function onClick() {
+  // 防止拖拽结束后触发误点击，只有纯点击才打开编辑
+  if (hasDragged) return
+  emit('click')
+}
+
+const baseX = computed(() => {
   const start = props.task.startDate
   const { unit, step, tickWidth } = props.viewModeConfig
   if (unit === 'hour') return ((start - props.baseDate) / 3600000 / step) * tickWidth
@@ -53,6 +108,9 @@ const x = computed(() => {
                      (start.getMonth() - props.baseDate.getMonth())
   return (monthsDiff / step) * tickWidth
 })
+
+// 任务条横坐标 = 原始位置 + 拖拽中的临时偏移
+const x = computed(() => baseX.value + minutesToWidth(dragDeltaMinutes.value))
 
 const width          = computed(() => minutesToWidth(props.task.duration))
 const jobchangeWidth = computed(() => minutesToWidth(props.task.jobchange || 0))
@@ -67,12 +125,17 @@ const textY          = computed(() => props.options.rowHeight / 2 - props.option
 }
 
 .task-bar {
-  cursor: pointer;
+  cursor: grab;
   transition: filter 0.2s;
 }
 
 .task-bar:hover {
   filter: brightness(1.1);
+}
+
+.dragging .task-bar {
+  cursor: grabbing;
+  opacity: 0.85;
 }
 
 .task-text {

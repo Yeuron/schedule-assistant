@@ -11,7 +11,7 @@
       <TaskForm v-else @add-task="onAddTask" :tasks="tasks" />
     </div>
     <div class="main">
-      <GanttChart :resources="resources" :tasks="tasks" :options="options" @task-click="onTaskClick" style="width: 100%; height: 100%;" />
+      <GanttChart :resources="resources" :tasks="tasks" :options="options" @task-click="onTaskClick" @task-move="onTaskMove" style="width: 100%; height: 100%;" />
     </div>
   </div>
 </template>
@@ -45,6 +45,12 @@ const onAddTask = (task: Task) => {
 
 const onTaskClick = (task: Task) => {
   selectedTask.value = tasks.value.find(t => t.id === task.id) || null
+}
+
+const onTaskMove = ({ id, startDate }: { id: number; startDate: Date }) => {
+  const task = tasks.value.find(t => t.id === id)
+  // 拖拽仅改变开始时间；结束时间由 startDate + duration 推导
+  if (task) task.startDate = startDate
 }
 
 const onUpdateTask = (changes: Pick<Task, 'id' | 'qty' | 'jobchange' | 'startDate' | 'duration' | 'display'>) => {

@@ -63,6 +63,7 @@
         <rect width="100%" height="100%" fill="url(#grid)" />
 
         <!-- 任务条 -->
+        <!-- 子组件只上报位移结果，实际数据更新在 App.vue 统一处理 -->
         <GanttTask
           v-for="task in computedTasks"
           :key="task.id"
@@ -72,6 +73,7 @@
           :viewModeConfig="viewModeConfig"
           :options="options"
           @click="emit('task-click', task)"
+          @move="emit('task-move', $event)"
         />
 
         <!-- 当前时间线 -->
@@ -285,7 +287,7 @@ const currentTimeLine = computed(() => {
   return x
 })
 
-const emit = defineEmits(['task-click'])
+const emit = defineEmits(['task-click', 'task-move'])
 
 // 滚动到当前时间
 onMounted(() => {
