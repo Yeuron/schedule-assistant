@@ -30,7 +30,7 @@
       </div>
       <!-- 下层时间轴 -->
       <div class="timeline-lower">
-        <div v-for="tick in timeTicks" :key="tick.date" class="time-tick">
+        <div v-for="tick in timeTicks" :key="tick.key" class="time-tick">
           {{ tick.lowerLabel }}
         </div>
       </div>
@@ -131,6 +131,13 @@ const changeViewMode = (mode) => {
   viewMode.value = mode
 }
 
+const createTick = (date, mode) => ({
+  key: date.getTime(),
+  date,
+  upperLabel: mode.upperFormat(date),
+  lowerLabel: mode.lowerFormat(date)
+})
+
 // 生成时间刻度
 const timeTicks = computed(() => {
   const ticks = []
@@ -149,11 +156,7 @@ const timeTicks = computed(() => {
         const date = new Date(today)
         date.setDate(today.getDate() + d)
         date.setHours(startHour + h)
-        ticks.push({
-          date: date.toISOString(),
-          upperLabel: mode.upperFormat(date),
-          lowerLabel: mode.lowerFormat(date)
-        })
+        ticks.push(createTick(date, mode))
       }
     }
   } else if (mode.unit === 'day') {
@@ -164,11 +167,7 @@ const timeTicks = computed(() => {
       const date = new Date(today)
       date.setDate(today.getDate() + d)
       date.setHours(startHour)
-      ticks.push({
-        date: date.toISOString(),
-        upperLabel: mode.upperFormat(date),
-        lowerLabel: mode.lowerFormat(date)
-      })
+      ticks.push(createTick(date, mode))
     }
   } else if (mode.unit === 'month') {
     // 月模式 - 也支持小时偏移
@@ -181,11 +180,7 @@ const timeTicks = computed(() => {
 
     const current = new Date(startDate)
     while (current <= endDate) {
-      ticks.push({
-        date: current.toISOString(),
-        upperLabel: mode.upperFormat(current),
-        lowerLabel: mode.lowerFormat(current)
-      })
+      ticks.push(createTick(new Date(current), mode))
       current.setMonth(current.getMonth() + mode.step)
     }
   }
@@ -250,7 +245,7 @@ const svgWidth = computed(() => timeTicks.value.length * viewModeConfig.value.ti
 const svgHeight = computed(() => props.resources.length * options.value.rowHeight)
 
 const baseDate = computed(() =>
-  timeTicks.value.length ? new Date(timeTicks.value[0].date) : new Date()
+  timeTicks.value.length ? timeTicks.value[0].date : new Date()
 )
 
 const computedTasks = computed(() =>
@@ -265,7 +260,7 @@ const currentTimeLine = computed(() => {
   if (ticks.length === 0) return null
 
   const now = new Date()
-  const baseDate = new Date(ticks[0].date)
+  const baseDate = ticks[0].date
 
   let x = 0
 
