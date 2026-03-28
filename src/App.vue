@@ -17,12 +17,14 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from 'vue'
+import { ref, computed, watch } from 'vue'
 import GanttChart from './components/gantt/GanttChart.vue'
 import TaskForm from './components/TaskForm.vue'
 import TaskEditForm from './components/TaskEditForm.vue'
 import { PRODUCT_MASTER } from './data/productMaster'
 import type { Task } from './models'
+
+const TASKS_STORAGE_KEY = 'schedule-assistant.tasks'
 
 const options = {
   view_mode: 'HOUR_2',
@@ -36,8 +38,34 @@ const resources = computed(() => {
   return Array.from(set).sort()
 })
 
-const tasks = ref<Task[]>([])
+function loadTasks(): Task[] {
+  try {
+    const raw = localStorage.getItem(TASKS_STORAGE_KEY)
+    if (!raw) return []
+
+    const parsed = JSON.parse(raw)
+    if (!Array.isArray(parsed)) return []
+
+    return parsed.map((task) => ({
+      ...task,
+      // localStorage 里会被序列化成字符串，这里恢复为 Date
+      startDate: new Date(task.startDate)
+    }))
+  } catch {
+    return []
+  }
+}
+
+const tasks = ref<Task[]>(loadTasks())
 const selectedTask = ref<Task | null>(null)
+
+watch(
+  tasks,
+  (nextTasks) => {
+    localStorage.setItem(TASKS_STORAGE_KEY, JSON.stringify(nextTasks))
+  },
+  { deep: true }
+)
 
 const onAddTask = (task: Task) => {
   tasks.value.push({ ...task })
