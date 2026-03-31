@@ -7,93 +7,105 @@ This file provides guidance to Claude Code when working with this repository.
 Schedule-Assistant is a Vue3 Gantt chart component for production scheduling (排产甘特图).
 
 - GitHub: https://github.com/Yeuron/schedule-assistant.git
-- Stack: Vue3 + Vite + TypeScript
-- Run: `npm run dev`
+- Stack: Vue3 + Vite + TypeScript (frontend) / Node.js + Express + OracleDB (backend)
 
-## File Structure
+## Directory Structure
 
 ```
-src/
-  App.vue                      # Main app: manages tasks array, handles add/update/delete
-  components/
-    TaskForm.vue               # New task creation form
-    TaskEditForm.vue           # Task editing form
-    gantt/
-      GanttChart.vue           # Main Gantt component: renders timeline + tasks
-      GanttTask.vue            # Individual task bar component
-      defaults.js              # DEFAULT_VIEW_MODES + DEFAULT_OPTIONS
-  models.ts                    # TypeScript interfaces (Task, etc.)
-  main.js                      # Vue app entry
-appendix/
-  defaults.js                  # User's reference/scratch file
-gantt-chart.html               # Original HTML prototype
+client/                        # 前端（Vue3 + Vite）
+  index.html
+  vite.config.js               # 配置了 /api -> localhost:3000 的 proxy
+  package.json
+  src/
+    main.js                    # Vue 入口
+    App.vue                    # 顶层：注册 NMessageProvider
+    api.js                     # 封装所有后端 API 请求
+    models.ts                  # TypeScript 接口（Task 等）
+    components/
+      AppContent.vue           # 主页面逻辑：tasks/resources 状态、事件处理
+      TaskForm.vue             # 新增排产任务表单
+      TaskEditForm.vue         # 编辑排产任务表单（:key="selectedTask.id" 强制重建）
+      gantt/
+        GanttChart.vue         # 甘特图主组件：时间轴 + 任务渲染
+        GanttToolbar.vue       # 工具栏组件：视图模式切换 + 今天按钮
+        GanttTask.vue          # 单个任务条组件（SVG，支持拖拽）
+        defaults.js            # DEFAULT_VIEW_MODES + DEFAULT_OPTIONS
+    data/
+      productMaster.js         # (已废弃) 静态产品主数据，改由 API 提供
+server/                        # 后端（Node.js + Express + OracleDB）
+  index.js                     # Express 入口，创建连接池并启动服务
+  db.js                        # Oracle 连接池（Thick 模式）
+  .env                         # 数据库连接配置（不提交 git）
+  .env.example                 # 配置模板
+  ddl.sql                      # 建表 SQL
+  package.json
+  routes/
+    productMaster.js           # GET /api/product-master（读 FR_CX_CL_INFO2）
+    tasks.js                   # CRUD /api/tasks（读写 FR_CX_SCHEDULE_TASK）
+refs/                          # 参考资料
+  product-master-data          # 产品主数据原始格式参考
 ```
 
-## Core Components Logic
+## Start Commands
 
-### App.vue
-- Holds reactive `tasks` array (Task[])
-- Handles events: `add-task`, `update-task`, `delete-task`, `task-click`, `task-move`
-- Passes `tasks`, `resources`, `options` to GanttChart
-- Opens TaskForm/TaskEditForm modals
-- On `task-move`, updates `task.startDate` only (end time is derived from duration)
+```bash
+# 后端
+cd server && npm run dev       # http://localhost:3000
 
-### TaskForm.vue & TaskEditForm.vue
-- Use Naive UI forms (n-form, n-date-picker, n-input-number)
-- Emit Date objects directly (no ISO string conversion)
-- TaskForm: creates new task with default start time
-- TaskEditForm: initializes form from existing task.startDate
+# 前端
+cd client && npm run dev       # http://localhost:5173 (proxy /api -> :3000)
+```
 
-### GanttChart.vue
-- Merges props.options with DEFAULT_OPTIONS
-- Manages `viewMode` ref (string key like 'DAY')
-- Computes `viewModeConfig` from options.view_modes[viewMode]
-- Generates `timeTicks` array based on view mode and date range
-- Computes `upperGroups` for timeline header grouping
-- Renders SVG with grid + GanttTask components
-- Forwards child move event: `GanttTask@move` -> emit `task-move`
-- Handles view mode switching UI
-- Auto-scrolls to current time on mount
+## Database Tables
 
-### GanttTask.vue
-- Receives `task` (Task), `viewModeConfig` (object), `baseDate` (Date)
-- Computes x position: (task.startDate - baseDate) / timeUnit * tickWidth
-- Computes width: task.duration / timeUnit * tickWidth
-- Renders SVG rect with task color and padding
-- Supports horizontal drag move with pointer events
-- Snap-to-grid at 30 minutes (minimum move unit)
-- Emits `move` with `{ id, startDate }` on drag end
-- Suppresses click after drag to avoid accidental edit popup
+### FR_CX_CL_INFO2（产品主数据，只读）
+| 字段 | 说明 |
+|------|------|
+| CELL_NO | 产品型号 |
+| DEVICE | 设备 |
+| TYPE | 生产模式（1/2/3）|
+| PI | PI液 |
+| TT | 秒/片 |
+| OPERATION_RATE | 稼动率（小数，如 0.97）|
 
-## Data Flow
+### FR_CX_SCHEDULE_TASK（排产任务表）
+| 字段 | 说明 |
+|------|------|
+| ID | 毫秒时间戳字符串（VARCHAR2(13)）|
+| DISPLAY | 任务条显示内容 |
+| PRODUCT | 产品型号 |
+| MACHINE | 设备 |
+| TYPE | 生产模式 |
+| START_DATE | 开始时间（TIMESTAMP）|
+| DURATION | 总时长分钟（含换机）|
+| QTY | 片数 |
+| TT | 秒/片 |
+| JOBCHANGE | 换机时间（分钟）|
 
-1. User creates/edits task via forms → emit to App.vue → update tasks array
-2. App.vue passes tasks to GanttChart → renders GanttTask components
-3. User drags task bar in GanttTask → emit `move` (`id`, `startDate`) after 30-minute snapping
-4. GanttChart forwards `task-move` to App.vue
-5. App.vue updates matching task `startDate`; end time shifts accordingly via unchanged `duration`
-6. View mode changes → update viewMode → recompute timeTicks → re-render
+## API Endpoints
 
-## GanttChart Component API
+| 方法 | 路径 | 说明 |
+|------|------|------|
+| GET | /api/product-master | 产品主数据 |
+| GET | /api/tasks | 所有排产任务 |
+| POST | /api/tasks | 新增任务 |
+| PUT | /api/tasks/:id | 更新任务（只更新传入的字段）|
+| DELETE | /api/tasks/:id | 删除任务 |
 
-Props:
-- `resources`: Array (required) - list of resource name strings
-- `tasks`: Array (required) - task objects
-- `options`: Object - merged with DEFAULT_OPTIONS
+## Task Object (models.ts)
 
-Task object shape (from models.ts):
 ```ts
 interface Task {
-  id: number
-  display: string
+  id: string          // 毫秒时间戳字符串
+  display: string     // 任务条显示内容
   product: string
   machine: string
-  startDate: Date        // Date object, not ISO string
-  duration: number       // minutes
+  startDate: Date     // Date 对象，不是 ISO 字符串
+  duration: number    // 分钟，含 jobchange
   qty: number
-  tt: number             // seconds per piece
-  jobchange: number      // minutes
-  type: string           // '1' | '2' | '3'
+  tt: number          // 秒/片
+  jobchange: number   // 分钟
+  type: string        // '1' | '2' | '3'
 }
 ```
 
@@ -101,57 +113,40 @@ interface Task {
 
 ```js
 {
-  view_mode: 'DAY',            // current view mode key
-  view_mode_select: true,      // show view mode switcher UI
+  view_mode: 'DAY',
+  view_mode_select: true,       // 是否显示视图模式选择器
   view_modes: DEFAULT_VIEW_MODES,
-  show_current_time: false,    // show black vertical line at current time
-  rowHeight: 40,
-  startDay: -7,                // days offset from today
+  show_current_time: false,     // 是否显示当前时间竖线（黑色虚线）
+  rowHeight: 60,
+  startDay: -7,
   endDay: 7,
   barPaddingY: 5,
+  today_button: true,           // 是否显示「今天」按钮（滚动到当前时间）
+  container_height: 'auto',     // 'auto' 随内容展开，或任意正整数（px）
 }
 ```
 
-## DEFAULT_VIEW_MODES
+## GanttChart Features
 
-Keys: `HOUR`, `HOUR_2`, `HOUR_6`, `DAY`, `WEEK`, `MONTH`
+- **视图模式切换**：切换时保持视口中心时间不变（`xToTime` / `timeToX` 互转）
+- **今天定位**：初始化及点击「今天」按钮时，将当前时间滚动到数据区中央
+  - 数据区宽度 = `wrapper.clientWidth - 150`（减去左侧固定资源列 150px）
+- **当前 tick 高亮**：下层时间轴中，当前时间所在 tick 显示黑色圆圈 + 白色数字（`currentTickKey`）
+- **当前时间线**：落在当前 tick 正中间的黑色虚线（`show_current_time: true` 时显示）
+- **GanttToolbar**：已剥离为独立组件，通过 `change-mode` / `scroll-to-today` 事件通信
+  - 视图模式按钮等宽（`flex: 1`，外层 `display: flex`）
+  - 「今天」按钮靠右（`margin-left: auto`）
 
-Each mode has:
-```js
-{
-  name, tickWidth, step, unit,  // unit: 'hour' | 'day' | 'month'
-  dayStartHour,                 // all modes have this; shifts timeline start hour
-  upperFormat(date),            // top row label formatter
-  lowerFormat(date),            // bottom row label formatter
-}
-```
+## TaskEditForm Notes
 
-## Timeline Generation Logic
-
-- `timeTicks`: Array of {date: Date, upperLabel: string, lowerLabel: string}
-- For hour modes: generate ticks every `step` hours, starting from `dayStartHour`
-- For day/month modes: generate ticks every `step` days/months
-- `upperGroups`: Merge consecutive ticks with same `upperLabel`
-- SVG width = timeTicks.length * viewModeConfig.tickWidth
-- SVG height = resources.length * options.rowHeight
-
-## Task Positioning Logic
-
-- Base date = timeTicks[0].date
-- Time unit conversion: hour=3600000ms, day=86400000ms, month=approx 30.44 days
-- X position = ((task.startDate - baseDate) / timeUnit) * tickWidth / step
-- Width = (task.duration / 60 / timeUnit) * tickWidth / step  // duration in minutes
-
-## Current Time Line
-
-- Calculates position relative to baseDate using same time unit logic
-- Only shows if within visible range (x >=0 && x <= svgWidth)
+- `startTime` 使用毫秒时间戳（`Date.getTime()`），与 NDatePicker v-model 兼容
+- AppContent 中使用 `:key="selectedTask.id"` 强制在切换 task 时重建组件
 
 ## Conventions
 
-- 日期统一使用 Date 对象（不再是 ISO 字符串）
+- 前端日期统一使用 Date 对象，API 传输时转为 ISO 字符串
 - duration 单位为分钟
-- DEFAULT_OPTIONS 配置项用 snake_case
-- view mode 内部属性用 camelCase
-- 组件间传递 Date 对象，避免重复转换
+- DEFAULT_OPTIONS 配置项用 snake_case，view mode 内部属性用 camelCase
+- PUT /api/tasks/:id 只更新 body 中实际传入的字段（partial update）
+- 拖拽移动采用乐观更新：先更新本地状态，再异步调用 API
 - 保持最小实现，不添加多余代码

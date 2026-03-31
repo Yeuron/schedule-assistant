@@ -1,19 +1,23 @@
 <template>
   <div class="gantt-container">
-    <!-- 视图模式选择器 -->
-    <div v-if="options.view_mode_select" class="view-mode-selector">
-      <button
-        v-for="(mode, key) in options.view_modes"
-        :key="key"
-        class="mode-button"
-        :class="{ active: viewMode === key }"
-        @click="changeViewMode(key)"
-      >
-        {{ mode.name }}
-      </button>
-    </div>
+    <!-- 工具栏 -->
+    <GanttToolbar
+      :options="options"
+      :viewMode="viewMode"
+      @change-mode="changeViewMode"
+      @scroll-to-today="scrollToToday"
+    />
 
-    <div class="gantt-wrapper" ref="ganttWrapper" :style="{ '--tick-width': `${viewModeConfig.tickWidth}px`, '--row-height': `${options.rowHeight}px` }">
+    <div
+      class="gantt-wrapper"
+      ref="ganttWrapper"
+      :style="{
+        '--tick-width': `${viewModeConfig.tickWidth}px`,
+        '--row-height': `${options.rowHeight}px`,
+        '--resource-col-width': `${options.resource_col_width}px`,
+        height: options.container_height === 'auto' ? 'max-content' : `${options.container_height}px`
+      }"
+    >
       <div class="gantt-corner">资源 \ 时间</div>
 
       <div class="gantt-timeline">
@@ -31,14 +35,15 @@
       <!-- 下层时间轴 -->
       <div class="timeline-lower">
         <div v-for="tick in timeTicks" :key="tick.key" class="time-tick">
-          {{ tick.lowerLabel }}
+          <span v-if="tick.key === currentTickKey" class="current-tick-label">{{ tick.lowerLabel }}</span>
+          <template v-else>{{ tick.lowerLabel }}</template>
         </div>
       </div>
     </div>
 
     <div class="gantt-resources">
-      <div v-for="resource in resources" :key="resource" class="resource-item">
-        {{ resource }}
+      <div v-for="resource in resources" :key="resource.name" class="resource-item">
+        {{ resource.name }}
       </div>
     </div>
 
@@ -79,11 +84,11 @@
         <!-- 当前时间线 -->
         <line
           v-if="options.show_current_time && currentTimeLine !== null"
+          class="current-time-line"
           :x1="currentTimeLine"
           :y1="0"
           :x2="currentTimeLine"
           :y2="svgHeight"
-          class="current-time-line"
         />
       </svg>
     </div>
@@ -93,8 +98,9 @@
 </template>
 
 <script setup>
-import { computed, ref, onMounted } from 'vue'
+import { computed, nextTick, ref, onMounted } from 'vue'
 import { DEFAULT_OPTIONS } from './defaults'
+import GanttToolbar from './GanttToolbar.vue'
 import GanttTask from './GanttTask.vue'
 
 const props = defineProps({
@@ -126,9 +132,47 @@ const viewMode = ref(options.value.view_mode)
 // 获取当前视图模式配置
 const viewModeConfig = computed(() => options.value.view_modes[viewMode.value])
 
-// 切换视图模式
-const changeViewMode = (mode) => {
+// 将 x 偏移量（像素）转换为对应的时间点
+const xToTime = (x, config, base) => {
+  if (config.unit === 'hour') {
+    return new Date(base.getTime() + (x / config.tickWidth) * config.step * 3600000)
+  } else if (config.unit === 'day') {
+    return new Date(base.getTime() + (x / config.tickWidth) * config.step * 86400000)
+  } else {
+    // month：用近似毫秒数
+    return new Date(base.getTime() + (x / config.tickWidth) * config.step * 30.44 * 86400000)
+  }
+}
+
+// 将时间点转换为 x 偏移量（像素）
+const timeToX = (time, config, base) => {
+  if (config.unit === 'hour') {
+    return ((time - base) / 3600000 / config.step) * config.tickWidth
+  } else if (config.unit === 'day') {
+    return ((time - base) / 86400000 / config.step) * config.tickWidth
+  } else {
+    const months = (time.getFullYear() - base.getFullYear()) * 12 + (time.getMonth() - base.getMonth())
+    return (months / config.step) * config.tickWidth
+  }
+}
+
+// 切换视图模式，并将视口中心时间保持不变
+const changeViewMode = async (mode) => {
+  const wrapper = ganttWrapper.value
+  // 数据区可视宽度（减去左侧固定资源列）
+  const dataWidth = wrapper ? wrapper.clientWidth - options.value.resource_col_width : 0
+  // 记录切换前视口中心对应的时间
+  const centerX = wrapper ? wrapper.scrollLeft + dataWidth / 2 : 0
+  const centerTime = xToTime(centerX, viewModeConfig.value, baseDate.value)
+
   viewMode.value = mode
+
+  await nextTick()
+
+  if (wrapper) {
+    const newX = timeToX(centerTime, viewModeConfig.value, baseDate.value)
+    wrapper.scrollLeft = Math.max(0, newX - dataWidth / 2)
+  }
 }
 
 const createTick = (date, mode) => ({
@@ -252,97 +296,63 @@ const computedTasks = computed(() =>
   timeTicks.value.length ? props.tasks : []
 )
 
-// 计算当前时间线的位置
-const currentTimeLine = computed(() => {
-  const mode = viewModeConfig.value
+// 当前时间落在哪个 tick
+const currentTickKey = computed(() => {
   const ticks = timeTicks.value
+  const now = new Date()
+  for (let i = 0; i < ticks.length; i++) {
+    const start = ticks[i].date
+    const end = ticks[i + 1] ? ticks[i + 1].date : new Date(start.getTime() + 1)
+    if (now >= start && now < end) return ticks[i].key
+  }
+  return null
+})
 
+// 计算当前时间线的位置（落在哪个 tick，就居中对齐到该 tick 中心）
+const currentTimeLine = computed(() => {
+  const ticks = timeTicks.value
   if (ticks.length === 0) return null
 
-  const now = new Date()
-  const baseDate = ticks[0].date
+  const idx = ticks.findIndex(t => t.key === currentTickKey.value)
+  if (idx === -1) return null
 
-  let x = 0
-
-  if (mode.unit === 'hour') {
-    const hoursDiff = (now - baseDate) / 3600000
-    x = (hoursDiff / mode.step) * mode.tickWidth
-  } else if (mode.unit === 'day') {
-    const daysDiff = (now - baseDate) / 86400000
-    x = (daysDiff / mode.step) * mode.tickWidth
-  } else if (mode.unit === 'month') {
-    const monthsDiff = (now.getFullYear() - baseDate.getFullYear()) * 12 +
-                      (now.getMonth() - baseDate.getMonth())
-    x = (monthsDiff / mode.step) * mode.tickWidth
-  }
-
-  // 只在可见范围内显示
-  if (x < 0 || x > svgWidth.value) return null
-
-  return x
+  return idx * viewModeConfig.value.tickWidth + viewModeConfig.value.tickWidth / 2
 })
 
 const emit = defineEmits(['task-click', 'task-move'])
 
-// 滚动到当前时间
+// 滚动到今天
+const scrollToToday = () => {
+  if (!ganttWrapper.value) return
+  const dataWidth = ganttWrapper.value.clientWidth - options.value.resource_col_width
+  const x = timeToX(new Date(), viewModeConfig.value, baseDate.value)
+  ganttWrapper.value.scrollLeft = Math.max(0, x - dataWidth / 2)
+}
+
+// 初始滚动到今天
 onMounted(() => {
-  if (ganttWrapper.value && currentTimeLine.value !== null) {
-    const scrollLeft = currentTimeLine.value - ganttWrapper.value.clientWidth / 2
-    ganttWrapper.value.scrollLeft = Math.max(0, scrollLeft)
+  if (ganttWrapper.value) {
+    scrollToToday()
   }
 })
 </script>
 
 <style scoped>
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+
 
 .gantt-container {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
-}
-
-.view-mode-selector {
-  display: flex;
-  gap: 8px;
-  padding: 10px;
-  background-color: #f8fafc;
-  border-bottom: 1px solid #cbd5e1;
-}
-
-.mode-button {
-  padding: 6px 12px;
-  font-size: 13px;
-  border: 1px solid #cbd5e1;
-  background-color: #fff;
-  color: #475569;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-
-.mode-button:hover {
-  background-color: #f1f5f9;
-  border-color: #94a3b8;
-}
-
-.mode-button.active {
-  background-color: #3b82f6;
-  color: #fff;
-  border-color: #3b82f6;
+  overflow: hidden;
 }
 
 .gantt-wrapper {
   display: grid;
-  grid-template-columns: 150px max-content;
+  grid-template-columns: var(--resource-col-width, 150px) max-content;
   grid-template-rows: 60px max-content;
   width: 100%;
-  height: 100%;
   overflow: auto;
   border: 1px solid #cbd5e1;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
@@ -414,6 +424,18 @@ onMounted(() => {
   border-right: 1px solid #e2e8f0;
 }
 
+.current-tick-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: #000;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 13px;
+}
+
 .gantt-resources {
   grid-column: 1;
   grid-row: 2;
@@ -429,7 +451,7 @@ onMounted(() => {
   height: var(--row-height, 40px);
   display: flex;
   align-items: center;
-  padding: 0 10px;
+  justify-content: center;
   font-size: 13px;
   color: #334155;
   border-bottom: 1px solid #f1f5f9;
@@ -444,7 +466,8 @@ onMounted(() => {
 
 .current-time-line {
   stroke: #000;
-  stroke-width: 2;
+  stroke-width: 1.5;
+  stroke-dasharray: 4 3;
   pointer-events: none;
 }
 </style>

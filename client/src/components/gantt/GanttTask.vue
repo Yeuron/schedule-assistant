@@ -39,10 +39,12 @@ const props = defineProps({
 
 const emit = defineEmits(['click', 'move'])
 
-const resourceIndex = computed(() => props.resources.indexOf(props.task.machine))
+const resourceIndex = computed(() => props.resources.findIndex(r => r.name === props.task.machine))
 
-const taskColors = ['#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#6366f1', '#8b5cf6', '#ec4899', '#14b8a6', '#f97316', '#06b6d4']
-const color = computed(() => taskColors[props.task.id % taskColors.length])
+const color = computed(() => {
+  const res = props.resources.find(r => r.name === props.task.machine)
+  return res ? res.color : '#3b82f6'
+})
 
 function minutesToWidth(minutes) {
   const { unit, step, tickWidth } = props.viewModeConfig

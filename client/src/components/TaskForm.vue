@@ -69,7 +69,7 @@
         <n-form-item label="片数 (Qty)">
           <n-input-number
             v-model:value="form.qty"
-            :min="minQty"
+            :min="0"
             :max="999999"
             placeholder="请输入数量"
           />
@@ -98,6 +98,8 @@
             type="datetime"
             :disabled="!canSelectTime"
             :max="maxDateTime"
+            :time-picker-props="{ minutes: [0, 30], seconds: [0], isSecondDisabled: () => true }"
+            format="yyyy-MM-dd HH:mm"
           />
         </n-form-item>
 
@@ -126,15 +128,24 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
-import { PRODUCT_MASTER } from '../data/productMaster'
+import { ref, computed, onMounted } from 'vue'
 import { NCard, NForm, NFormItem, NSelect, NRadioGroup, NRadio, NSpace, NInput, NInputNumber, NButton, NDatePicker } from 'naive-ui'
+import { api } from '../api'
 
 const props = defineProps({
   tasks: {
     type: Array,
     default: () => []
+  },
+  resources: {
+    type: Array,
+    default: () => []
   }
+})
+
+const productMaster = ref([])
+onMounted(async () => {
+  productMaster.value = await api.getProductMaster()
 })
 
 const emit = defineEmits(['add-task'])
@@ -149,7 +160,7 @@ const form = ref({
   product: '',
   machine: '',
   type: '',
-  qty: 1,
+  qty: 0,
   jobchange: 0,
   startTime: null,
   display: ''
@@ -157,26 +168,26 @@ const form = ref({
 
 // 获取所有产品列表
 const productOptions = computed(() => {
-  const set = new Set(PRODUCT_MASTER.map(item => item.product))
+  const set = new Set(productMaster.value.map(item => item.product))
   return Array.from(set).sort().map(p => ({ label: p, value: p }))
 })
 
-// 根据选中的产品，获取可用设备
+// 根据选中的产品，获取可用设备（仅限 resources 配置中的机台）
 const machines = computed(() => {
   if (!form.value.product) return []
-  const set = new Set(
-    PRODUCT_MASTER
+  const pmMachines = new Set(
+    productMaster.value
       .filter(item => item.product === form.value.product)
       .map(item => item.machine)
   )
-  return Array.from(set).sort()
+  return props.resources.filter(r => pmMachines.has(r.name)).map(r => r.name)
 })
 
 // 根据选中的产品和设备，获取可用生产模式
 const types = computed(() => {
   if (!form.value.product || !form.value.machine) return []
   const set = new Set(
-    PRODUCT_MASTER
+    productMaster.value
       .filter(item => item.product === form.value.product && item.machine === form.value.machine)
       .map(item => item.type)
   )
@@ -186,25 +197,26 @@ const types = computed(() => {
 // 获取当前选中的配置
 const selectedConfig = computed(() => {
   if (!form.value.product || !form.value.machine || !form.value.type) return null
-  return PRODUCT_MASTER.find(
+  return productMaster.value.find(
     item => item.product === form.value.product &&
             item.machine === form.value.machine &&
             item.type === form.value.type
   )
 })
 
-// 计算结束时间（对齐到半小时，再加换机时间）
-const endTime = computed(() => {
-  if (!selectedConfig.value || !form.value.qty || !form.value.startTime) return ''
-
+// 计算结束时间的 Date 对象（用于显示和校验）
+const endDateValue = computed(() => {
+  if (!selectedConfig.value || form.value.qty == null || !form.value.startTime) return null
   const { tt, utilization } = selectedConfig.value
   const productionMinutes = (form.value.qty * tt) / utilization / 60
+  const productionEnd = snapToHalfHour(form.value.startTime + productionMinutes * 60000)
+  return new Date(productionEnd + form.value.jobchange * 60000)
+})
 
-  const start = form.value.startTime
-  const productionEnd = snapToHalfHour(new Date(start.getTime() + productionMinutes * 60000))
-  const end = new Date(productionEnd.getTime() + form.value.jobchange * 60000)
-
-  return end.toLocaleString('zh-CN', {
+// 结束时间显示字符串
+const endTime = computed(() => {
+  if (!endDateValue.value) return ''
+  return endDateValue.value.toLocaleString('zh-CN', {
     year: 'numeric',
     month: '2-digit',
     day: '2-digit',
@@ -213,16 +225,12 @@ const endTime = computed(() => {
   })
 })
 
-const minQty = computed(() => {
-  if (!selectedConfig.value) return 1
-  const { tt, utilization } = selectedConfig.value
-  return Math.ceil(30 * utilization * 60 / tt)
-})
-
 const canSubmit = computed(() => {
   return form.value.product && form.value.machine && form.value.type &&
-         form.value.qty >= minQty.value && form.value.startTime !== null &&
-         form.value.display.trim() !== ''
+         form.value.startTime !== null &&
+         form.value.display.trim() !== '' &&
+         endDateValue.value !== null &&
+         endDateValue.value.getTime() > form.value.startTime
 })
 
 const canSelectTime = computed(() => {
@@ -255,7 +263,7 @@ const updateDefaultStartTime = () => {
   if (machineTasks.length === 0) {
     // 没有任务，使用当前时间
     const now = new Date()
-    form.value.startTime = snapToHalfHour(now)
+    form.value.startTime = snapToHalfHour(now.getTime())
     return
   }
 
@@ -270,12 +278,11 @@ const updateDefaultStartTime = () => {
   }
 
   // 设置为最晚结束时间
-  form.value.startTime = snapToHalfHour(latestEnd)
+  form.value.startTime = snapToHalfHour(latestEnd.getTime())
 }
 
-const snapToHalfHour = (date) => {
-  const ms = date.getTime()
-  return new Date(Math.ceil(ms / 1800000) * 1800000)
+const snapToHalfHour = (ms) => {
+  return Math.ceil(ms / 1800000) * 1800000
 }
 
 
@@ -283,21 +290,20 @@ const addTask = () => {
   if (!canSubmit.value || !selectedConfig.value) return
 
   const { tt, utilization } = selectedConfig.value
-  const start = form.value.startTime
-  const rawProductionEnd = new Date(start.getTime() + (form.value.qty * tt) / utilization / 60 * 60000)
+  const start = form.value.startTime  // number (ms)
+  const rawProductionEnd = start + (form.value.qty * tt) / utilization / 60 * 60000
   const snappedProductionEnd = snapToHalfHour(rawProductionEnd)
-  const productionDuration = (snappedProductionEnd.getTime() - start.getTime()) / 60000
+  const productionDuration = (snappedProductionEnd - start) / 60000
   const totalDuration = form.value.jobchange + productionDuration
 
   emit('add-task', {
-    id: Date.now(),
     display: form.value.display,
     product: form.value.product,
     machine: form.value.machine,
     type: form.value.type,
     qty: form.value.qty,
     jobchange: form.value.jobchange,
-    startDate: start,
+    startDate: new Date(start),
     duration: totalDuration,
     pi: selectedConfig.value.pi,
     tt: selectedConfig.value.tt,
@@ -309,7 +315,7 @@ const addTask = () => {
     product: '',
     machine: '',
     type: '',
-    qty: 1,
+    qty: 0,
     jobchange: 0,
     startTime: null,
     display: ''

@@ -59,12 +59,18 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import { NCard, NForm, NFormItem, NInput, NInputNumber, NButton, NDatePicker, NPopconfirm } from 'naive-ui'
-import { PRODUCT_MASTER } from '../data/productMaster'
+import { api } from '../api'
 
 const props = defineProps({
-  task: { type: Object, required: true }
+  task: { type: Object, required: true },
+  resources: { type: Array, default: () => [] }
+})
+
+const productMaster = ref([])
+onMounted(async () => {
+  productMaster.value = await api.getProductMaster()
 })
 
 const emit = defineEmits(['update-task', 'delete-task', 'close'])
@@ -78,12 +84,12 @@ const typeNames = {
 const form = ref({
   qty: props.task.qty,
   jobchange: props.task.jobchange || 0,
-  startTime: props.task.startDate,
+  startTime: props.task.startDate instanceof Date ? props.task.startDate.getTime() : (props.task.startDate || null),
   display: props.task.display
 })
 
 const utilization = computed(() =>
-  PRODUCT_MASTER.find(
+  productMaster.value.find(
     item => item.product === props.task.product &&
             item.machine === props.task.machine &&
             item.type === props.task.type
@@ -95,8 +101,8 @@ const minQty = computed(() => Math.ceil(30 * utilization.value * 60 / props.task
 const endTime = computed(() => {
   if (!form.value.qty || !form.value.startTime) return ''
   const productionMinutes = (form.value.qty * props.task.tt) / utilization.value / 60
-  const start = form.value.startTime
-  const productionEnd = new Date(Math.ceil((start.getTime() + productionMinutes * 60000) / 1800000) * 1800000)
+  const startMs = form.value.startTime
+  const productionEnd = new Date(Math.ceil((startMs + productionMinutes * 60000) / 1800000) * 1800000)
   const end = new Date(productionEnd.getTime() + form.value.jobchange * 60000)
   return end.toLocaleString('zh-CN', {
     year: 'numeric', month: '2-digit', day: '2-digit',
@@ -107,7 +113,7 @@ const endTime = computed(() => {
 const canSave = computed(() => form.value.qty >= minQty.value && form.value.startTime !== null)
 
 const save = () => {
-  const start = form.value.startTime
+  const start = new Date(form.value.startTime)
   const rawProductionEnd = new Date(start.getTime() + (form.value.qty * props.task.tt) / utilization.value / 60 * 60000)
   const snappedProductionEnd = new Date(Math.ceil(rawProductionEnd.getTime() / 1800000) * 1800000)
   const productionDuration = (snappedProductionEnd.getTime() - start.getTime()) / 60000
