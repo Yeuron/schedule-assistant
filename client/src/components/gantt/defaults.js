@@ -5,7 +5,7 @@
 export const DEFAULT_VIEW_MODES = {
   HOUR: {
     name: "Hour",
-    tickWidth: 30,
+    tickWidth: 50,
     step: 1, // 小时
     unit: "hour",
     dayStartHour: 6, // 一天开始时间（早上6点）

@@ -43,6 +43,7 @@
 
     <div class="gantt-resources">
       <div v-for="resource in resources" :key="resource.name" class="resource-item">
+        <span class="resource-dot" :style="{ background: resource.color }"></span>
         {{ resource.name }}
       </div>
     </div>
@@ -452,10 +453,18 @@ onMounted(() => {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 6px;
   font-size: 13px;
   color: #334155;
   border-bottom: 1px solid #f1f5f9;
   font-weight: 500;
+}
+
+.resource-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
 }
 
 .gantt-data {

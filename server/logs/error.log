@@ -1,0 +1,27 @@
+[2026-04-17 15:47:28] [ERROR] SQL execution error - Duration: 5ms | Error: ORA-01400: cannot insert NULL into ("CREATE_TABLE"."FR_CX_SCHEDULE_TASK"."DISPLAY") | INSERT INTO FR_CX_SCHEDULE_TASK
+        (ID, DISPLAY, PRODUCT, MACHINE, TYPE, ST...
+[2026-04-17 15:47:28] [ERROR] Failed to create task: ORA-01400: cannot insert NULL into ("CREATE_TABLE"."FR_CX_SCHEDULE_TASK"."DISPLAY")
+[2026-04-17 15:48:16] [ERROR] SQL execution error - Duration: 19ms | Error: ORA-01400: cannot insert NULL into ("CREATE_TABLE"."FR_CX_SCHEDULE_TASK"."DISPLAY") | INSERT INTO FR_CX_SCHEDULE_TASK
+        (ID, DISPLAY, PRODUCT, MACHINE, TYPE, ST...
+[2026-04-17 15:48:16] [ERROR] Failed to create task: ORA-01400: cannot insert NULL into ("CREATE_TABLE"."FR_CX_SCHEDULE_TASK"."DISPLAY")
+[2026-04-20 09:04:04] [ERROR] Failed to fetch tasks: NJS-116: password verifier type 0x939 is not supported by node-oracledb in Thin mode
+[2026-04-20 09:04:04] [ERROR] Failed to fetch product master: NJS-116: password verifier type 0x939 is not supported by node-oracledb in Thin mode
+[2026-04-20 17:04:25] [ERROR] SQL execution error - Duration: 7ms | Error: ORA-00942: table or view does not exist | SELECT
+        CELL_NO       AS "product",
+        DEVICE        AS "machine",
+ ...
+[2026-04-20 17:04:25] [ERROR] SQL execution error - Duration: 8ms | Error: ORA-00942: table or view does not exist | SELECT
+        ID          AS "id",
+        DISPLAY     AS "remark",
+        PRO...
+[2026-04-20 17:04:25] [ERROR] Failed to fetch product master: ORA-00942: table or view does not exist
+[2026-04-20 17:04:25] [ERROR] Failed to fetch tasks: ORA-00942: table or view does not exist
+[2026-04-22 09:58:03] [ERROR] Failed to fetch product master: NJS-500: connection to Oracle Database was closed or broken
+DPI-1080: connection was closed by ORA-03135
+ORA-03135: connection lost contact
+[2026-04-22 10:07:14] [ERROR] Failed to fetch product master: NJS-500: connection to Oracle Database was closed or broken
+DPI-1080: connection was closed by ORA-03113
+ORA-03113: end-of-file on communication channel
+[2026-04-22 10:07:14] [ERROR] Failed to fetch tasks: NJS-500: connection to Oracle Database was closed or broken
+DPI-1080: connection was closed by ORA-03113
+ORA-03113: end-of-file on communication channel

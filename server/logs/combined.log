@@ -1,0 +1,1817 @@
+[2026-04-16 13:52:45] [INFO] Database initialized successfully
+[2026-04-16 13:52:45] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-16 13:52:51] [INFO] Database initialized successfully
+[2026-04-16 13:52:51] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-16 13:52:55] [INFO] oracledb: Thick mode enabled
+[2026-04-16 13:52:55] [INFO] Database initialized successfully
+[2026-04-16 13:52:55] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-16 13:53:02] [INFO] oracledb: Thick mode enabled
+[2026-04-16 13:53:02] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-16 13:53:02] [INFO] Database initialized successfully
+[2026-04-16 13:53:02] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-16 13:53:03] [INFO] oracledb: Thick mode enabled
+[2026-04-16 13:53:04] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-16 13:53:04] [INFO] Database initialized successfully
+[2026-04-16 13:53:04] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-16 13:53:14] [INFO] oracledb: Thick mode enabled
+[2026-04-16 13:53:14] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-16 13:53:14] [INFO] Database initialized successfully
+[2026-04-16 13:53:14] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-16 13:53:18] [INFO] oracledb: Thick mode enabled
+[2026-04-16 13:53:19] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-16 13:53:19] [INFO] Database initialized successfully
+[2026-04-16 13:53:19] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-16 13:53:20] [INFO] oracledb: Thick mode enabled
+[2026-04-16 13:53:21] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-16 13:53:21] [INFO] Database initialized successfully
+[2026-04-16 13:53:21] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-16 13:53:28] [INFO] oracledb: Thick mode enabled
+[2026-04-16 13:53:28] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-16 13:53:28] [INFO] Database initialized successfully
+[2026-04-16 13:53:28] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-16 13:53:34] [INFO] oracledb: Thick mode enabled
+[2026-04-16 13:53:34] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-16 13:53:34] [INFO] Database initialized successfully
+[2026-04-16 13:53:34] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-16 13:53:34] [INFO] oracledb: Thick mode enabled
+[2026-04-16 13:53:34] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-16 13:53:34] [INFO] Database initialized successfully
+[2026-04-16 13:53:34] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-16 13:53:47] [INFO] oracledb: Thick mode enabled
+[2026-04-16 13:53:47] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-16 13:53:47] [INFO] Database initialized successfully
+[2026-04-16 13:53:47] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-16 13:53:49] [INFO] oracledb: Thick mode enabled
+[2026-04-16 13:53:49] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-16 13:53:49] [INFO] Database initialized successfully
+[2026-04-16 13:53:49] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-16 13:54:58] [INFO] Tasks fetched successfully | Count: 1
+[2026-04-16 13:54:58] [INFO] GET / - Status: 200 - Duration: 11ms
+[2026-04-16 13:54:58] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-16 13:54:58] [INFO] GET / - Status: 200 - Duration: 33ms
+[2026-04-16 13:55:46] [INFO] SQL executed - Duration: 15ms | Rows affected: 1 | INSERT INTO FR_CX_SCHEDULE_TASK
+        (ID, DISPLAY, PRODUCT, MACHINE, TYPE, ST...
+[2026-04-16 13:55:46] [INFO] Task created successfully | ID: 1776318946099 | Product: B5P080HD5VP05, Machine: 5CIPI02, Type: 2
+[2026-04-16 13:55:46] [INFO] POST / - Status: 201 - Duration: 19ms
+[2026-04-16 14:14:45] [INFO] oracledb: Thick mode enabled
+[2026-04-16 14:14:45] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-16 14:14:45] [INFO] Database initialized successfully
+[2026-04-16 14:14:45] [INFO] Server running on http://localhost:3000 | Environment: production
+[2026-04-16 14:14:50] [INFO] oracledb: Thick mode enabled
+[2026-04-16 14:14:50] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-16 14:14:50] [INFO] Database initialized successfully
+[2026-04-16 14:14:50] [INFO] Server running on http://localhost:3000 | Environment: production
+[2026-04-16 14:14:54] [INFO] oracledb: Thick mode enabled
+[2026-04-16 14:14:54] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-16 14:14:54] [INFO] Database initialized successfully
+[2026-04-16 14:14:54] [INFO] Server running on http://localhost:3000 | Environment: production
+[2026-04-16 14:20:12] [INFO] SIGINT received, shutting down gracefully...
+[2026-04-17 08:34:48] [INFO] oracledb: Thick mode enabled
+[2026-04-17 08:34:48] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 08:34:48] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 08:34:48] [INFO] Database initialized successfully
+[2026-04-17 08:34:48] [INFO] Server running on http://localhost:3000 | Environment: production
+[2026-04-17 08:34:49] [INFO] oracledb: Thick mode enabled
+[2026-04-17 08:34:49] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 08:34:49] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 08:34:49] [INFO] Database initialized successfully
+[2026-04-17 08:34:49] [INFO] Server running on http://localhost:3000 | Environment: production
+[2026-04-17 08:35:31] [INFO] Tasks fetched successfully | Count: 2
+[2026-04-17 08:35:31] [INFO] GET / - Status: 200 - Duration: 20ms
+[2026-04-17 08:35:31] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 08:35:31] [INFO] GET / - Status: 200 - Duration: 42ms
+[2026-04-17 08:35:32] [INFO] Tasks fetched successfully | Count: 2
+[2026-04-17 08:35:32] [INFO] GET / - Status: 200 - Duration: 7ms
+[2026-04-17 08:35:32] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 08:35:32] [INFO] GET / - Status: 200 - Duration: 22ms
+[2026-04-17 08:35:33] [INFO] SQL executed - Duration: 17ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-17 08:35:33] [INFO] Task updated successfully | ID: 1776318946099 | Fields: startDate
+[2026-04-17 08:35:33] [INFO] PUT /1776318946099 - Status: 200 - Duration: 19ms
+[2026-04-17 08:35:34] [INFO] oracledb: Thick mode enabled
+[2026-04-17 08:35:34] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 08:35:34] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 08:35:34] [INFO] Database initialized successfully
+[2026-04-17 08:35:34] [INFO] Server running on http://localhost:3000 | Environment: production
+[2026-04-17 08:35:40] [INFO] Tasks fetched successfully | Count: 2
+[2026-04-17 08:35:40] [INFO] GET / - Status: 200 - Duration: 24ms
+[2026-04-17 08:35:40] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 08:35:40] [INFO] GET / - Status: 200 - Duration: 28ms
+[2026-04-17 08:35:42] [INFO] SQL executed - Duration: 6ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-17 08:35:42] [INFO] Task updated successfully | ID: 1776318946099 | Fields: startDate
+[2026-04-17 08:35:42] [INFO] PUT /1776318946099 - Status: 200 - Duration: 9ms
+[2026-04-17 08:35:43] [INFO] Tasks fetched successfully | Count: 2
+[2026-04-17 08:35:43] [INFO] GET / - Status: 200 - Duration: 11ms
+[2026-04-17 08:35:43] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 08:35:43] [INFO] GET / - Status: 200 - Duration: 27ms
+[2026-04-17 08:35:48] [INFO] SQL executed - Duration: 9ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-17 08:35:48] [INFO] Task updated successfully | ID: 1776318946099 | Fields: startDate
+[2026-04-17 08:35:48] [INFO] PUT /1776318946099 - Status: 200 - Duration: 14ms
+[2026-04-17 08:35:50] [INFO] Tasks fetched successfully | Count: 2
+[2026-04-17 08:35:50] [INFO] GET / - Status: 200 - Duration: 14ms
+[2026-04-17 08:35:50] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 08:35:50] [INFO] GET / - Status: 200 - Duration: 30ms
+[2026-04-17 08:35:51] [INFO] Tasks fetched successfully | Count: 2
+[2026-04-17 08:35:51] [INFO] GET / - Status: 200 - Duration: 13ms
+[2026-04-17 08:35:51] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 08:35:51] [INFO] GET / - Status: 200 - Duration: 28ms
+[2026-04-17 08:35:51] [INFO] Tasks fetched successfully | Count: 2
+[2026-04-17 08:35:51] [INFO] GET / - Status: 200 - Duration: 7ms
+[2026-04-17 08:35:52] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 08:35:52] [INFO] GET / - Status: 200 - Duration: 25ms
+[2026-04-17 08:35:52] [INFO] Tasks fetched successfully | Count: 2
+[2026-04-17 08:35:52] [INFO] GET / - Status: 200 - Duration: 7ms
+[2026-04-17 08:35:52] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 08:35:52] [INFO] GET / - Status: 200 - Duration: 19ms
+[2026-04-17 08:35:52] [INFO] Tasks fetched successfully | Count: 2
+[2026-04-17 08:35:52] [INFO] GET / - Status: 200 - Duration: 10ms
+[2026-04-17 08:35:52] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 08:35:52] [INFO] GET / - Status: 200 - Duration: 23ms
+[2026-04-17 08:35:52] [INFO] Tasks fetched successfully | Count: 2
+[2026-04-17 08:35:52] [INFO] GET / - Status: 200 - Duration: 13ms
+[2026-04-17 08:35:52] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 08:35:52] [INFO] GET / - Status: 200 - Duration: 27ms
+[2026-04-17 08:35:53] [INFO] SQL executed - Duration: 9ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-17 08:35:53] [INFO] Task updated successfully | ID: 1776318946099 | Fields: startDate
+[2026-04-17 08:35:53] [INFO] PUT /1776318946099 - Status: 200 - Duration: 14ms
+[2026-04-17 08:35:54] [INFO] Tasks fetched successfully | Count: 2
+[2026-04-17 08:35:54] [INFO] GET / - Status: 200 - Duration: 6ms
+[2026-04-17 08:35:55] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 08:35:55] [INFO] GET / - Status: 200 - Duration: 20ms
+[2026-04-17 08:40:06] [INFO] SIGINT received, shutting down gracefully...
+[2026-04-17 08:40:09] [INFO] oracledb: Thick mode enabled
+[2026-04-17 08:40:09] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 08:40:10] [INFO] oracledb: Thick mode enabled
+[2026-04-17 08:40:10] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 08:40:10] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 08:40:10] [INFO] Database initialized successfully
+[2026-04-17 08:40:10] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 08:40:16] [INFO] Tasks fetched successfully | Count: 2
+[2026-04-17 08:40:16] [INFO] GET / - Status: 200 - Duration: 13ms
+[2026-04-17 08:40:16] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 08:40:16] [INFO] GET / - Status: 200 - Duration: 35ms
+[2026-04-17 08:40:17] [INFO] SQL executed - Duration: 15ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-17 08:40:17] [INFO] Task updated successfully | ID: 1776318946099 | Fields: startDate
+[2026-04-17 08:40:17] [INFO] PUT /1776318946099 - Status: 200 - Duration: 21ms
+[2026-04-17 08:40:19] [INFO] Tasks fetched successfully | Count: 2
+[2026-04-17 08:40:19] [INFO] GET / - Status: 200 - Duration: 11ms
+[2026-04-17 08:40:19] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 08:40:19] [INFO] GET / - Status: 200 - Duration: 25ms
+[2026-04-17 08:40:20] [INFO] Tasks fetched successfully | Count: 2
+[2026-04-17 08:40:20] [INFO] GET / - Status: 200 - Duration: 10ms
+[2026-04-17 08:40:20] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 08:40:20] [INFO] GET / - Status: 200 - Duration: 25ms
+[2026-04-17 08:40:20] [INFO] Tasks fetched successfully | Count: 2
+[2026-04-17 08:40:20] [INFO] GET / - Status: 200 - Duration: 11ms
+[2026-04-17 08:40:20] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 08:40:20] [INFO] GET / - Status: 200 - Duration: 27ms
+[2026-04-17 08:40:20] [INFO] Tasks fetched successfully | Count: 2
+[2026-04-17 08:40:20] [INFO] GET / - Status: 200 - Duration: 7ms
+[2026-04-17 08:40:20] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 08:40:20] [INFO] GET / - Status: 200 - Duration: 28ms
+[2026-04-17 08:40:20] [INFO] Tasks fetched successfully | Count: 2
+[2026-04-17 08:40:20] [INFO] GET / - Status: 200 - Duration: 6ms
+[2026-04-17 08:40:20] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 08:40:20] [INFO] GET / - Status: 200 - Duration: 21ms
+[2026-04-17 08:40:23] [INFO] SQL executed - Duration: 5ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-17 08:40:23] [INFO] Task updated successfully | ID: 1776318946099 | Fields: startDate
+[2026-04-17 08:40:23] [INFO] PUT /1776318946099 - Status: 200 - Duration: 9ms
+[2026-04-17 08:40:24] [INFO] Tasks fetched successfully | Count: 2
+[2026-04-17 08:40:24] [INFO] GET / - Status: 200 - Duration: 6ms
+[2026-04-17 08:40:24] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 08:40:24] [INFO] GET / - Status: 200 - Duration: 23ms
+[2026-04-17 08:40:28] [INFO] SQL executed - Duration: 11ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-17 08:40:28] [INFO] Task updated successfully | ID: 1776318946099 | Fields: startDate
+[2026-04-17 08:40:28] [INFO] PUT /1776318946099 - Status: 200 - Duration: 14ms
+[2026-04-17 08:40:44] [INFO] SQL executed - Duration: 4ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-17 08:40:44] [INFO] Task updated successfully | ID: 1776318946099 | Fields: startDate
+[2026-04-17 08:40:44] [INFO] PUT /1776318946099 - Status: 200 - Duration: 6ms
+[2026-04-17 08:40:59] [INFO] SQL executed - Duration: 8ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-17 08:40:59] [INFO] Task updated successfully | ID: 1776318946099 | Fields: startDate
+[2026-04-17 08:40:59] [INFO] PUT /1776318946099 - Status: 200 - Duration: 11ms
+[2026-04-17 08:41:48] [INFO] oracledb: Thick mode enabled
+[2026-04-17 08:41:48] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 08:41:48] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 08:41:48] [INFO] Database initialized successfully
+[2026-04-17 08:41:48] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 08:42:32] [INFO] oracledb: Thick mode enabled
+[2026-04-17 08:42:32] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 08:42:32] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 08:42:32] [INFO] Database initialized successfully
+[2026-04-17 08:42:32] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 08:42:39] [INFO] Tasks fetched successfully | Count: 2
+[2026-04-17 08:42:39] [INFO] GET / - Status: 200 - Duration: 8ms
+[2026-04-17 08:42:39] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 08:42:39] [INFO] GET / - Status: 200 - Duration: 23ms
+[2026-04-17 08:42:46] [INFO] Tasks fetched successfully | Count: 2
+[2026-04-17 08:42:46] [INFO] GET / - Status: 200 - Duration: 6ms
+[2026-04-17 08:42:46] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 08:42:46] [INFO] GET / - Status: 200 - Duration: 17ms
+[2026-04-17 08:42:47] [INFO] Tasks fetched successfully | Count: 2
+[2026-04-17 08:42:47] [INFO] GET / - Status: 200 - Duration: 5ms
+[2026-04-17 08:42:47] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 08:42:47] [INFO] GET / - Status: 200 - Duration: 16ms
+[2026-04-17 08:42:48] [INFO] oracledb: Thick mode enabled
+[2026-04-17 08:42:48] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 08:42:48] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 08:42:48] [INFO] Database initialized successfully
+[2026-04-17 08:42:48] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 08:42:51] [INFO] oracledb: Thick mode enabled
+[2026-04-17 08:42:51] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 08:42:51] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 08:42:51] [INFO] Database initialized successfully
+[2026-04-17 08:42:51] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 08:42:52] [INFO] oracledb: Thick mode enabled
+[2026-04-17 08:42:52] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 08:42:52] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 08:42:52] [INFO] Database initialized successfully
+[2026-04-17 08:42:52] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 08:42:58] [INFO] oracledb: Thick mode enabled
+[2026-04-17 08:42:58] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 08:42:58] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 08:42:58] [INFO] Database initialized successfully
+[2026-04-17 08:42:58] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 08:43:00] [INFO] oracledb: Thick mode enabled
+[2026-04-17 08:43:01] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 08:43:01] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 08:43:01] [INFO] Database initialized successfully
+[2026-04-17 08:43:01] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 08:43:07] [INFO] oracledb: Thick mode enabled
+[2026-04-17 08:43:07] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 08:43:07] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 08:43:07] [INFO] Database initialized successfully
+[2026-04-17 08:43:08] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 08:43:09] [INFO] oracledb: Thick mode enabled
+[2026-04-17 08:43:09] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 08:43:10] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 08:43:10] [INFO] Database initialized successfully
+[2026-04-17 08:43:10] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 08:43:13] [INFO] oracledb: Thick mode enabled
+[2026-04-17 08:43:13] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 08:43:13] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 08:43:13] [INFO] Database initialized successfully
+[2026-04-17 08:43:13] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 08:43:27] [INFO] oracledb: Thick mode enabled
+[2026-04-17 08:43:27] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 08:43:28] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 08:43:28] [INFO] Database initialized successfully
+[2026-04-17 08:43:28] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 08:43:33] [INFO] Tasks fetched successfully | Count: 2
+[2026-04-17 08:43:33] [INFO] GET / - Status: 200 - Duration: 15ms
+[2026-04-17 08:43:33] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 08:43:33] [INFO] GET / - Status: 200 - Duration: 31ms
+[2026-04-17 08:43:34] [INFO] SQL executed - Duration: 9ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-17 08:43:34] [INFO] Task updated successfully | ID: 1776318946099 | Fields: startDate
+[2026-04-17 08:43:34] [INFO] PUT /1776318946099 - Status: 200 - Duration: 14ms
+[2026-04-17 08:43:36] [INFO] Tasks fetched successfully | Count: 2
+[2026-04-17 08:43:36] [INFO] GET / - Status: 200 - Duration: 7ms
+[2026-04-17 08:43:36] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 08:43:36] [INFO] GET / - Status: 200 - Duration: 19ms
+[2026-04-17 08:43:36] [INFO] Tasks fetched successfully | Count: 2
+[2026-04-17 08:43:36] [INFO] GET / - Status: 200 - Duration: 7ms
+[2026-04-17 08:43:36] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 08:43:36] [INFO] GET / - Status: 200 - Duration: 24ms
+[2026-04-17 08:43:38] [INFO] SQL executed - Duration: 5ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-17 08:43:38] [INFO] Task updated successfully | ID: 1776304766059 | Fields: startDate
+[2026-04-17 08:43:38] [INFO] PUT /1776304766059 - Status: 200 - Duration: 10ms
+[2026-04-17 08:43:39] [INFO] Tasks fetched successfully | Count: 2
+[2026-04-17 08:43:39] [INFO] GET / - Status: 200 - Duration: 8ms
+[2026-04-17 08:43:39] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 08:43:39] [INFO] GET / - Status: 200 - Duration: 24ms
+[2026-04-17 08:43:40] [INFO] Tasks fetched successfully | Count: 2
+[2026-04-17 08:43:40] [INFO] GET / - Status: 200 - Duration: 10ms
+[2026-04-17 08:43:40] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 08:43:40] [INFO] GET / - Status: 200 - Duration: 22ms
+[2026-04-17 08:43:40] [INFO] Tasks fetched successfully | Count: 2
+[2026-04-17 08:43:40] [INFO] GET / - Status: 200 - Duration: 5ms
+[2026-04-17 08:43:40] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 08:43:40] [INFO] GET / - Status: 200 - Duration: 20ms
+[2026-04-17 08:43:40] [INFO] Tasks fetched successfully | Count: 2
+[2026-04-17 08:43:40] [INFO] GET / - Status: 200 - Duration: 8ms
+[2026-04-17 08:43:40] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 08:43:40] [INFO] GET / - Status: 200 - Duration: 21ms
+[2026-04-17 08:49:43] [INFO] Tasks fetched successfully | Count: 2
+[2026-04-17 08:49:43] [INFO] GET / - Status: 200 - Duration: 7ms
+[2026-04-17 08:49:43] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 08:49:43] [INFO] GET / - Status: 200 - Duration: 22ms
+[2026-04-17 08:51:16] [INFO] oracledb: Thick mode enabled
+[2026-04-17 08:51:16] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 08:51:16] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 08:51:16] [INFO] Database initialized successfully
+[2026-04-17 08:51:16] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 08:51:54] [INFO] Tasks fetched successfully | Count: 2
+[2026-04-17 08:51:54] [INFO] GET / - Status: 200 - Duration: 13ms
+[2026-04-17 08:51:54] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 08:51:54] [INFO] GET / - Status: 200 - Duration: 21ms
+[2026-04-17 08:51:54] [INFO] Tasks fetched successfully | Count: 2
+[2026-04-17 08:51:54] [INFO] GET / - Status: 200 - Duration: 7ms
+[2026-04-17 08:51:54] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 08:51:54] [INFO] GET / - Status: 200 - Duration: 15ms
+[2026-04-17 08:52:04] [INFO] Tasks fetched successfully | Count: 2
+[2026-04-17 08:52:04] [INFO] GET / - Status: 200 - Duration: 6ms
+[2026-04-17 08:52:04] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 08:52:04] [INFO] GET / - Status: 200 - Duration: 14ms
+[2026-04-17 08:52:04] [INFO] Tasks fetched successfully | Count: 2
+[2026-04-17 08:52:04] [INFO] GET / - Status: 200 - Duration: 6ms
+[2026-04-17 08:52:04] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 08:52:04] [INFO] GET / - Status: 200 - Duration: 13ms
+[2026-04-17 08:52:28] [INFO] oracledb: Thick mode enabled
+[2026-04-17 08:52:28] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 08:52:28] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 08:52:28] [INFO] Database initialized successfully
+[2026-04-17 08:52:28] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 08:52:33] [INFO] oracledb: Thick mode enabled
+[2026-04-17 08:52:33] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 08:52:33] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 08:52:33] [INFO] Database initialized successfully
+[2026-04-17 08:52:33] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 08:52:36] [INFO] oracledb: Thick mode enabled
+[2026-04-17 08:52:36] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 08:52:36] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 08:52:36] [INFO] Database initialized successfully
+[2026-04-17 08:52:36] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 08:52:40] [INFO] oracledb: Thick mode enabled
+[2026-04-17 08:52:40] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 08:52:40] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 08:52:40] [INFO] Database initialized successfully
+[2026-04-17 08:52:40] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 08:52:41] [INFO] oracledb: Thick mode enabled
+[2026-04-17 08:52:41] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 08:52:42] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 08:52:42] [INFO] Database initialized successfully
+[2026-04-17 08:52:42] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 08:52:52] [INFO] oracledb: Thick mode enabled
+[2026-04-17 08:52:52] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 08:52:53] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 08:52:53] [INFO] Database initialized successfully
+[2026-04-17 08:52:53] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 08:52:54] [INFO] oracledb: Thick mode enabled
+[2026-04-17 08:52:54] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 08:52:54] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 08:52:54] [INFO] Database initialized successfully
+[2026-04-17 08:52:54] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 08:53:52] [INFO] oracledb: Thick mode enabled
+[2026-04-17 08:53:52] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 08:53:52] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 08:53:52] [INFO] Database initialized successfully
+[2026-04-17 08:53:52] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 08:53:55] [INFO] oracledb: Thick mode enabled
+[2026-04-17 08:53:55] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 08:53:55] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 08:53:55] [INFO] Database initialized successfully
+[2026-04-17 08:53:55] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 08:53:56] [INFO] oracledb: Thick mode enabled
+[2026-04-17 08:53:56] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 08:53:56] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 08:53:56] [INFO] Database initialized successfully
+[2026-04-17 08:53:56] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 08:53:57] [INFO] oracledb: Thick mode enabled
+[2026-04-17 08:53:57] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 08:53:57] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 08:53:57] [INFO] Database initialized successfully
+[2026-04-17 08:53:57] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 08:54:03] [INFO] Tasks fetched successfully | Count: 2
+[2026-04-17 08:54:03] [INFO] GET / - Status: 200 - Duration: 12ms
+[2026-04-17 08:54:03] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 08:54:03] [INFO] GET / - Status: 200 - Duration: 33ms
+[2026-04-17 08:54:05] [INFO] Tasks fetched successfully | Count: 2
+[2026-04-17 08:54:05] [INFO] GET / - Status: 200 - Duration: 8ms
+[2026-04-17 08:54:05] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 08:54:05] [INFO] GET / - Status: 200 - Duration: 24ms
+[2026-04-17 08:54:57] [INFO] oracledb: Thick mode enabled
+[2026-04-17 08:54:57] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 08:54:57] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 08:54:57] [INFO] Database initialized successfully
+[2026-04-17 08:54:57] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 08:54:59] [INFO] oracledb: Thick mode enabled
+[2026-04-17 08:54:59] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 08:54:59] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 08:54:59] [INFO] Database initialized successfully
+[2026-04-17 08:54:59] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 08:55:26] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 08:55:26] [INFO] GET / - Status: 200 - Duration: 25ms
+[2026-04-17 08:55:26] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 08:55:26] [INFO] GET / - Status: 200 - Duration: 16ms
+[2026-04-17 08:55:35] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 08:55:35] [INFO] GET / - Status: 200 - Duration: 18ms
+[2026-04-17 08:55:35] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 08:55:35] [INFO] GET / - Status: 200 - Duration: 16ms
+[2026-04-17 08:56:23] [INFO] oracledb: Thick mode enabled
+[2026-04-17 08:56:23] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 08:56:23] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 08:56:23] [INFO] Database initialized successfully
+[2026-04-17 08:56:23] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 08:58:35] [INFO] oracledb: Thick mode enabled
+[2026-04-17 08:58:35] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 08:58:35] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 08:58:35] [INFO] Database initialized successfully
+[2026-04-17 08:58:36] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 08:59:13] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 08:59:13] [INFO] GET / - Status: 200 - Duration: 29ms
+[2026-04-17 08:59:13] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 08:59:13] [INFO] GET / - Status: 200 - Duration: 24ms
+[2026-04-17 08:59:24] [INFO] oracledb: Thick mode enabled
+[2026-04-17 08:59:24] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 08:59:24] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 08:59:24] [INFO] Database initialized successfully
+[2026-04-17 08:59:24] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 08:59:35] [INFO] Tasks fetched successfully | Count: 2
+[2026-04-17 08:59:35] [INFO] GET / - Status: 200 - Duration: 12ms
+[2026-04-17 08:59:35] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 08:59:35] [INFO] GET / - Status: 200 - Duration: 27ms
+[2026-04-17 09:00:58] [INFO] SQL executed - Duration: 8ms | Rows affected: 1 | INSERT INTO FR_CX_SCHEDULE_TASK
+        (ID, DISPLAY, PRODUCT, MACHINE, TYPE, ST...
+[2026-04-17 09:00:58] [INFO] Task created successfully | ID: 1776387658776 | Product: B5P109CFLVP02, Machine: 5CIPI01, Type: 1 | StartDate: 2026-04-17 09:00:00
+[2026-04-17 09:00:58] [INFO] POST / - Status: 201 - Duration: 14ms
+[2026-04-17 09:01:01] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 09:01:01] [INFO] GET / - Status: 200 - Duration: 21ms
+[2026-04-17 09:01:15] [INFO] oracledb: Thick mode enabled
+[2026-04-17 09:01:15] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 09:01:15] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 09:01:15] [INFO] Database initialized successfully
+[2026-04-17 09:01:15] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 09:01:54] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 09:01:54] [INFO] GET / - Status: 200 - Duration: 24ms
+[2026-04-17 09:01:54] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 09:01:54] [INFO] GET / - Status: 200 - Duration: 16ms
+[2026-04-17 09:02:04] [INFO] oracledb: Thick mode enabled
+[2026-04-17 09:02:04] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 09:02:04] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 09:02:04] [INFO] Database initialized successfully
+[2026-04-17 09:02:04] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 09:02:17] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 09:02:17] [INFO] GET / - Status: 200 - Duration: 24ms
+[2026-04-17 09:02:17] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 09:02:17] [INFO] GET / - Status: 200 - Duration: 12ms
+[2026-04-17 09:02:39] [INFO] Tasks fetched successfully | Count: 3
+[2026-04-17 09:02:39] [INFO] GET / - Status: 200 - Duration: 10ms
+[2026-04-17 09:02:39] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 09:02:39] [INFO] GET / - Status: 200 - Duration: 21ms
+[2026-04-17 09:02:41] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 09:02:41] [INFO] GET / - Status: 200 - Duration: 20ms
+[2026-04-17 09:02:41] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 09:02:41] [INFO] GET / - Status: 200 - Duration: 26ms
+[2026-04-17 09:02:44] [INFO] SQL executed - Duration: 11ms | Rows affected: 1 | DELETE FROM FR_CX_SCHEDULE_TASK WHERE ID = :id...
+[2026-04-17 09:02:44] [INFO] Task deleted successfully | ID: 1776387658776
+[2026-04-17 09:02:44] [INFO] DELETE /1776387658776 - Status: 200 - Duration: 16ms
+[2026-04-17 09:02:44] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 09:02:44] [INFO] GET / - Status: 200 - Duration: 20ms
+[2026-04-17 09:05:27] [INFO] oracledb: Thick mode enabled
+[2026-04-17 09:05:27] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 09:05:27] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 09:05:27] [INFO] Database initialized successfully
+[2026-04-17 09:05:27] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 09:07:18] [INFO] oracledb: Thick mode enabled
+[2026-04-17 09:07:18] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 09:07:18] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 09:07:18] [INFO] Database initialized successfully
+[2026-04-17 09:07:18] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 09:07:19] [INFO] oracledb: Thick mode enabled
+[2026-04-17 09:07:19] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 09:07:19] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 09:07:19] [INFO] Database initialized successfully
+[2026-04-17 09:07:19] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 09:07:20] [INFO] oracledb: Thick mode enabled
+[2026-04-17 09:07:20] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 09:07:20] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 09:07:20] [INFO] Database initialized successfully
+[2026-04-17 09:07:20] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 09:07:22] [INFO] oracledb: Thick mode enabled
+[2026-04-17 09:07:22] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 09:07:22] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 09:07:22] [INFO] Database initialized successfully
+[2026-04-17 09:07:22] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 09:13:22] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 09:13:22] [INFO] GET / - Status: 200 - Duration: 30ms
+[2026-04-17 09:13:22] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 09:13:22] [INFO] GET / - Status: 200 - Duration: 19ms
+[2026-04-17 09:13:36] [INFO] oracledb: Thick mode enabled
+[2026-04-17 09:13:36] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 09:13:36] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 09:13:36] [INFO] Database initialized successfully
+[2026-04-17 09:13:36] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 09:15:48] [INFO] SQL executed - Duration: 11ms | Rows affected: 1 | INSERT INTO FR_CX_SCHEDULE_TASK
+        (ID, DISPLAY, PRODUCT, MACHINE, TYPE, ST...
+[2026-04-17 09:15:48] [INFO] Task created successfully | ID: 1776388548208 | Product: B5P081AN5EP01, Machine: 5CIPI03, Type: 1 | StartDate: 2026-04-17 09:30:00
+[2026-04-17 09:15:48] [INFO] POST / - Status: 201 - Duration: 20ms
+[2026-04-17 09:15:49] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 09:15:49] [INFO] GET / - Status: 200 - Duration: 30ms
+[2026-04-17 09:17:19] [INFO] Tasks fetched successfully | Count: 3
+[2026-04-17 09:17:19] [INFO] GET / - Status: 200 - Duration: 11ms
+[2026-04-17 09:17:19] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 09:17:19] [INFO] GET / - Status: 200 - Duration: 24ms
+[2026-04-17 09:17:21] [INFO] Tasks fetched successfully | Count: 3
+[2026-04-17 09:17:21] [INFO] GET / - Status: 200 - Duration: 9ms
+[2026-04-17 09:17:21] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 09:17:21] [INFO] GET / - Status: 200 - Duration: 22ms
+[2026-04-17 09:17:22] [INFO] SQL executed - Duration: 6ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-17 09:17:22] [INFO] Task updated successfully | ID: 1776388548208 | Fields: startDate
+[2026-04-17 09:17:22] [INFO] PUT /1776388548208 - Status: 200 - Duration: 12ms
+[2026-04-17 09:17:31] [INFO] SQL executed - Duration: 4ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-17 09:17:31] [INFO] Task updated successfully | ID: 1776388548208 | Fields: startDate
+[2026-04-17 09:17:31] [INFO] PUT /1776388548208 - Status: 200 - Duration: 8ms
+[2026-04-17 09:17:33] [INFO] Tasks fetched successfully | Count: 3
+[2026-04-17 09:17:33] [INFO] GET / - Status: 200 - Duration: 7ms
+[2026-04-17 09:17:33] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 09:17:33] [INFO] GET / - Status: 200 - Duration: 22ms
+[2026-04-17 09:17:34] [INFO] Tasks fetched successfully | Count: 3
+[2026-04-17 09:17:34] [INFO] GET / - Status: 200 - Duration: 8ms
+[2026-04-17 09:17:34] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 09:17:34] [INFO] GET / - Status: 200 - Duration: 19ms
+[2026-04-17 09:19:51] [INFO] oracledb: Thick mode enabled
+[2026-04-17 09:19:51] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 09:19:51] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 09:19:51] [INFO] Database initialized successfully
+[2026-04-17 09:19:52] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 09:20:20] [INFO] oracledb: Thick mode enabled
+[2026-04-17 09:20:20] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 09:20:20] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 09:20:20] [INFO] Database initialized successfully
+[2026-04-17 09:20:20] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 09:23:49] [INFO] oracledb: Thick mode enabled
+[2026-04-17 09:23:49] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 09:23:49] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 09:23:49] [INFO] Database initialized successfully
+[2026-04-17 09:23:49] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 09:23:59] [INFO] Tasks fetched successfully | Count: 3
+[2026-04-17 09:23:59] [INFO] GET / - Status: 200 - Duration: 13ms
+[2026-04-17 09:23:59] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 09:23:59] [INFO] GET / - Status: 200 - Duration: 31ms
+[2026-04-17 09:24:38] [INFO] Tasks fetched successfully | Count: 3
+[2026-04-17 09:24:38] [INFO] GET / - Status: 200 - Duration: 7ms
+[2026-04-17 09:24:38] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 09:24:38] [INFO] GET / - Status: 200 - Duration: 23ms
+[2026-04-17 09:24:39] [INFO] Tasks fetched successfully | Count: 3
+[2026-04-17 09:24:39] [INFO] GET / - Status: 200 - Duration: 8ms
+[2026-04-17 09:24:39] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 09:24:39] [INFO] GET / - Status: 200 - Duration: 24ms
+[2026-04-17 09:25:14] [INFO] Tasks fetched successfully | Count: 3
+[2026-04-17 09:25:14] [INFO] GET / - Status: 200 - Duration: 7ms
+[2026-04-17 09:25:14] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 09:25:14] [INFO] GET / - Status: 200 - Duration: 21ms
+[2026-04-17 09:38:11] [INFO] oracledb: Thick mode enabled
+[2026-04-17 09:38:11] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 09:38:12] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 09:38:12] [INFO] Database initialized successfully
+[2026-04-17 09:38:12] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 09:38:12] [INFO] oracledb: Thick mode enabled
+[2026-04-17 09:38:12] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 09:38:12] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 09:38:12] [INFO] Database initialized successfully
+[2026-04-17 09:38:12] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 09:39:32] [INFO] oracledb: Thick mode enabled
+[2026-04-17 09:39:32] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 09:39:33] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 09:39:33] [INFO] Database initialized successfully
+[2026-04-17 09:39:33] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 09:40:40] [INFO] oracledb: Thick mode enabled
+[2026-04-17 09:40:40] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 09:40:40] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 09:40:41] [INFO] oracledb: Thick mode enabled
+[2026-04-17 09:40:41] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 09:40:41] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 09:40:41] [INFO] Database initialized successfully
+[2026-04-17 09:40:41] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 09:40:41] [INFO] oracledb: Thick mode enabled
+[2026-04-17 09:40:41] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 09:40:42] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 09:40:42] [INFO] Database initialized successfully
+[2026-04-17 09:40:42] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 09:41:38] [INFO] oracledb: Thick mode enabled
+[2026-04-17 09:41:38] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 09:41:38] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 09:41:38] [INFO] Database initialized successfully
+[2026-04-17 09:41:38] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 09:41:51] [INFO] oracledb: Thick mode enabled
+[2026-04-17 09:41:51] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 09:41:51] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 09:41:51] [INFO] Database initialized successfully
+[2026-04-17 09:41:51] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 09:41:55] [INFO] Tasks fetched successfully | Count: 3
+[2026-04-17 09:41:55] [INFO] GET / - Status: 200 - Duration: 14ms
+[2026-04-17 09:41:55] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 09:41:55] [INFO] GET / - Status: 200 - Duration: 30ms
+[2026-04-17 09:42:12] [INFO] Tasks fetched successfully | Count: 3
+[2026-04-17 09:42:12] [INFO] GET / - Status: 200 - Duration: 8ms
+[2026-04-17 09:42:12] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 09:42:12] [INFO] GET / - Status: 200 - Duration: 19ms
+[2026-04-17 09:42:19] [INFO] Tasks fetched successfully | Count: 3
+[2026-04-17 09:42:19] [INFO] GET / - Status: 200 - Duration: 7ms
+[2026-04-17 09:42:19] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 09:42:19] [INFO] GET / - Status: 200 - Duration: 17ms
+[2026-04-17 09:43:39] [INFO] SQL executed - Duration: 7ms | Rows affected: 1 | INSERT INTO FR_CX_SCHEDULE_TASK
+        (ID, DISPLAY, PRODUCT, MACHINE, TYPE, ST...
+[2026-04-17 09:43:39] [INFO] Task created successfully | ID: 1776390219018 | Product: B5P092K55VP01, Machine: 5CIPI03, Type: 1 | StartDate: 2026-04-17 14:00:00
+[2026-04-17 09:43:39] [INFO] POST / - Status: 201 - Duration: 9ms
+[2026-04-17 09:43:39] [INFO] oracledb: Thick mode enabled
+[2026-04-17 09:43:39] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 09:43:40] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 09:43:40] [INFO] Database initialized successfully
+[2026-04-17 09:43:40] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 09:44:31] [INFO] SQL executed - Duration: 5ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-17 09:44:31] [INFO] Task updated successfully | ID: 1776390219018 | Fields: startDate
+[2026-04-17 09:44:31] [INFO] PUT /1776390219018 - Status: 200 - Duration: 16ms
+[2026-04-17 09:44:37] [INFO] SQL executed - Duration: 6ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-17 09:44:37] [INFO] Task updated successfully | ID: 1776390219018 | Fields: startDate
+[2026-04-17 09:44:37] [INFO] PUT /1776390219018 - Status: 200 - Duration: 10ms
+[2026-04-17 09:44:47] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 09:44:47] [INFO] GET / - Status: 200 - Duration: 23ms
+[2026-04-17 09:44:50] [INFO] SQL executed - Duration: 5ms | Rows affected: 1 | DELETE FROM FR_CX_SCHEDULE_TASK WHERE ID = :id...
+[2026-04-17 09:44:50] [INFO] Task deleted successfully | ID: 1776388548208
+[2026-04-17 09:44:50] [INFO] DELETE /1776388548208 - Status: 200 - Duration: 10ms
+[2026-04-17 09:44:50] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 09:44:50] [INFO] GET / - Status: 200 - Duration: 17ms
+[2026-04-17 09:44:51] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 09:44:51] [INFO] GET / - Status: 200 - Duration: 19ms
+[2026-04-17 09:44:53] [INFO] SQL executed - Duration: 8ms | Rows affected: 1 | DELETE FROM FR_CX_SCHEDULE_TASK WHERE ID = :id...
+[2026-04-17 09:44:53] [INFO] Task deleted successfully | ID: 1776390219018
+[2026-04-17 09:44:53] [INFO] DELETE /1776390219018 - Status: 200 - Duration: 12ms
+[2026-04-17 09:44:53] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 09:44:53] [INFO] GET / - Status: 200 - Duration: 17ms
+[2026-04-17 09:44:53] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 09:44:53] [INFO] GET / - Status: 200 - Duration: 21ms
+[2026-04-17 09:44:55] [INFO] SQL executed - Duration: 7ms | Rows affected: 1 | DELETE FROM FR_CX_SCHEDULE_TASK WHERE ID = :id...
+[2026-04-17 09:44:55] [INFO] Task deleted successfully | ID: 1776304766059
+[2026-04-17 09:44:55] [INFO] DELETE /1776304766059 - Status: 200 - Duration: 11ms
+[2026-04-17 09:44:55] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 09:44:55] [INFO] GET / - Status: 200 - Duration: 15ms
+[2026-04-17 09:44:56] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 09:44:56] [INFO] GET / - Status: 200 - Duration: 24ms
+[2026-04-17 09:44:58] [INFO] SQL executed - Duration: 8ms | Rows affected: 1 | DELETE FROM FR_CX_SCHEDULE_TASK WHERE ID = :id...
+[2026-04-17 09:44:58] [INFO] Task deleted successfully | ID: 1776318946099
+[2026-04-17 09:44:58] [INFO] DELETE /1776318946099 - Status: 200 - Duration: 12ms
+[2026-04-17 09:44:58] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 09:44:58] [INFO] GET / - Status: 200 - Duration: 15ms
+[2026-04-17 09:45:14] [INFO] SQL executed - Duration: 10ms | Rows affected: 1 | INSERT INTO FR_CX_SCHEDULE_TASK
+        (ID, DISPLAY, PRODUCT, MACHINE, TYPE, ST...
+[2026-04-17 09:45:14] [INFO] Task created successfully | ID: 1776390314553 | Product: B5P101WS5TP08, Machine: 5CIPI03, Type: 1 | StartDate: 2026-04-17 10:00:00
+[2026-04-17 09:45:14] [INFO] POST / - Status: 201 - Duration: 16ms
+[2026-04-17 09:45:16] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 09:45:16] [INFO] GET / - Status: 200 - Duration: 16ms
+[2026-04-17 09:45:30] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 09:45:30] [INFO] GET / - Status: 200 - Duration: 15ms
+[2026-04-17 09:46:12] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 09:46:12] [INFO] GET / - Status: 200 - Duration: 15ms
+[2026-04-17 09:49:08] [INFO] Tasks fetched successfully | Count: 1
+[2026-04-17 09:49:08] [INFO] GET / - Status: 200 - Duration: 7ms
+[2026-04-17 09:49:09] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 09:49:09] [INFO] GET / - Status: 200 - Duration: 24ms
+[2026-04-17 09:49:22] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 09:49:22] [INFO] GET / - Status: 200 - Duration: 14ms
+[2026-04-17 09:50:37] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 09:50:37] [INFO] GET / - Status: 200 - Duration: 24ms
+[2026-04-17 09:50:47] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 09:50:47] [INFO] GET / - Status: 200 - Duration: 22ms
+[2026-04-17 10:14:59] [INFO] Tasks fetched successfully | Count: 1
+[2026-04-17 10:14:59] [INFO] GET / - Status: 200 - Duration: 8ms
+[2026-04-17 10:15:00] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 10:15:00] [INFO] GET / - Status: 200 - Duration: 18ms
+[2026-04-17 15:09:15] [INFO] oracledb: Thick mode enabled
+[2026-04-17 15:09:15] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 15:09:15] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 15:09:15] [INFO] Database initialized successfully
+[2026-04-17 15:09:15] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 15:09:15] [INFO] oracledb: Thick mode enabled
+[2026-04-17 15:09:15] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 15:09:16] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 15:09:16] [INFO] Database initialized successfully
+[2026-04-17 15:09:16] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 15:13:22] [INFO] Tasks fetched successfully | Count: 1
+[2026-04-17 15:13:22] [INFO] GET / - Status: 200 - Duration: 19ms
+[2026-04-17 15:13:22] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:13:22] [INFO] GET / - Status: 200 - Duration: 41ms
+[2026-04-17 15:44:43] [INFO] oracledb: Thick mode enabled
+[2026-04-17 15:44:43] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 15:44:43] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 15:44:43] [INFO] Database initialized successfully
+[2026-04-17 15:44:44] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 15:44:45] [INFO] oracledb: Thick mode enabled
+[2026-04-17 15:44:45] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 15:44:45] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 15:44:45] [INFO] Database initialized successfully
+[2026-04-17 15:44:45] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 15:46:29] [INFO] oracledb: Thick mode enabled
+[2026-04-17 15:46:29] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 15:46:30] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 15:46:30] [INFO] Database initialized successfully
+[2026-04-17 15:46:30] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 15:46:30] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:46:30] [INFO] GET / - Status: 200 - Duration: 28ms
+[2026-04-17 15:46:33] [INFO] Tasks fetched successfully | Count: 1
+[2026-04-17 15:46:33] [INFO] GET / - Status: 200 - Duration: 14ms
+[2026-04-17 15:46:33] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:46:33] [INFO] GET / - Status: 200 - Duration: 24ms
+[2026-04-17 15:46:51] [INFO] oracledb: Thick mode enabled
+[2026-04-17 15:46:51] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 15:46:52] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 15:46:52] [INFO] Database initialized successfully
+[2026-04-17 15:46:52] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 15:47:05] [INFO] Tasks fetched successfully | Count: 1
+[2026-04-17 15:47:05] [INFO] GET / - Status: 200 - Duration: 12ms
+[2026-04-17 15:47:05] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:47:05] [INFO] GET / - Status: 200 - Duration: 31ms
+[2026-04-17 15:47:07] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:47:07] [INFO] GET / - Status: 200 - Duration: 21ms
+[2026-04-17 15:47:13] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:47:13] [INFO] GET / - Status: 200 - Duration: 21ms
+[2026-04-17 15:47:15] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:47:15] [INFO] GET / - Status: 200 - Duration: 21ms
+[2026-04-17 15:47:17] [INFO] SQL executed - Duration: 12ms | Rows affected: 1 | DELETE FROM FR_CX_SCHEDULE_TASK WHERE ID = :id...
+[2026-04-17 15:47:17] [INFO] Task deleted successfully | ID: 1776390314553
+[2026-04-17 15:47:17] [INFO] DELETE /1776390314553 - Status: 200 - Duration: 16ms
+[2026-04-17 15:47:17] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:47:17] [INFO] GET / - Status: 200 - Duration: 16ms
+[2026-04-17 15:47:28] [ERROR] SQL execution error - Duration: 5ms | Error: ORA-01400: cannot insert NULL into ("CREATE_TABLE"."FR_CX_SCHEDULE_TASK"."DISPLAY") | INSERT INTO FR_CX_SCHEDULE_TASK
+        (ID, DISPLAY, PRODUCT, MACHINE, TYPE, ST...
+[2026-04-17 15:47:28] [ERROR] Failed to create task: ORA-01400: cannot insert NULL into ("CREATE_TABLE"."FR_CX_SCHEDULE_TASK"."DISPLAY")
+[2026-04-17 15:47:28] [WARN] POST / - Status: 500 - Duration: 8ms
+[2026-04-17 15:47:29] [INFO] oracledb: Thick mode enabled
+[2026-04-17 15:47:29] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 15:47:29] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 15:47:29] [INFO] Database initialized successfully
+[2026-04-17 15:47:29] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 15:47:38] [INFO] Tasks fetched successfully | Count: 0
+[2026-04-17 15:47:38] [INFO] GET / - Status: 200 - Duration: 15ms
+[2026-04-17 15:47:38] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:47:38] [INFO] GET / - Status: 200 - Duration: 31ms
+[2026-04-17 15:47:39] [INFO] Tasks fetched successfully | Count: 0
+[2026-04-17 15:47:39] [INFO] GET / - Status: 200 - Duration: 6ms
+[2026-04-17 15:47:39] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:47:39] [INFO] GET / - Status: 200 - Duration: 22ms
+[2026-04-17 15:47:41] [INFO] Tasks fetched successfully | Count: 0
+[2026-04-17 15:47:41] [INFO] GET / - Status: 200 - Duration: 6ms
+[2026-04-17 15:47:41] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:47:41] [INFO] GET / - Status: 200 - Duration: 32ms
+[2026-04-17 15:47:41] [INFO] Tasks fetched successfully | Count: 0
+[2026-04-17 15:47:41] [INFO] GET / - Status: 200 - Duration: 6ms
+[2026-04-17 15:47:41] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:47:41] [INFO] GET / - Status: 200 - Duration: 22ms
+[2026-04-17 15:47:41] [INFO] Tasks fetched successfully | Count: 0
+[2026-04-17 15:47:41] [INFO] GET / - Status: 200 - Duration: 5ms
+[2026-04-17 15:47:41] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:47:41] [INFO] GET / - Status: 200 - Duration: 21ms
+[2026-04-17 15:47:42] [INFO] Tasks fetched successfully | Count: 0
+[2026-04-17 15:47:42] [INFO] GET / - Status: 200 - Duration: 5ms
+[2026-04-17 15:47:42] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:47:42] [INFO] GET / - Status: 200 - Duration: 21ms
+[2026-04-17 15:47:52] [INFO] Tasks fetched successfully | Count: 0
+[2026-04-17 15:47:52] [INFO] GET / - Status: 200 - Duration: 4ms
+[2026-04-17 15:47:52] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:47:52] [INFO] GET / - Status: 200 - Duration: 21ms
+[2026-04-17 15:47:52] [INFO] Tasks fetched successfully | Count: 0
+[2026-04-17 15:47:52] [INFO] GET / - Status: 200 - Duration: 6ms
+[2026-04-17 15:47:52] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:47:52] [INFO] GET / - Status: 200 - Duration: 19ms
+[2026-04-17 15:47:52] [INFO] Tasks fetched successfully | Count: 0
+[2026-04-17 15:47:52] [INFO] GET / - Status: 200 - Duration: 4ms
+[2026-04-17 15:47:52] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:47:52] [INFO] GET / - Status: 200 - Duration: 20ms
+[2026-04-17 15:48:05] [INFO] Tasks fetched successfully | Count: 0
+[2026-04-17 15:48:05] [INFO] GET / - Status: 200 - Duration: 5ms
+[2026-04-17 15:48:05] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:48:05] [INFO] GET / - Status: 200 - Duration: 18ms
+[2026-04-17 15:48:16] [ERROR] SQL execution error - Duration: 19ms | Error: ORA-01400: cannot insert NULL into ("CREATE_TABLE"."FR_CX_SCHEDULE_TASK"."DISPLAY") | INSERT INTO FR_CX_SCHEDULE_TASK
+        (ID, DISPLAY, PRODUCT, MACHINE, TYPE, ST...
+[2026-04-17 15:48:16] [ERROR] Failed to create task: ORA-01400: cannot insert NULL into ("CREATE_TABLE"."FR_CX_SCHEDULE_TASK"."DISPLAY")
+[2026-04-17 15:48:16] [WARN] POST / - Status: 500 - Duration: 25ms
+[2026-04-17 15:48:32] [INFO] Tasks fetched successfully | Count: 0
+[2026-04-17 15:48:32] [INFO] GET / - Status: 200 - Duration: 4ms
+[2026-04-17 15:48:32] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:48:32] [INFO] GET / - Status: 200 - Duration: 19ms
+[2026-04-17 15:50:32] [INFO] Tasks fetched successfully | Count: 0
+[2026-04-17 15:50:32] [INFO] GET / - Status: 200 - Duration: 17ms
+[2026-04-17 15:50:32] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:50:32] [INFO] GET / - Status: 200 - Duration: 25ms
+[2026-04-17 15:50:58] [INFO] Tasks fetched successfully | Count: 0
+[2026-04-17 15:50:58] [INFO] GET / - Status: 200 - Duration: 4ms
+[2026-04-17 15:50:58] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:50:58] [INFO] GET / - Status: 200 - Duration: 19ms
+[2026-04-17 15:51:12] [INFO] Tasks fetched successfully | Count: 0
+[2026-04-17 15:51:12] [INFO] GET / - Status: 200 - Duration: 3ms
+[2026-04-17 15:51:12] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:51:12] [INFO] GET / - Status: 200 - Duration: 17ms
+[2026-04-17 15:51:15] [INFO] Tasks fetched successfully | Count: 0
+[2026-04-17 15:51:15] [INFO] GET / - Status: 200 - Duration: 6ms
+[2026-04-17 15:51:15] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:51:15] [INFO] GET / - Status: 200 - Duration: 25ms
+[2026-04-17 15:51:28] [INFO] Tasks fetched successfully | Count: 0
+[2026-04-17 15:51:28] [INFO] GET / - Status: 200 - Duration: 4ms
+[2026-04-17 15:51:28] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:51:28] [INFO] GET / - Status: 200 - Duration: 38ms
+[2026-04-17 15:51:28] [INFO] Tasks fetched successfully | Count: 0
+[2026-04-17 15:51:28] [INFO] GET / - Status: 200 - Duration: 4ms
+[2026-04-17 15:51:28] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:51:28] [INFO] GET / - Status: 200 - Duration: 18ms
+[2026-04-17 15:51:28] [INFO] Tasks fetched successfully | Count: 0
+[2026-04-17 15:51:28] [INFO] GET / - Status: 200 - Duration: 8ms
+[2026-04-17 15:51:28] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:51:28] [INFO] GET / - Status: 200 - Duration: 29ms
+[2026-04-17 15:51:29] [INFO] Tasks fetched successfully | Count: 0
+[2026-04-17 15:51:29] [INFO] GET / - Status: 200 - Duration: 5ms
+[2026-04-17 15:51:29] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:51:29] [INFO] GET / - Status: 200 - Duration: 25ms
+[2026-04-17 15:51:29] [INFO] Tasks fetched successfully | Count: 0
+[2026-04-17 15:51:29] [INFO] GET / - Status: 200 - Duration: 4ms
+[2026-04-17 15:51:29] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:51:29] [INFO] GET / - Status: 200 - Duration: 36ms
+[2026-04-17 15:51:29] [INFO] Tasks fetched successfully | Count: 0
+[2026-04-17 15:51:29] [INFO] GET / - Status: 200 - Duration: 4ms
+[2026-04-17 15:51:29] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:51:29] [INFO] GET / - Status: 200 - Duration: 22ms
+[2026-04-17 15:51:31] [INFO] Tasks fetched successfully | Count: 0
+[2026-04-17 15:51:31] [INFO] GET / - Status: 200 - Duration: 6ms
+[2026-04-17 15:51:31] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:51:31] [INFO] GET / - Status: 200 - Duration: 22ms
+[2026-04-17 15:51:31] [INFO] Tasks fetched successfully | Count: 0
+[2026-04-17 15:51:31] [INFO] GET / - Status: 200 - Duration: 7ms
+[2026-04-17 15:51:31] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:51:31] [INFO] GET / - Status: 200 - Duration: 29ms
+[2026-04-17 15:51:31] [INFO] Tasks fetched successfully | Count: 0
+[2026-04-17 15:51:31] [INFO] GET / - Status: 200 - Duration: 6ms
+[2026-04-17 15:51:31] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:51:31] [INFO] GET / - Status: 200 - Duration: 24ms
+[2026-04-17 15:51:31] [INFO] Tasks fetched successfully | Count: 0
+[2026-04-17 15:51:31] [INFO] GET / - Status: 200 - Duration: 7ms
+[2026-04-17 15:51:31] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:51:31] [INFO] GET / - Status: 200 - Duration: 26ms
+[2026-04-17 15:51:32] [INFO] Tasks fetched successfully | Count: 0
+[2026-04-17 15:51:32] [INFO] GET / - Status: 200 - Duration: 4ms
+[2026-04-17 15:51:32] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:51:32] [INFO] GET / - Status: 200 - Duration: 22ms
+[2026-04-17 15:51:32] [INFO] Tasks fetched successfully | Count: 0
+[2026-04-17 15:51:32] [INFO] GET / - Status: 200 - Duration: 6ms
+[2026-04-17 15:51:32] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:51:32] [INFO] GET / - Status: 200 - Duration: 31ms
+[2026-04-17 15:51:32] [INFO] Tasks fetched successfully | Count: 0
+[2026-04-17 15:51:32] [INFO] GET / - Status: 200 - Duration: 8ms
+[2026-04-17 15:51:32] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:51:32] [INFO] GET / - Status: 200 - Duration: 23ms
+[2026-04-17 15:51:32] [INFO] Tasks fetched successfully | Count: 0
+[2026-04-17 15:51:32] [INFO] GET / - Status: 200 - Duration: 5ms
+[2026-04-17 15:51:32] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:51:32] [INFO] GET / - Status: 200 - Duration: 28ms
+[2026-04-17 15:51:33] [INFO] Tasks fetched successfully | Count: 0
+[2026-04-17 15:51:33] [INFO] GET / - Status: 200 - Duration: 5ms
+[2026-04-17 15:51:33] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:51:33] [INFO] GET / - Status: 200 - Duration: 36ms
+[2026-04-17 15:51:33] [INFO] Tasks fetched successfully | Count: 0
+[2026-04-17 15:51:33] [INFO] GET / - Status: 200 - Duration: 5ms
+[2026-04-17 15:51:33] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:51:33] [INFO] GET / - Status: 200 - Duration: 17ms
+[2026-04-17 15:51:33] [INFO] Tasks fetched successfully | Count: 0
+[2026-04-17 15:51:33] [INFO] GET / - Status: 200 - Duration: 4ms
+[2026-04-17 15:51:33] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:51:33] [INFO] GET / - Status: 200 - Duration: 24ms
+[2026-04-17 15:51:33] [INFO] Tasks fetched successfully | Count: 0
+[2026-04-17 15:51:33] [INFO] GET / - Status: 200 - Duration: 5ms
+[2026-04-17 15:51:33] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:51:33] [INFO] GET / - Status: 200 - Duration: 27ms
+[2026-04-17 15:51:33] [INFO] Tasks fetched successfully | Count: 0
+[2026-04-17 15:51:33] [INFO] GET / - Status: 200 - Duration: 6ms
+[2026-04-17 15:51:33] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:51:33] [INFO] GET / - Status: 200 - Duration: 30ms
+[2026-04-17 15:51:40] [INFO] Tasks fetched successfully | Count: 0
+[2026-04-17 15:51:40] [INFO] GET / - Status: 200 - Duration: 4ms
+[2026-04-17 15:51:41] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:51:41] [INFO] GET / - Status: 200 - Duration: 17ms
+[2026-04-17 15:52:08] [INFO] Tasks fetched successfully | Count: 0
+[2026-04-17 15:52:08] [INFO] GET / - Status: 200 - Duration: 4ms
+[2026-04-17 15:52:08] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:52:08] [INFO] GET / - Status: 200 - Duration: 19ms
+[2026-04-17 15:52:16] [INFO] Tasks fetched successfully | Count: 0
+[2026-04-17 15:52:16] [INFO] GET / - Status: 200 - Duration: 4ms
+[2026-04-17 15:52:16] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:52:16] [INFO] GET / - Status: 200 - Duration: 32ms
+[2026-04-17 15:53:46] [INFO] oracledb: Thick mode enabled
+[2026-04-17 15:53:46] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 15:53:46] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 15:53:46] [INFO] Database initialized successfully
+[2026-04-17 15:53:46] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 15:53:58] [INFO] Tasks fetched successfully | Count: 0
+[2026-04-17 15:53:58] [INFO] GET / - Status: 200 - Duration: 12ms
+[2026-04-17 15:53:58] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:53:58] [INFO] GET / - Status: 200 - Duration: 34ms
+[2026-04-17 15:54:24] [INFO] SQL executed - Duration: 13ms | Rows affected: 1 | INSERT INTO FR_CX_SCHEDULE_TASK
+        (ID, DISPLAY, PRODUCT, MACHINE, TYPE, ST...
+[2026-04-17 15:54:24] [INFO] Task created successfully | ID: 1776412464727 | Product: B5P101HD5VP02, Machine: 5CIPI02, Type: 1 | StartDate: 2026-04-17 16:00:00
+[2026-04-17 15:54:24] [INFO] POST / - Status: 201 - Duration: 17ms
+[2026-04-17 15:54:25] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:54:25] [INFO] GET / - Status: 200 - Duration: 22ms
+[2026-04-17 15:54:30] [INFO] SQL executed - Duration: 12ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET DISPLAY    = :display, START_DATE = TO_DATE(:star...
+[2026-04-17 15:54:30] [INFO] Task updated successfully | ID: 1776412464727 | Fields: id, qty, jobchange, startDate, duration, remark
+[2026-04-17 15:54:30] [INFO] PUT /1776412464727 - Status: 200 - Duration: 16ms
+[2026-04-17 15:54:30] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:54:30] [INFO] GET / - Status: 200 - Duration: 22ms
+[2026-04-17 15:57:53] [INFO] SQL executed - Duration: 8ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-17 15:57:53] [INFO] Task updated successfully | ID: 1776412464727 | Fields: startDate
+[2026-04-17 15:57:53] [INFO] PUT /1776412464727 - Status: 200 - Duration: 11ms
+[2026-04-17 15:57:55] [INFO] Tasks fetched successfully | Count: 1
+[2026-04-17 15:57:55] [INFO] GET / - Status: 200 - Duration: 8ms
+[2026-04-17 15:57:55] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:57:55] [INFO] GET / - Status: 200 - Duration: 24ms
+[2026-04-17 15:57:56] [INFO] Tasks fetched successfully | Count: 1
+[2026-04-17 15:57:56] [INFO] GET / - Status: 200 - Duration: 7ms
+[2026-04-17 15:57:56] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:57:56] [INFO] GET / - Status: 200 - Duration: 29ms
+[2026-04-17 15:57:57] [INFO] Tasks fetched successfully | Count: 1
+[2026-04-17 15:57:57] [INFO] GET / - Status: 200 - Duration: 5ms
+[2026-04-17 15:57:57] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:57:57] [INFO] GET / - Status: 200 - Duration: 18ms
+[2026-04-17 15:57:57] [INFO] Tasks fetched successfully | Count: 1
+[2026-04-17 15:57:57] [INFO] GET / - Status: 200 - Duration: 6ms
+[2026-04-17 15:57:57] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:57:57] [INFO] GET / - Status: 200 - Duration: 21ms
+[2026-04-17 15:57:58] [INFO] SQL executed - Duration: 6ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-17 15:57:58] [INFO] Task updated successfully | ID: 1776412464727 | Fields: startDate
+[2026-04-17 15:57:58] [INFO] PUT /1776412464727 - Status: 200 - Duration: 10ms
+[2026-04-17 15:57:59] [INFO] Tasks fetched successfully | Count: 1
+[2026-04-17 15:57:59] [INFO] GET / - Status: 200 - Duration: 6ms
+[2026-04-17 15:57:59] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:57:59] [INFO] GET / - Status: 200 - Duration: 19ms
+[2026-04-17 15:58:00] [INFO] Tasks fetched successfully | Count: 1
+[2026-04-17 15:58:00] [INFO] GET / - Status: 200 - Duration: 6ms
+[2026-04-17 15:58:00] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:58:00] [INFO] GET / - Status: 200 - Duration: 20ms
+[2026-04-17 15:58:00] [INFO] Tasks fetched successfully | Count: 1
+[2026-04-17 15:58:00] [INFO] GET / - Status: 200 - Duration: 8ms
+[2026-04-17 15:58:00] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:58:00] [INFO] GET / - Status: 200 - Duration: 21ms
+[2026-04-17 15:58:00] [INFO] Tasks fetched successfully | Count: 1
+[2026-04-17 15:58:00] [INFO] GET / - Status: 200 - Duration: 5ms
+[2026-04-17 15:58:00] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-17 15:58:00] [INFO] GET / - Status: 200 - Duration: 18ms
+[2026-04-17 16:14:40] [INFO] oracledb: Thick mode enabled
+[2026-04-17 16:14:40] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 16:14:40] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 16:14:41] [INFO] oracledb: Thick mode enabled
+[2026-04-17 16:14:41] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 16:14:41] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 16:14:41] [INFO] Database initialized successfully
+[2026-04-17 16:14:41] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-17 16:14:42] [INFO] oracledb: Thick mode enabled
+[2026-04-17 16:14:42] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-17 16:14:42] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-17 16:14:42] [INFO] Database initialized successfully
+[2026-04-17 16:14:42] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-20 08:57:16] [INFO] oracledb: Thick mode enabled
+[2026-04-20 08:57:16] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-20 08:57:16] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-20 08:57:16] [INFO] Database initialized successfully
+[2026-04-20 08:57:16] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-20 08:57:17] [INFO] oracledb: Thick mode enabled
+[2026-04-20 08:57:17] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-20 08:57:17] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-20 08:57:17] [INFO] Database initialized successfully
+[2026-04-20 08:57:17] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-20 09:03:13] [INFO] oracledb: Thick mode enabled
+[2026-04-20 09:03:13] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-20 09:03:13] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-20 09:03:13] [INFO] Database initialized successfully
+[2026-04-20 09:03:13] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-20 09:03:27] [INFO] oracledb: Thin mode enabled
+[2026-04-20 09:03:27] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-20 09:03:27] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-20 09:03:27] [INFO] Database initialized successfully
+[2026-04-20 09:03:27] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-20 09:03:28] [INFO] oracledb: Thin mode enabled
+[2026-04-20 09:03:28] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-20 09:03:28] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-20 09:03:28] [INFO] Database initialized successfully
+[2026-04-20 09:03:28] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-20 09:03:45] [INFO] oracledb: Thin mode enabled
+[2026-04-20 09:03:45] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-20 09:03:45] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-20 09:03:45] [INFO] Database initialized successfully
+[2026-04-20 09:03:45] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-20 09:03:46] [INFO] oracledb: Thin mode enabled
+[2026-04-20 09:03:46] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-20 09:03:46] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-20 09:03:46] [INFO] Database initialized successfully
+[2026-04-20 09:03:47] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-20 09:04:04] [ERROR] Failed to fetch tasks: NJS-116: password verifier type 0x939 is not supported by node-oracledb in Thin mode
+[2026-04-20 09:04:04] [WARN] GET / - Status: 500 - Duration: 43ms
+[2026-04-20 09:04:04] [ERROR] Failed to fetch product master: NJS-116: password verifier type 0x939 is not supported by node-oracledb in Thin mode
+[2026-04-20 09:04:04] [WARN] GET / - Status: 500 - Duration: 91ms
+[2026-04-20 09:06:18] [INFO] SIGINT received, shutting down gracefully...
+[2026-04-20 14:05:06] [INFO] oracledb: Thick mode enabled
+[2026-04-20 14:05:06] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-20 14:05:06] [INFO] oracledb: Thick mode enabled
+[2026-04-20 14:05:06] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-20 14:05:06] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-20 14:05:06] [INFO] Database initialized successfully
+[2026-04-20 14:05:06] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-20 14:05:11] [INFO] Tasks fetched successfully | Count: 1
+[2026-04-20 14:05:11] [INFO] GET / - Status: 200 - Duration: 20ms
+[2026-04-20 14:05:11] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-20 14:05:11] [INFO] GET / - Status: 200 - Duration: 44ms
+[2026-04-20 14:05:33] [INFO] oracledb: Thick mode enabled
+[2026-04-20 14:05:33] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-20 14:05:33] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-20 14:05:33] [INFO] Database initialized successfully
+[2026-04-20 14:05:34] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-20 14:05:35] [INFO] oracledb: Thick mode enabled
+[2026-04-20 14:05:35] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-20 14:05:36] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-20 14:05:36] [INFO] Database initialized successfully
+[2026-04-20 14:05:36] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-20 14:05:42] [INFO] oracledb: Thick mode enabled
+[2026-04-20 14:05:42] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-20 14:05:42] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-20 14:05:42] [INFO] Database initialized successfully
+[2026-04-20 14:05:42] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-20 14:06:59] [INFO] oracledb: Thick mode enabled
+[2026-04-20 14:06:59] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-20 14:06:59] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-20 14:06:59] [INFO] Database initialized successfully
+[2026-04-20 14:06:59] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-20 14:08:10] [INFO] oracledb: Thick mode enabled
+[2026-04-20 14:08:11] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-20 14:08:11] [INFO] Database initialized successfully
+[2026-04-20 14:08:11] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-20 14:08:20] [INFO] oracledb: Thick mode enabled
+[2026-04-20 14:08:20] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-20 14:08:20] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-20 14:08:20] [INFO] Database initialized successfully
+[2026-04-20 14:08:20] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-20 14:10:57] [INFO] oracledb: Thick mode enabled
+[2026-04-20 14:10:57] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-20 14:10:57] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-20 14:10:57] [INFO] Database initialized successfully
+[2026-04-20 14:10:57] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-20 14:10:58] [INFO] oracledb: Thick mode enabled
+[2026-04-20 14:10:58] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-20 14:10:59] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-20 14:10:59] [INFO] Database initialized successfully
+[2026-04-20 14:10:59] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-20 14:11:05] [INFO] oracledb: Thick mode enabled
+[2026-04-20 14:11:05] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-20 14:11:05] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-20 14:11:05] [INFO] Database initialized successfully
+[2026-04-20 14:11:05] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-20 14:24:56] [INFO] oracledb: Thick mode enabled
+[2026-04-20 14:24:56] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-20 14:24:56] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-20 14:24:56] [INFO] Database initialized successfully
+[2026-04-20 14:24:56] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-20 14:25:14] [INFO] oracledb: Thick mode enabled
+[2026-04-20 14:25:14] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-20 14:25:14] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-20 14:25:14] [INFO] Database initialized successfully
+[2026-04-20 14:25:14] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-20 14:26:35] [INFO] oracledb: Thick mode enabled
+[2026-04-20 14:26:35] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-20 14:26:35] [INFO] Database initialized successfully
+[2026-04-20 14:26:35] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-20 14:26:43] [INFO] oracledb: Thick mode enabled
+[2026-04-20 14:26:43] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-20 14:26:43] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-20 14:26:43] [INFO] Database initialized successfully
+[2026-04-20 14:26:43] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-20 14:27:33] [INFO] oracledb: Thick mode enabled
+[2026-04-20 14:27:33] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-20 14:27:33] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-20 14:27:33] [INFO] Database initialized successfully
+[2026-04-20 14:27:34] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-20 14:28:16] [INFO] oracledb: Thick mode enabled
+[2026-04-20 14:28:16] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-20 14:28:16] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-20 14:28:16] [INFO] Database initialized successfully
+[2026-04-20 14:28:16] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-20 14:28:18] [INFO] oracledb: Thick mode enabled
+[2026-04-20 14:28:18] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-20 14:28:18] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-20 14:28:18] [INFO] Database initialized successfully
+[2026-04-20 14:28:18] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-20 14:28:22] [INFO] oracledb: Thick mode enabled
+[2026-04-20 14:28:22] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-20 14:28:23] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-20 14:28:23] [INFO] Database initialized successfully
+[2026-04-20 14:28:23] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-20 14:28:23] [INFO] oracledb: Thick mode enabled
+[2026-04-20 14:28:23] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-20 14:28:24] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-20 14:28:24] [INFO] Database initialized successfully
+[2026-04-20 14:28:24] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-20 14:28:28] [INFO] oracledb: Thick mode enabled
+[2026-04-20 14:28:28] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-20 14:28:29] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-20 14:28:29] [INFO] Database initialized successfully
+[2026-04-20 14:28:29] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-20 15:13:27] [INFO] oracledb: Thick mode enabled
+[2026-04-20 15:13:27] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-20 15:13:27] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-20 15:13:28] [INFO] oracledb: Thick mode enabled
+[2026-04-20 15:13:28] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-20 15:13:28] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-20 15:13:28] [INFO] Database initialized successfully
+[2026-04-20 15:13:28] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-20 15:27:54] [INFO] oracledb: Thick mode enabled
+[2026-04-20 15:27:54] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-20 15:27:54] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-20 15:27:54] [INFO] Database initialized successfully
+[2026-04-20 15:27:54] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-20 17:04:04] [INFO] oracledb: Thick mode enabled
+[2026-04-20 17:04:04] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-20 17:04:04] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-20 17:04:05] [INFO] oracledb: Thick mode enabled
+[2026-04-20 17:04:05] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-20 17:04:05] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-20 17:04:05] [INFO] Database initialized successfully
+[2026-04-20 17:04:05] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-20 17:04:19] [INFO] oracledb: Thick mode enabled
+[2026-04-20 17:04:19] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-20 17:04:19] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-20 17:04:19] [INFO] Database initialized successfully
+[2026-04-20 17:04:19] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-20 17:04:25] [ERROR] SQL execution error - Duration: 7ms | Error: ORA-00942: table or view does not exist | SELECT
+        CELL_NO       AS "product",
+        DEVICE        AS "machine",
+ ...
+[2026-04-20 17:04:25] [ERROR] SQL execution error - Duration: 8ms | Error: ORA-00942: table or view does not exist | SELECT
+        ID          AS "id",
+        DISPLAY     AS "remark",
+        PRO...
+[2026-04-20 17:04:25] [ERROR] Failed to fetch product master: ORA-00942: table or view does not exist
+[2026-04-20 17:04:25] [WARN] GET / - Status: 500 - Duration: 15ms
+[2026-04-20 17:04:25] [ERROR] Failed to fetch tasks: ORA-00942: table or view does not exist
+[2026-04-20 17:04:25] [WARN] GET / - Status: 500 - Duration: 21ms
+[2026-04-20 17:06:46] [INFO] oracledb: Thick mode enabled
+[2026-04-20 17:06:46] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-20 17:06:46] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-20 17:06:46] [INFO] Database initialized successfully
+[2026-04-20 17:06:46] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-20 17:35:14] [INFO] oracledb: Thick mode enabled
+[2026-04-20 17:35:14] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-20 17:35:14] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-20 17:35:14] [INFO] Database initialized successfully
+[2026-04-20 17:35:14] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-20 17:35:16] [INFO] oracledb: Thick mode enabled
+[2026-04-20 17:35:16] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-20 17:35:16] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-20 17:35:16] [INFO] Database initialized successfully
+[2026-04-20 17:35:16] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-21 08:15:48] [INFO] oracledb: Thick mode enabled
+[2026-04-21 08:15:48] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-21 08:15:48] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-21 08:15:49] [INFO] oracledb: Thick mode enabled
+[2026-04-21 08:15:49] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-21 08:15:49] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-21 08:15:49] [INFO] Database initialized successfully
+[2026-04-21 08:15:49] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-21 14:48:54] [INFO] oracledb: Thick mode enabled
+[2026-04-21 14:48:54] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-21 14:48:55] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-21 14:48:55] [INFO] oracledb: Thick mode enabled
+[2026-04-21 14:48:55] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-21 14:48:55] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-21 14:48:55] [INFO] Database initialized successfully
+[2026-04-21 14:48:55] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-21 14:49:44] [INFO] oracledb: Thick mode enabled
+[2026-04-21 14:49:44] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-21 14:49:44] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-21 14:49:44] [INFO] Database initialized successfully
+[2026-04-21 14:49:44] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-21 14:49:46] [INFO] oracledb: Thick mode enabled
+[2026-04-21 14:49:46] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-21 14:49:47] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-21 14:49:47] [INFO] Database initialized successfully
+[2026-04-21 14:49:47] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-21 14:52:52] [INFO] Tasks fetched successfully | Count: 1
+[2026-04-21 14:52:52] [INFO] GET / - Status: 200 - Duration: 19ms
+[2026-04-21 14:52:52] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 14:52:52] [INFO] GET / - Status: 200 - Duration: 42ms
+[2026-04-21 14:52:57] [INFO] SQL executed - Duration: 20ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 14:52:57] [INFO] Task updated successfully | ID: 1776412464727 | Fields: startDate
+[2026-04-21 14:52:57] [INFO] PUT /1776412464727 - Status: 200 - Duration: 23ms
+[2026-04-21 14:52:58] [INFO] oracledb: Thick mode enabled
+[2026-04-21 14:52:58] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-21 14:52:58] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-21 14:52:58] [INFO] Database initialized successfully
+[2026-04-21 14:52:58] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-21 14:53:27] [INFO] Tasks fetched successfully | Count: 1
+[2026-04-21 14:53:27] [INFO] GET / - Status: 200 - Duration: 13ms
+[2026-04-21 14:53:27] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 14:53:27] [INFO] GET / - Status: 200 - Duration: 31ms
+[2026-04-21 15:04:46] [INFO] Tasks fetched successfully | Count: 1
+[2026-04-21 15:04:46] [INFO] GET / - Status: 200 - Duration: 8ms
+[2026-04-21 15:04:46] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 15:04:46] [INFO] GET / - Status: 200 - Duration: 18ms
+[2026-04-21 15:04:50] [INFO] SQL executed - Duration: 4ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 15:04:50] [INFO] Task updated successfully | ID: 1776412464727 | Fields: startDate
+[2026-04-21 15:04:50] [INFO] PUT /1776412464727 - Status: 200 - Duration: 7ms
+[2026-04-21 15:04:52] [INFO] Tasks fetched successfully | Count: 1
+[2026-04-21 15:04:52] [INFO] GET / - Status: 200 - Duration: 5ms
+[2026-04-21 15:04:52] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 15:04:52] [INFO] GET / - Status: 200 - Duration: 19ms
+[2026-04-21 15:04:54] [INFO] SQL executed - Duration: 7ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 15:04:54] [INFO] Task updated successfully | ID: 1776412464727 | Fields: startDate
+[2026-04-21 15:04:54] [INFO] PUT /1776412464727 - Status: 200 - Duration: 9ms
+[2026-04-21 15:04:55] [INFO] Tasks fetched successfully | Count: 1
+[2026-04-21 15:04:55] [INFO] GET / - Status: 200 - Duration: 5ms
+[2026-04-21 15:04:55] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 15:04:55] [INFO] GET / - Status: 200 - Duration: 25ms
+[2026-04-21 15:05:39] [INFO] Tasks fetched successfully | Count: 1
+[2026-04-21 15:05:39] [INFO] GET / - Status: 200 - Duration: 5ms
+[2026-04-21 15:05:39] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 15:05:39] [INFO] GET / - Status: 200 - Duration: 19ms
+[2026-04-21 15:06:12] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 15:06:12] [INFO] GET / - Status: 200 - Duration: 14ms
+[2026-04-21 15:06:42] [INFO] SQL executed - Duration: 12ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET DISPLAY    = :display, START_DATE = TO_DATE(:star...
+[2026-04-21 15:06:42] [INFO] Task updated successfully | ID: 1776412464727 | Fields: id, qty, jobchange, startDate, duration, remark
+[2026-04-21 15:06:42] [INFO] PUT /1776412464727 - Status: 200 - Duration: 16ms
+[2026-04-21 15:06:42] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 15:06:42] [INFO] GET / - Status: 200 - Duration: 13ms
+[2026-04-21 15:06:48] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 15:06:48] [INFO] GET / - Status: 200 - Duration: 12ms
+[2026-04-21 15:07:41] [INFO] SQL executed - Duration: 9ms | Rows affected: 1 | DELETE FROM FR_CX_SCHEDULE_TASK WHERE ID = :id...
+[2026-04-21 15:07:41] [INFO] Task deleted successfully | ID: 1776412464727
+[2026-04-21 15:07:41] [INFO] DELETE /1776412464727 - Status: 200 - Duration: 13ms
+[2026-04-21 15:07:41] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 15:07:41] [INFO] GET / - Status: 200 - Duration: 13ms
+[2026-04-21 15:08:47] [INFO] Tasks fetched successfully | Count: 0
+[2026-04-21 15:08:47] [INFO] GET / - Status: 200 - Duration: 7ms
+[2026-04-21 15:08:47] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 15:08:47] [INFO] GET / - Status: 200 - Duration: 18ms
+[2026-04-21 15:12:57] [INFO] Tasks fetched successfully | Count: 0
+[2026-04-21 15:12:57] [INFO] GET / - Status: 200 - Duration: 5ms
+[2026-04-21 15:12:57] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 15:12:57] [INFO] GET / - Status: 200 - Duration: 17ms
+[2026-04-21 15:13:00] [INFO] Tasks fetched successfully | Count: 0
+[2026-04-21 15:13:00] [INFO] GET / - Status: 200 - Duration: 5ms
+[2026-04-21 15:13:00] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 15:13:00] [INFO] GET / - Status: 200 - Duration: 18ms
+[2026-04-21 15:13:02] [INFO] Tasks fetched successfully | Count: 0
+[2026-04-21 15:13:02] [INFO] GET / - Status: 200 - Duration: 4ms
+[2026-04-21 15:13:02] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 15:13:02] [INFO] GET / - Status: 200 - Duration: 15ms
+[2026-04-21 15:15:21] [INFO] SQL executed - Duration: 7ms | Rows affected: 1 | INSERT INTO FR_CX_SCHEDULE_TASK
+        (ID, DISPLAY, PRODUCT, MACHINE, TYPE, ST...
+[2026-04-21 15:15:21] [INFO] Task created successfully | ID: 1776755721771 | Product: B5P130QN5VB03, Machine: 5CIPI03, Type: 3 | StartDate: 2026-04-20 13:30:00
+[2026-04-21 15:15:21] [INFO] POST / - Status: 201 - Duration: 11ms
+[2026-04-21 15:15:31] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 15:15:31] [INFO] GET / - Status: 200 - Duration: 15ms
+[2026-04-21 15:16:21] [INFO] oracledb: Thick mode enabled
+[2026-04-21 15:16:21] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-21 15:16:21] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-21 15:16:21] [INFO] Database initialized successfully
+[2026-04-21 15:16:21] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-21 15:18:03] [INFO] SQL executed - Duration: 5ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET DISPLAY    = :display, START_DATE = TO_DATE(:star...
+[2026-04-21 15:18:03] [INFO] Task updated successfully | ID: 1776755721771 | Fields: id, qty, jobchange, startDate, duration, remark
+[2026-04-21 15:18:03] [INFO] PUT /1776755721771 - Status: 200 - Duration: 12ms
+[2026-04-21 15:18:03] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 15:18:03] [INFO] GET / - Status: 200 - Duration: 25ms
+[2026-04-21 15:18:08] [INFO] oracledb: Thick mode enabled
+[2026-04-21 15:18:08] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-21 15:18:08] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-21 15:18:08] [INFO] Database initialized successfully
+[2026-04-21 15:18:08] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-21 15:18:09] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 15:18:09] [INFO] GET / - Status: 200 - Duration: 19ms
+[2026-04-21 15:18:13] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 15:18:13] [INFO] GET / - Status: 200 - Duration: 20ms
+[2026-04-21 15:18:50] [INFO] Tasks fetched successfully | Count: 1
+[2026-04-21 15:18:50] [INFO] GET / - Status: 200 - Duration: 8ms
+[2026-04-21 15:18:50] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 15:18:50] [INFO] GET / - Status: 200 - Duration: 20ms
+[2026-04-21 15:18:56] [INFO] SQL executed - Duration: 5ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 15:18:56] [INFO] Task updated successfully | ID: 1776755721771 | Fields: startDate
+[2026-04-21 15:18:56] [INFO] PUT /1776755721771 - Status: 200 - Duration: 9ms
+[2026-04-21 15:18:57] [INFO] SQL executed - Duration: 7ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 15:18:57] [INFO] Task updated successfully | ID: 1776755721771 | Fields: startDate
+[2026-04-21 15:18:57] [INFO] PUT /1776755721771 - Status: 200 - Duration: 9ms
+[2026-04-21 15:18:59] [INFO] SQL executed - Duration: 6ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 15:18:59] [INFO] Task updated successfully | ID: 1776755721771 | Fields: startDate
+[2026-04-21 15:18:59] [INFO] PUT /1776755721771 - Status: 200 - Duration: 11ms
+[2026-04-21 15:20:05] [INFO] SQL executed - Duration: 5ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 15:20:05] [INFO] Task updated successfully | ID: 1776755721771 | Fields: startDate
+[2026-04-21 15:20:05] [INFO] PUT /1776755721771 - Status: 200 - Duration: 10ms
+[2026-04-21 15:20:28] [INFO] SQL executed - Duration: 6ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 15:20:28] [INFO] Task updated successfully | ID: 1776755721771 | Fields: startDate
+[2026-04-21 15:20:28] [INFO] PUT /1776755721771 - Status: 200 - Duration: 9ms
+[2026-04-21 15:22:55] [WARN] Task creation failed - Missing required fields | Product: B5P090HD5VP09, Machine: 5CIPI03, Type: 3
+[2026-04-21 15:22:55] [WARN] POST / - Status: 400 - Duration: 1ms
+[2026-04-21 15:24:53] [INFO] SQL executed - Duration: 5ms | Rows affected: 1 | INSERT INTO FR_CX_SCHEDULE_TASK
+        (ID, DISPLAY, PRODUCT, MACHINE, TYPE, ST...
+[2026-04-21 15:24:53] [INFO] Task created successfully | ID: 1776756293717 | Product: B5P090HD5VP09, Machine: 5CIPI03, Type: 3 | StartDate: 2026-04-23 14:30:00
+[2026-04-21 15:24:53] [INFO] POST / - Status: 201 - Duration: 9ms
+[2026-04-21 15:24:58] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 15:24:58] [INFO] GET / - Status: 200 - Duration: 15ms
+[2026-04-21 15:25:13] [INFO] SQL executed - Duration: 4ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET DISPLAY    = :display, START_DATE = TO_DATE(:star...
+[2026-04-21 15:25:13] [INFO] Task updated successfully | ID: 1776756293717 | Fields: id, qty, jobchange, startDate, duration, remark
+[2026-04-21 15:25:13] [INFO] PUT /1776756293717 - Status: 200 - Duration: 6ms
+[2026-04-21 15:25:13] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 15:25:13] [INFO] GET / - Status: 200 - Duration: 17ms
+[2026-04-21 15:25:24] [INFO] SQL executed - Duration: 3ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 15:25:24] [INFO] Task updated successfully | ID: 1776756293717 | Fields: startDate
+[2026-04-21 15:25:24] [INFO] PUT /1776756293717 - Status: 200 - Duration: 6ms
+[2026-04-21 15:25:27] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 15:25:27] [INFO] GET / - Status: 200 - Duration: 18ms
+[2026-04-21 15:26:12] [INFO] SQL executed - Duration: 4ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET DISPLAY    = :display, START_DATE = TO_DATE(:star...
+[2026-04-21 15:26:12] [INFO] Task updated successfully | ID: 1776756293717 | Fields: id, qty, jobchange, startDate, duration, remark
+[2026-04-21 15:26:12] [INFO] PUT /1776756293717 - Status: 200 - Duration: 8ms
+[2026-04-21 15:26:12] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 15:26:12] [INFO] GET / - Status: 200 - Duration: 15ms
+[2026-04-21 15:27:50] [INFO] SQL executed - Duration: 9ms | Rows affected: 1 | INSERT INTO FR_CX_SCHEDULE_TASK
+        (ID, DISPLAY, PRODUCT, MACHINE, TYPE, ST...
+[2026-04-21 15:27:50] [INFO] Task created successfully | ID: 1776756470660 | Product: B5P101WX5VPA0, Machine: 5CIPI03, Type: 3 | StartDate: 2026-04-24 16:30:00
+[2026-04-21 15:27:50] [INFO] POST / - Status: 201 - Duration: 16ms
+[2026-04-21 15:30:00] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 15:30:00] [INFO] GET / - Status: 200 - Duration: 20ms
+[2026-04-21 15:30:10] [INFO] SQL executed - Duration: 12ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET DISPLAY    = :display, START_DATE = TO_DATE(:star...
+[2026-04-21 15:30:10] [INFO] Task updated successfully | ID: 1776756470660 | Fields: id, qty, jobchange, startDate, duration, remark
+[2026-04-21 15:30:10] [INFO] PUT /1776756470660 - Status: 200 - Duration: 16ms
+[2026-04-21 15:30:10] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 15:30:10] [INFO] GET / - Status: 200 - Duration: 16ms
+[2026-04-21 15:31:22] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 15:31:22] [INFO] GET / - Status: 200 - Duration: 15ms
+[2026-04-21 15:31:22] [INFO] Tasks fetched successfully | Count: 3
+[2026-04-21 15:31:22] [INFO] GET / - Status: 200 - Duration: 6ms
+[2026-04-21 15:31:23] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 15:31:23] [INFO] GET / - Status: 200 - Duration: 16ms
+[2026-04-21 15:31:23] [INFO] Tasks fetched successfully | Count: 3
+[2026-04-21 15:31:23] [INFO] GET / - Status: 200 - Duration: 7ms
+[2026-04-21 15:33:36] [INFO] SQL executed - Duration: 4ms | Rows affected: 1 | INSERT INTO FR_CX_SCHEDULE_TASK
+        (ID, DISPLAY, PRODUCT, MACHINE, TYPE, ST...
+[2026-04-21 15:33:36] [INFO] Task created successfully | ID: 1776756816040 | Product: B5P153HWLVB01, Machine: 5CIPI03, Type: 3 | StartDate: 2026-04-28 00:00:00
+[2026-04-21 15:33:36] [INFO] POST / - Status: 201 - Duration: 9ms
+[2026-04-21 15:33:42] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 15:33:42] [INFO] GET / - Status: 200 - Duration: 16ms
+[2026-04-21 15:33:52] [INFO] SQL executed - Duration: 7ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET DISPLAY    = :display, START_DATE = TO_DATE(:star...
+[2026-04-21 15:33:52] [INFO] Task updated successfully | ID: 1776755721771 | Fields: id, qty, jobchange, startDate, duration, remark
+[2026-04-21 15:33:52] [INFO] PUT /1776755721771 - Status: 200 - Duration: 9ms
+[2026-04-21 15:33:52] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 15:33:52] [INFO] GET / - Status: 200 - Duration: 14ms
+[2026-04-21 15:34:18] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 15:34:18] [INFO] GET / - Status: 200 - Duration: 17ms
+[2026-04-21 15:34:23] [INFO] SQL executed - Duration: 4ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET DISPLAY    = :display, START_DATE = TO_DATE(:star...
+[2026-04-21 15:34:23] [INFO] Task updated successfully | ID: 1776755721771 | Fields: id, qty, jobchange, startDate, duration, remark
+[2026-04-21 15:34:23] [INFO] PUT /1776755721771 - Status: 200 - Duration: 6ms
+[2026-04-21 15:34:23] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 15:34:23] [INFO] GET / - Status: 200 - Duration: 16ms
+[2026-04-21 15:34:41] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 15:34:41] [INFO] GET / - Status: 200 - Duration: 16ms
+[2026-04-21 15:35:07] [INFO] SQL executed - Duration: 5ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET DISPLAY    = :display, START_DATE = TO_DATE(:star...
+[2026-04-21 15:35:07] [INFO] Task updated successfully | ID: 1776755721771 | Fields: id, qty, jobchange, startDate, duration, remark
+[2026-04-21 15:35:07] [INFO] PUT /1776755721771 - Status: 200 - Duration: 8ms
+[2026-04-21 15:35:07] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 15:35:07] [INFO] GET / - Status: 200 - Duration: 15ms
+[2026-04-21 15:36:47] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 15:36:47] [INFO] GET / - Status: 200 - Duration: 14ms
+[2026-04-21 15:37:36] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 15:37:36] [INFO] GET / - Status: 200 - Duration: 16ms
+[2026-04-21 15:38:11] [INFO] SQL executed - Duration: 4ms | Rows affected: 1 | INSERT INTO FR_CX_SCHEDULE_TASK
+        (ID, DISPLAY, PRODUCT, MACHINE, TYPE, ST...
+[2026-04-21 15:38:11] [INFO] Task created successfully | ID: 1776757091002 | Product: B5P550QU5VPA0, Machine: 5CIPI01, Type: 1 | StartDate: 2026-04-21 02:00:00
+[2026-04-21 15:38:11] [INFO] POST / - Status: 201 - Duration: 7ms
+[2026-04-21 15:39:16] [INFO] SQL executed - Duration: 8ms | Rows affected: 1 | INSERT INTO FR_CX_SCHEDULE_TASK
+        (ID, DISPLAY, PRODUCT, MACHINE, TYPE, ST...
+[2026-04-21 15:39:16] [INFO] Task created successfully | ID: 1776757156228 | Product: B5P103Z75VP03, Machine: 5CIPI01, Type: 1 | StartDate: 2026-04-22 09:00:00
+[2026-04-21 15:39:16] [INFO] POST / - Status: 201 - Duration: 11ms
+[2026-04-21 15:39:46] [INFO] SQL executed - Duration: 5ms | Rows affected: 1 | INSERT INTO FR_CX_SCHEDULE_TASK
+        (ID, DISPLAY, PRODUCT, MACHINE, TYPE, ST...
+[2026-04-21 15:39:46] [INFO] Task created successfully | ID: 1776757186925 | Product: B5P103Y05VP04, Machine: 5CIPI01, Type: 1 | StartDate: 2026-04-22 21:30:00
+[2026-04-21 15:39:46] [INFO] POST / - Status: 201 - Duration: 7ms
+[2026-04-21 15:40:32] [INFO] SQL executed - Duration: 3ms | Rows affected: 1 | INSERT INTO FR_CX_SCHEDULE_TASK
+        (ID, DISPLAY, PRODUCT, MACHINE, TYPE, ST...
+[2026-04-21 15:40:32] [INFO] Task created successfully | ID: 1776757232898 | Product: B5P320WH5VP47, Machine: 5CIPI01, Type: 1 | StartDate: 2026-04-23 15:00:00
+[2026-04-21 15:40:32] [INFO] POST / - Status: 201 - Duration: 5ms
+[2026-04-21 15:41:25] [INFO] SQL executed - Duration: 4ms | Rows affected: 1 | INSERT INTO FR_CX_SCHEDULE_TASK
+        (ID, DISPLAY, PRODUCT, MACHINE, TYPE, ST...
+[2026-04-21 15:41:25] [INFO] Task created successfully | ID: 1776757285864 | Product: B5P101WS5TP05, Machine: 5CIPI01, Type: 1 | StartDate: 2026-04-24 02:30:00
+[2026-04-21 15:41:25] [INFO] POST / - Status: 201 - Duration: 6ms
+[2026-04-21 15:42:25] [INFO] SQL executed - Duration: 3ms | Rows affected: 1 | INSERT INTO FR_CX_SCHEDULE_TASK
+        (ID, DISPLAY, PRODUCT, MACHINE, TYPE, ST...
+[2026-04-21 15:42:25] [INFO] Task created successfully | ID: 1776757345632 | Product: B5P320WH5VP47, Machine: 5CIPI01, Type: 1 | StartDate: 2026-04-25 01:30:00
+[2026-04-21 15:42:25] [INFO] POST / - Status: 201 - Duration: 8ms
+[2026-04-21 15:45:31] [WARN] Task creation: startDate not aligned to half-hour, auto-aligned | Original: 2026-04-21 11:30:10 → Aligned: 2026-04-21 12:00:00
+[2026-04-21 15:45:31] [INFO] SQL executed - Duration: 4ms | Rows affected: 1 | INSERT INTO FR_CX_SCHEDULE_TASK
+        (ID, DISPLAY, PRODUCT, MACHINE, TYPE, ST...
+[2026-04-21 15:45:31] [INFO] Task created successfully | ID: 1776757531406 | Product: B5P110QD5VP08, Machine: 5CIPI02, Type: 1 | StartDate: 2026-04-21 11:30:10
+[2026-04-21 15:45:31] [INFO] POST / - Status: 201 - Duration: 9ms
+[2026-04-21 15:46:24] [INFO] SQL executed - Duration: 9ms | Rows affected: 1 | INSERT INTO FR_CX_SCHEDULE_TASK
+        (ID, DISPLAY, PRODUCT, MACHINE, TYPE, ST...
+[2026-04-21 15:46:24] [INFO] Task created successfully | ID: 1776757584927 | Product: B5P121QD5EP01, Machine: 5CIPI02, Type: 1 | StartDate: 2026-04-22 19:30:00
+[2026-04-21 15:46:24] [INFO] POST / - Status: 201 - Duration: 12ms
+[2026-04-21 15:47:01] [INFO] SQL executed - Duration: 7ms | Rows affected: 1 | INSERT INTO FR_CX_SCHEDULE_TASK
+        (ID, DISPLAY, PRODUCT, MACHINE, TYPE, ST...
+[2026-04-21 15:47:01] [INFO] Task created successfully | ID: 1776757621199 | Product: B5P110WU5VP09, Machine: 5CIPI02, Type: 1 | StartDate: 2026-04-23 12:00:00
+[2026-04-21 15:47:01] [INFO] POST / - Status: 201 - Duration: 9ms
+[2026-04-21 15:47:44] [INFO] SQL executed - Duration: 4ms | Rows affected: 1 | INSERT INTO FR_CX_SCHEDULE_TASK
+        (ID, DISPLAY, PRODUCT, MACHINE, TYPE, ST...
+[2026-04-21 15:47:44] [INFO] Task created successfully | ID: 1776757664955 | Product: B5P115UW5VP01, Machine: 5CIPI02, Type: 1 | StartDate: 2026-04-24 20:30:00
+[2026-04-21 15:47:44] [INFO] POST / - Status: 201 - Duration: 7ms
+[2026-04-21 15:48:18] [INFO] SQL executed - Duration: 6ms | Rows affected: 1 | INSERT INTO FR_CX_SCHEDULE_TASK
+        (ID, DISPLAY, PRODUCT, MACHINE, TYPE, ST...
+[2026-04-21 15:48:18] [INFO] Task created successfully | ID: 1776757698403 | Product: B5P121QD5VP06, Machine: 5CIPI02, Type: 1 | StartDate: 2026-04-25 04:00:00
+[2026-04-21 15:48:18] [INFO] POST / - Status: 201 - Duration: 8ms
+[2026-04-21 15:48:39] [INFO] SQL executed - Duration: 3ms | Rows affected: 1 | INSERT INTO FR_CX_SCHEDULE_TASK
+        (ID, DISPLAY, PRODUCT, MACHINE, TYPE, ST...
+[2026-04-21 15:48:39] [INFO] Task created successfully | ID: 1776757719487 | Product: B5P121QD5VP03, Machine: 5CIPI02, Type: 1 | StartDate: 2026-04-25 16:30:00
+[2026-04-21 15:48:39] [INFO] POST / - Status: 201 - Duration: 6ms
+[2026-04-21 15:49:09] [INFO] SQL executed - Duration: 8ms | Rows affected: 1 | INSERT INTO FR_CX_SCHEDULE_TASK
+        (ID, DISPLAY, PRODUCT, MACHINE, TYPE, ST...
+[2026-04-21 15:49:09] [INFO] Task created successfully | ID: 1776757749242 | Product: B5P110QD5VP07, Machine: 5CIPI02, Type: 1 | StartDate: 2026-04-26 01:30:00
+[2026-04-21 15:49:09] [INFO] POST / - Status: 201 - Duration: 11ms
+[2026-04-21 15:49:41] [INFO] SQL executed - Duration: 9ms | Rows affected: 1 | INSERT INTO FR_CX_SCHEDULE_TASK
+        (ID, DISPLAY, PRODUCT, MACHINE, TYPE, ST...
+[2026-04-21 15:49:41] [INFO] Task created successfully | ID: 1776757781719 | Product: B5P1303T5VPA0, Machine: 5CIPI02, Type: 1 | StartDate: 2026-04-27 07:00:00
+[2026-04-21 15:49:41] [INFO] POST / - Status: 201 - Duration: 12ms
+[2026-04-21 15:57:11] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 15:57:11] [INFO] GET / - Status: 200 - Duration: 19ms
+[2026-04-21 15:57:13] [INFO] SQL executed - Duration: 8ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET DISPLAY    = :display, START_DATE = TO_DATE(:star...
+[2026-04-21 15:57:13] [INFO] Task updated successfully | ID: 1776757781719 | Fields: id, qty, jobchange, startDate, duration, remark
+[2026-04-21 15:57:13] [INFO] PUT /1776757781719 - Status: 200 - Duration: 12ms
+[2026-04-21 15:57:13] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 15:57:13] [INFO] GET / - Status: 200 - Duration: 17ms
+[2026-04-21 15:57:48] [INFO] SQL executed - Duration: 8ms | Rows affected: 1 | INSERT INTO FR_CX_SCHEDULE_TASK
+        (ID, DISPLAY, PRODUCT, MACHINE, TYPE, ST...
+[2026-04-21 15:57:48] [INFO] Task created successfully | ID: 1776758268230 | Product: B5P070WS5VPA0, Machine: 5CIPI02, Type: 1 | StartDate: 2026-04-28 08:00:00
+[2026-04-21 15:57:48] [INFO] POST / - Status: 201 - Duration: 12ms
+[2026-04-21 15:57:51] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 15:57:51] [INFO] GET / - Status: 200 - Duration: 19ms
+[2026-04-21 15:59:29] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 15:59:29] [INFO] GET / - Status: 200 - Duration: 17ms
+[2026-04-21 16:31:53] [INFO] SQL executed - Duration: 4ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET DISPLAY    = :display, START_DATE = TO_DATE(:star...
+[2026-04-21 16:31:53] [INFO] Task updated successfully | ID: 1776757091002 | Fields: id, qty, jobchange, startDate, duration, remark
+[2026-04-21 16:31:53] [INFO] PUT /1776757091002 - Status: 200 - Duration: 9ms
+[2026-04-21 16:31:53] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 16:31:53] [INFO] GET / - Status: 200 - Duration: 17ms
+[2026-04-21 16:51:24] [INFO] oracledb: Thick mode enabled
+[2026-04-21 16:51:24] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-21 16:51:25] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-21 16:51:25] [INFO] Database initialized successfully
+[2026-04-21 16:51:25] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-21 16:51:25] [INFO] oracledb: Thick mode enabled
+[2026-04-21 16:51:25] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-21 16:51:25] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-21 16:51:25] [INFO] Database initialized successfully
+[2026-04-21 16:51:25] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-21 17:00:52] [INFO] oracledb: Thick mode enabled
+[2026-04-21 17:00:52] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-21 17:00:52] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-21 17:00:52] [INFO] Database initialized successfully
+[2026-04-21 17:00:52] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-21 17:00:53] [INFO] Tasks fetched successfully | Count: 19
+[2026-04-21 17:00:53] [INFO] GET / - Status: 200 - Duration: 14ms
+[2026-04-21 17:00:53] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 17:00:53] [INFO] GET / - Status: 200 - Duration: 26ms
+[2026-04-21 17:02:15] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 17:02:15] [INFO] GET / - Status: 200 - Duration: 20ms
+[2026-04-21 17:02:24] [INFO] SQL executed - Duration: 5ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 17:02:24] [INFO] Task updated successfully | ID: 1776755721771 | Fields: startDate
+[2026-04-21 17:02:24] [INFO] PUT /1776755721771 - Status: 200 - Duration: 7ms
+[2026-04-21 17:02:25] [INFO] oracledb: Thick mode enabled
+[2026-04-21 17:02:25] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-21 17:02:25] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-21 17:02:25] [INFO] Database initialized successfully
+[2026-04-21 17:02:25] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-21 17:02:30] [INFO] SQL executed - Duration: 7ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 17:02:30] [INFO] Task updated successfully | ID: 1776755721771 | Fields: startDate
+[2026-04-21 17:02:30] [INFO] PUT /1776755721771 - Status: 200 - Duration: 15ms
+[2026-04-21 17:02:37] [INFO] SQL executed - Duration: 5ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 17:02:37] [INFO] Task updated successfully | ID: 1776755721771 | Fields: startDate
+[2026-04-21 17:02:37] [INFO] PUT /1776755721771 - Status: 200 - Duration: 11ms
+[2026-04-21 17:02:42] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 17:02:42] [INFO] GET / - Status: 200 - Duration: 24ms
+[2026-04-21 17:42:09] [INFO] SQL executed - Duration: 6ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 17:42:09] [INFO] Task updated successfully | ID: 1776756470660 | Fields: startDate
+[2026-04-21 17:42:09] [INFO] PUT /1776756470660 - Status: 200 - Duration: 10ms
+[2026-04-21 17:42:12] [INFO] SQL executed - Duration: 3ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 17:42:12] [INFO] Task updated successfully | ID: 1776756470660 | Fields: startDate
+[2026-04-21 17:42:12] [INFO] PUT /1776756470660 - Status: 200 - Duration: 7ms
+[2026-04-21 17:42:14] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 17:42:14] [INFO] GET / - Status: 200 - Duration: 15ms
+[2026-04-21 17:42:52] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 17:42:52] [INFO] GET / - Status: 200 - Duration: 14ms
+[2026-04-21 17:42:55] [INFO] SQL executed - Duration: 5ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 17:42:55] [INFO] Task updated successfully | ID: 1776755721771 | Fields: startDate
+[2026-04-21 17:42:55] [INFO] PUT /1776755721771 - Status: 200 - Duration: 7ms
+[2026-04-21 17:42:56] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 17:42:56] [INFO] GET / - Status: 200 - Duration: 16ms
+[2026-04-21 17:42:58] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 17:42:58] [INFO] GET / - Status: 200 - Duration: 14ms
+[2026-04-21 17:45:02] [INFO] oracledb: Thick mode enabled
+[2026-04-21 17:45:02] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-21 17:45:02] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-21 17:45:02] [INFO] Database initialized successfully
+[2026-04-21 17:45:02] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-21 17:45:55] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 17:45:55] [INFO] GET / - Status: 200 - Duration: 27ms
+[2026-04-21 17:45:59] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 17:45:59] [INFO] GET / - Status: 200 - Duration: 15ms
+[2026-04-21 17:47:34] [INFO] Tasks fetched successfully | Count: 19
+[2026-04-21 17:47:34] [INFO] GET / - Status: 200 - Duration: 19ms
+[2026-04-21 17:47:34] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 17:47:34] [INFO] GET / - Status: 200 - Duration: 25ms
+[2026-04-21 17:48:14] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 17:48:14] [INFO] GET / - Status: 200 - Duration: 15ms
+[2026-04-21 17:48:17] [INFO] SQL executed - Duration: 9ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 17:48:17] [INFO] Task updated successfully | ID: 1776757345632 | Fields: startDate
+[2026-04-21 17:48:17] [INFO] PUT /1776757345632 - Status: 200 - Duration: 11ms
+[2026-04-21 17:48:19] [INFO] SQL executed - Duration: 7ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 17:48:19] [INFO] Task updated successfully | ID: 1776757345632 | Fields: startDate
+[2026-04-21 17:48:19] [INFO] PUT /1776757345632 - Status: 200 - Duration: 9ms
+[2026-04-21 17:48:23] [INFO] SQL executed - Duration: 10ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET DISPLAY    = :display, START_DATE = TO_DATE(:star...
+[2026-04-21 17:48:23] [INFO] Task updated successfully | ID: 1776757345632 | Fields: id, qty, jobchange, startDate, duration, remark
+[2026-04-21 17:48:23] [INFO] PUT /1776757345632 - Status: 200 - Duration: 13ms
+[2026-04-21 17:48:23] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 17:48:23] [INFO] GET / - Status: 200 - Duration: 16ms
+[2026-04-21 17:48:25] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 17:48:25] [INFO] GET / - Status: 200 - Duration: 15ms
+[2026-04-21 17:48:28] [INFO] SQL executed - Duration: 4ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 17:48:28] [INFO] Task updated successfully | ID: 1776757345632 | Fields: startDate
+[2026-04-21 17:48:28] [INFO] PUT /1776757345632 - Status: 200 - Duration: 7ms
+[2026-04-21 17:48:29] [INFO] SQL executed - Duration: 3ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET DISPLAY    = :display, START_DATE = TO_DATE(:star...
+[2026-04-21 17:48:29] [INFO] Task updated successfully | ID: 1776757345632 | Fields: id, qty, jobchange, startDate, duration, remark
+[2026-04-21 17:48:29] [INFO] PUT /1776757345632 - Status: 200 - Duration: 5ms
+[2026-04-21 17:48:29] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 17:48:29] [INFO] GET / - Status: 200 - Duration: 18ms
+[2026-04-21 17:48:34] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 17:48:34] [INFO] GET / - Status: 200 - Duration: 13ms
+[2026-04-21 17:48:40] [INFO] SQL executed - Duration: 3ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 17:48:40] [INFO] Task updated successfully | ID: 1776757664955 | Fields: startDate
+[2026-04-21 17:48:40] [INFO] PUT /1776757664955 - Status: 200 - Duration: 5ms
+[2026-04-21 17:48:40] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 17:48:40] [INFO] GET / - Status: 200 - Duration: 15ms
+[2026-04-21 17:48:46] [INFO] SQL executed - Duration: 7ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 17:48:46] [INFO] Task updated successfully | ID: 1776757664955 | Fields: startDate
+[2026-04-21 17:48:46] [INFO] PUT /1776757664955 - Status: 200 - Duration: 8ms
+[2026-04-21 17:48:47] [INFO] SQL executed - Duration: 5ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 17:48:47] [INFO] Task updated successfully | ID: 1776757664955 | Fields: startDate
+[2026-04-21 17:48:47] [INFO] PUT /1776757664955 - Status: 200 - Duration: 8ms
+[2026-04-21 17:48:50] [INFO] SQL executed - Duration: 6ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET DISPLAY    = :display, START_DATE = TO_DATE(:star...
+[2026-04-21 17:48:50] [INFO] Task updated successfully | ID: 1776757664955 | Fields: id, qty, jobchange, startDate, duration, remark
+[2026-04-21 17:48:50] [INFO] PUT /1776757664955 - Status: 200 - Duration: 9ms
+[2026-04-21 17:48:50] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 17:48:50] [INFO] GET / - Status: 200 - Duration: 22ms
+[2026-04-21 17:48:52] [INFO] SQL executed - Duration: 4ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 17:48:52] [INFO] Task updated successfully | ID: 1776757621199 | Fields: startDate
+[2026-04-21 17:48:52] [INFO] PUT /1776757621199 - Status: 200 - Duration: 6ms
+[2026-04-21 17:48:55] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 17:48:55] [INFO] GET / - Status: 200 - Duration: 17ms
+[2026-04-21 17:48:57] [INFO] SQL executed - Duration: 4ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET DISPLAY    = :display, START_DATE = TO_DATE(:star...
+[2026-04-21 17:48:57] [INFO] Task updated successfully | ID: 1776757664955 | Fields: id, qty, jobchange, startDate, duration, remark
+[2026-04-21 17:48:57] [INFO] PUT /1776757664955 - Status: 200 - Duration: 7ms
+[2026-04-21 17:48:57] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 17:48:57] [INFO] GET / - Status: 200 - Duration: 15ms
+[2026-04-21 18:51:10] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 18:51:10] [INFO] GET / - Status: 200 - Duration: 27ms
+[2026-04-21 18:51:12] [INFO] SQL executed - Duration: 4ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET DISPLAY    = :display, START_DATE = TO_DATE(:star...
+[2026-04-21 18:51:12] [INFO] Task updated successfully | ID: 1776758268230 | Fields: id, qty, jobchange, startDate, duration, remark
+[2026-04-21 18:51:12] [INFO] PUT /1776758268230 - Status: 200 - Duration: 8ms
+[2026-04-21 18:51:12] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 18:51:12] [INFO] GET / - Status: 200 - Duration: 20ms
+[2026-04-21 18:51:45] [INFO] SQL executed - Duration: 6ms | Rows affected: 1 | INSERT INTO FR_CX_SCHEDULE_TASK
+        (ID, DISPLAY, PRODUCT, MACHINE, TYPE, ST...
+[2026-04-21 18:51:45] [INFO] Task created successfully | ID: 1776768705551 | Product: B5P068WV5VP01, Machine: 5CIPI02, Type: 1 | StartDate: 2026-04-28 22:30:00
+[2026-04-21 18:51:45] [INFO] POST / - Status: 201 - Duration: 10ms
+[2026-04-21 18:52:00] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 18:52:00] [INFO] GET / - Status: 200 - Duration: 17ms
+[2026-04-21 18:52:01] [INFO] SQL executed - Duration: 6ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 18:52:01] [INFO] Task updated successfully | ID: 1776768705551 | Fields: startDate
+[2026-04-21 18:52:01] [INFO] PUT /1776768705551 - Status: 200 - Duration: 7ms
+[2026-04-21 18:52:12] [INFO] SQL executed - Duration: 7ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 18:52:12] [INFO] Task updated successfully | ID: 1776768705551 | Fields: startDate
+[2026-04-21 18:52:12] [INFO] PUT /1776768705551 - Status: 200 - Duration: 11ms
+[2026-04-21 18:52:13] [INFO] SQL executed - Duration: 8ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 18:52:13] [INFO] Task updated successfully | ID: 1776768705551 | Fields: startDate
+[2026-04-21 18:52:13] [INFO] PUT /1776768705551 - Status: 200 - Duration: 10ms
+[2026-04-21 18:52:15] [INFO] SQL executed - Duration: 8ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 18:52:15] [INFO] Task updated successfully | ID: 1776768705551 | Fields: startDate
+[2026-04-21 18:52:15] [INFO] PUT /1776768705551 - Status: 200 - Duration: 11ms
+[2026-04-21 20:09:55] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 20:09:55] [INFO] GET / - Status: 200 - Duration: 18ms
+[2026-04-21 20:09:55] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 20:09:55] [INFO] GET / - Status: 200 - Duration: 13ms
+[2026-04-21 20:11:50] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 20:11:50] [INFO] GET / - Status: 200 - Duration: 17ms
+[2026-04-21 20:11:53] [INFO] SQL executed - Duration: 5ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 20:11:53] [INFO] Task updated successfully | ID: 1776757531406 | Fields: startDate
+[2026-04-21 20:11:53] [INFO] PUT /1776757531406 - Status: 200 - Duration: 9ms
+[2026-04-21 20:11:58] [INFO] SQL executed - Duration: 3ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 20:11:58] [INFO] Task updated successfully | ID: 1776757531406 | Fields: startDate
+[2026-04-21 20:11:58] [INFO] PUT /1776757531406 - Status: 200 - Duration: 5ms
+[2026-04-21 20:12:02] [INFO] SQL executed - Duration: 6ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 20:12:02] [INFO] Task updated successfully | ID: 1776757531406 | Fields: startDate
+[2026-04-21 20:12:02] [INFO] PUT /1776757531406 - Status: 200 - Duration: 9ms
+[2026-04-21 20:12:06] [INFO] SQL executed - Duration: 7ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 20:12:06] [INFO] Task updated successfully | ID: 1776757531406 | Fields: startDate
+[2026-04-21 20:12:06] [INFO] PUT /1776757531406 - Status: 200 - Duration: 9ms
+[2026-04-21 20:12:16] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 20:12:16] [INFO] GET / - Status: 200 - Duration: 15ms
+[2026-04-21 20:15:50] [INFO] SQL executed - Duration: 4ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 20:15:50] [INFO] Task updated successfully | ID: 1776757531406 | Fields: startDate
+[2026-04-21 20:15:50] [INFO] PUT /1776757531406 - Status: 200 - Duration: 8ms
+[2026-04-21 20:15:52] [INFO] SQL executed - Duration: 4ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 20:15:52] [INFO] Task updated successfully | ID: 1776757531406 | Fields: startDate
+[2026-04-21 20:15:52] [INFO] PUT /1776757531406 - Status: 200 - Duration: 7ms
+[2026-04-21 20:15:55] [INFO] SQL executed - Duration: 3ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 20:15:55] [INFO] Task updated successfully | ID: 1776757531406 | Fields: startDate
+[2026-04-21 20:15:55] [INFO] PUT /1776757531406 - Status: 200 - Duration: 5ms
+[2026-04-21 20:15:56] [INFO] SQL executed - Duration: 3ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 20:15:56] [INFO] Task updated successfully | ID: 1776757531406 | Fields: startDate
+[2026-04-21 20:15:56] [INFO] PUT /1776757531406 - Status: 200 - Duration: 5ms
+[2026-04-21 20:15:58] [INFO] SQL executed - Duration: 3ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 20:15:58] [INFO] Task updated successfully | ID: 1776757531406 | Fields: startDate
+[2026-04-21 20:15:58] [INFO] PUT /1776757531406 - Status: 200 - Duration: 5ms
+[2026-04-21 20:16:01] [INFO] SQL executed - Duration: 3ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 20:16:01] [INFO] Task updated successfully | ID: 1776757531406 | Fields: startDate
+[2026-04-21 20:16:01] [INFO] PUT /1776757531406 - Status: 200 - Duration: 6ms
+[2026-04-21 20:16:17] [INFO] SQL executed - Duration: 5ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 20:16:17] [INFO] Task updated successfully | ID: 1776757531406 | Fields: startDate
+[2026-04-21 20:16:17] [INFO] PUT /1776757531406 - Status: 200 - Duration: 7ms
+[2026-04-21 20:16:26] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 20:16:26] [INFO] GET / - Status: 200 - Duration: 15ms
+[2026-04-21 20:16:47] [INFO] SQL executed - Duration: 3ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET DISPLAY    = :display, START_DATE = TO_DATE(:star...
+[2026-04-21 20:16:47] [INFO] Task updated successfully | ID: 1776757531406 | Fields: id, qty, jobchange, startDate, duration, remark
+[2026-04-21 20:16:47] [INFO] PUT /1776757531406 - Status: 200 - Duration: 5ms
+[2026-04-21 20:16:47] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 20:16:47] [INFO] GET / - Status: 200 - Duration: 13ms
+[2026-04-21 20:16:52] [INFO] SQL executed - Duration: 4ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 20:16:52] [INFO] Task updated successfully | ID: 1776757584927 | Fields: startDate
+[2026-04-21 20:16:52] [INFO] PUT /1776757584927 - Status: 200 - Duration: 7ms
+[2026-04-21 20:16:53] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 20:16:53] [INFO] GET / - Status: 200 - Duration: 16ms
+[2026-04-21 20:17:00] [INFO] SQL executed - Duration: 4ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 20:17:00] [INFO] Task updated successfully | ID: 1776757584927 | Fields: startDate
+[2026-04-21 20:17:00] [INFO] PUT /1776757584927 - Status: 200 - Duration: 7ms
+[2026-04-21 20:17:04] [INFO] SQL executed - Duration: 4ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 20:17:04] [INFO] Task updated successfully | ID: 1776757531406 | Fields: startDate
+[2026-04-21 20:17:04] [INFO] PUT /1776757531406 - Status: 200 - Duration: 6ms
+[2026-04-21 20:17:06] [INFO] SQL executed - Duration: 5ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 20:17:06] [INFO] Task updated successfully | ID: 1776757584927 | Fields: startDate
+[2026-04-21 20:17:06] [INFO] PUT /1776757584927 - Status: 200 - Duration: 8ms
+[2026-04-21 20:17:08] [INFO] SQL executed - Duration: 4ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 20:17:08] [INFO] Task updated successfully | ID: 1776757584927 | Fields: startDate
+[2026-04-21 20:17:08] [INFO] PUT /1776757584927 - Status: 200 - Duration: 7ms
+[2026-04-21 20:17:09] [INFO] SQL executed - Duration: 5ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 20:17:09] [INFO] Task updated successfully | ID: 1776757584927 | Fields: startDate
+[2026-04-21 20:17:09] [INFO] PUT /1776757584927 - Status: 200 - Duration: 7ms
+[2026-04-21 20:17:12] [INFO] SQL executed - Duration: 5ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 20:17:12] [INFO] Task updated successfully | ID: 1776757621199 | Fields: startDate
+[2026-04-21 20:17:12] [INFO] PUT /1776757621199 - Status: 200 - Duration: 7ms
+[2026-04-21 20:23:33] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 20:23:33] [INFO] GET / - Status: 200 - Duration: 18ms
+[2026-04-21 20:23:35] [INFO] SQL executed - Duration: 5ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 20:23:35] [INFO] Task updated successfully | ID: 1776757621199 | Fields: startDate
+[2026-04-21 20:23:35] [INFO] PUT /1776757621199 - Status: 200 - Duration: 6ms
+[2026-04-21 20:23:40] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 20:23:40] [INFO] GET / - Status: 200 - Duration: 15ms
+[2026-04-21 20:23:42] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 20:23:42] [INFO] GET / - Status: 200 - Duration: 22ms
+[2026-04-21 20:23:43] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 20:23:43] [INFO] GET / - Status: 200 - Duration: 16ms
+[2026-04-21 20:23:49] [INFO] SQL executed - Duration: 4ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET DISPLAY    = :display, START_DATE = TO_DATE(:star...
+[2026-04-21 20:23:49] [INFO] Task updated successfully | ID: 1776757584927 | Fields: id, qty, jobchange, startDate, duration, remark
+[2026-04-21 20:23:49] [INFO] PUT /1776757584927 - Status: 200 - Duration: 7ms
+[2026-04-21 20:23:49] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 20:23:49] [INFO] GET / - Status: 200 - Duration: 17ms
+[2026-04-21 20:23:52] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 20:23:52] [INFO] GET / - Status: 200 - Duration: 14ms
+[2026-04-21 20:23:55] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-21 20:23:55] [INFO] GET / - Status: 200 - Duration: 15ms
+[2026-04-21 20:24:24] [INFO] SQL executed - Duration: 4ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 20:24:24] [INFO] Task updated successfully | ID: 1776757584927 | Fields: startDate
+[2026-04-21 20:24:24] [INFO] PUT /1776757584927 - Status: 200 - Duration: 5ms
+[2026-04-21 20:24:26] [INFO] SQL executed - Duration: 4ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 20:24:26] [INFO] Task updated successfully | ID: 1776757584927 | Fields: startDate
+[2026-04-21 20:24:26] [INFO] PUT /1776757584927 - Status: 200 - Duration: 7ms
+[2026-04-21 20:24:31] [INFO] SQL executed - Duration: 3ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 20:24:31] [INFO] Task updated successfully | ID: 1776757621199 | Fields: startDate
+[2026-04-21 20:24:31] [INFO] PUT /1776757621199 - Status: 200 - Duration: 5ms
+[2026-04-21 20:24:48] [INFO] SQL executed - Duration: 4ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 20:24:48] [INFO] Task updated successfully | ID: 1776757621199 | Fields: startDate
+[2026-04-21 20:24:48] [INFO] PUT /1776757621199 - Status: 200 - Duration: 6ms
+[2026-04-21 20:24:51] [INFO] SQL executed - Duration: 5ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 20:24:51] [INFO] Task updated successfully | ID: 1776757584927 | Fields: startDate
+[2026-04-21 20:24:51] [INFO] PUT /1776757584927 - Status: 200 - Duration: 8ms
+[2026-04-21 20:27:37] [INFO] SQL executed - Duration: 5ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-21 20:27:37] [INFO] Task updated successfully | ID: 1776757584927 | Fields: startDate
+[2026-04-21 20:27:37] [INFO] PUT /1776757584927 - Status: 200 - Duration: 11ms
+[2026-04-22 08:37:56] [INFO] Tasks fetched successfully | Count: 20
+[2026-04-22 08:37:56] [INFO] GET / - Status: 200 - Duration: 147ms
+[2026-04-22 08:37:56] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-22 08:37:56] [INFO] GET / - Status: 200 - Duration: 196ms
+[2026-04-22 08:43:17] [INFO] oracledb: Thick mode enabled
+[2026-04-22 08:43:17] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-22 08:43:17] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-22 08:43:17] [INFO] Database initialized successfully
+[2026-04-22 08:43:17] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-22 08:43:18] [INFO] oracledb: Thick mode enabled
+[2026-04-22 08:43:18] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-22 08:43:18] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-22 08:43:18] [INFO] Database initialized successfully
+[2026-04-22 08:43:18] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-22 09:58:03] [ERROR] Failed to fetch product master: NJS-500: connection to Oracle Database was closed or broken
+DPI-1080: connection was closed by ORA-03135
+ORA-03135: connection lost contact
+[2026-04-22 09:58:03] [WARN] GET / - Status: 500 - Duration: 12ms
+[2026-04-22 09:58:04] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-22 09:58:04] [INFO] GET / - Status: 200 - Duration: 120ms
+[2026-04-22 09:58:37] [INFO] oracledb: Thick mode enabled
+[2026-04-22 09:58:37] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-22 09:58:38] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-22 09:58:38] [INFO] oracledb: Thick mode enabled
+[2026-04-22 09:58:38] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-22 09:58:38] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-22 09:58:38] [INFO] Database initialized successfully
+[2026-04-22 09:58:38] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-22 10:07:14] [ERROR] Failed to fetch product master: NJS-500: connection to Oracle Database was closed or broken
+DPI-1080: connection was closed by ORA-03113
+ORA-03113: end-of-file on communication channel
+[2026-04-22 10:07:14] [WARN] GET / - Status: 500 - Duration: 6ms
+[2026-04-22 10:07:14] [ERROR] Failed to fetch tasks: NJS-500: connection to Oracle Database was closed or broken
+DPI-1080: connection was closed by ORA-03113
+ORA-03113: end-of-file on communication channel
+[2026-04-22 10:07:14] [WARN] GET / - Status: 500 - Duration: 9ms
+[2026-04-22 10:07:18] [INFO] Tasks fetched successfully | Count: 20
+[2026-04-22 10:07:18] [INFO] GET / - Status: 200 - Duration: 154ms
+[2026-04-22 10:07:18] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-22 10:07:18] [INFO] GET / - Status: 200 - Duration: 182ms
+[2026-04-22 10:07:19] [INFO] Tasks fetched successfully | Count: 20
+[2026-04-22 10:07:19] [INFO] GET / - Status: 200 - Duration: 7ms
+[2026-04-22 10:07:19] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-22 10:07:19] [INFO] GET / - Status: 200 - Duration: 21ms
+[2026-04-22 10:07:19] [INFO] Tasks fetched successfully | Count: 20
+[2026-04-22 10:07:19] [INFO] GET / - Status: 200 - Duration: 6ms
+[2026-04-22 10:07:19] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-22 10:07:19] [INFO] GET / - Status: 200 - Duration: 18ms
+[2026-04-22 10:07:20] [INFO] Tasks fetched successfully | Count: 20
+[2026-04-22 10:07:20] [INFO] GET / - Status: 200 - Duration: 6ms
+[2026-04-22 10:07:20] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-22 10:07:20] [INFO] GET / - Status: 200 - Duration: 20ms
+[2026-04-22 10:07:20] [INFO] Tasks fetched successfully | Count: 20
+[2026-04-22 10:07:20] [INFO] GET / - Status: 200 - Duration: 7ms
+[2026-04-22 10:07:20] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-22 10:07:20] [INFO] GET / - Status: 200 - Duration: 18ms
+[2026-04-22 13:45:24] [INFO] oracledb: Thick mode enabled
+[2026-04-22 13:45:24] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-22 13:45:24] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-22 13:45:24] [INFO] Database initialized successfully
+[2026-04-22 13:45:24] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-22 13:45:24] [INFO] oracledb: Thick mode enabled
+[2026-04-22 13:45:24] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-22 13:45:25] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-22 13:45:25] [INFO] Database initialized successfully
+[2026-04-22 13:45:25] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-22 14:59:25] [INFO] oracledb: Thick mode enabled
+[2026-04-22 14:59:25] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-22 14:59:26] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-22 14:59:26] [INFO] oracledb: Thick mode enabled
+[2026-04-22 14:59:26] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-22 14:59:26] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-22 14:59:26] [INFO] Database initialized successfully
+[2026-04-22 14:59:26] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-22 15:57:00] [INFO] oracledb: Thick mode enabled
+[2026-04-22 15:57:00] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-22 15:57:00] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-22 15:57:00] [INFO] Database initialized successfully
+[2026-04-22 15:57:00] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-22 15:57:01] [INFO] oracledb: Thick mode enabled
+[2026-04-22 15:57:01] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-22 15:57:01] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-22 15:57:01] [INFO] Database initialized successfully
+[2026-04-22 15:57:01] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-22 15:57:15] [INFO] Tasks fetched successfully | Count: 20
+[2026-04-22 15:57:15] [INFO] GET / - Status: 200 - Duration: 14ms
+[2026-04-22 15:57:15] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-22 15:57:15] [INFO] GET / - Status: 200 - Duration: 32ms
+[2026-04-22 15:57:17] [INFO] Tasks fetched successfully | Count: 20
+[2026-04-22 15:57:17] [INFO] GET / - Status: 200 - Duration: 8ms
+[2026-04-22 15:57:17] [INFO] Product master data fetched successfully | Count: 614
+[2026-04-22 15:57:17] [INFO] GET / - Status: 200 - Duration: 18ms
+[2026-04-22 15:58:50] [INFO] SQL executed - Duration: 8ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-22 15:58:50] [INFO] Task updated successfully | ID: 1776755721771 | Fields: startDate
+[2026-04-22 15:58:50] [INFO] PUT /1776755721771 - Status: 200 - Duration: 13ms
+[2026-04-22 15:58:52] [INFO] oracledb: Thick mode enabled
+[2026-04-22 15:58:52] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-22 15:58:52] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-22 15:58:52] [INFO] Database initialized successfully
+[2026-04-22 15:58:52] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-22 15:58:53] [INFO] SQL executed - Duration: 4ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-22 15:58:53] [INFO] Task updated successfully | ID: 1776755721771 | Fields: startDate
+[2026-04-22 15:58:53] [INFO] PUT /1776755721771 - Status: 200 - Duration: 10ms
+[2026-04-22 15:58:58] [INFO] SQL executed - Duration: 7ms | Rows affected: 1 | UPDATE FR_CX_SCHEDULE_TASK SET START_DATE = TO_DATE(:startDate, 'YYYY-MM-DD HH24...
+[2026-04-22 15:58:58] [INFO] Task updated successfully | ID: 1776756293717 | Fields: startDate
+[2026-04-22 15:58:58] [INFO] PUT /1776756293717 - Status: 200 - Duration: 10ms
+[2026-04-22 16:04:43] [INFO] oracledb: Thick mode enabled
+[2026-04-22 16:04:43] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-22 16:04:44] [INFO] oracledb: Thick mode enabled
+[2026-04-22 16:04:44] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-22 16:04:44] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-22 16:04:44] [INFO] Database initialized successfully
+[2026-04-22 16:04:44] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-22 16:05:55] [INFO] oracledb: Thick mode enabled
+[2026-04-22 16:05:55] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-22 16:05:55] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-22 16:05:55] [INFO] Database initialized successfully
+[2026-04-22 16:05:55] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-22 16:06:50] [INFO] oracledb: Thick mode enabled
+[2026-04-22 16:06:50] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-22 16:06:50] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-22 16:06:50] [INFO] Database initialized successfully
+[2026-04-22 16:06:50] [INFO] Server running on http://localhost:3000 | Environment: development
+[2026-04-22 16:08:39] [INFO] oracledb: Thick mode enabled
+[2026-04-22 16:08:39] [INFO] Static files serving from D:\SourceCode\4_AI\Schedule-Assistant\server\public
+[2026-04-22 16:08:40] [INFO] Oracle connection pool created - poolMin:2, poolMax:10 | masdb@10.73.1.15
+[2026-04-22 16:08:40] [INFO] Database initialized successfully
+[2026-04-22 16:08:40] [INFO] Server running on http://localhost:3000 | Environment: development

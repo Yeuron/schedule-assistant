@@ -52,10 +52,7 @@ onMounted(async () => {
 })
 
 const onAddTask = async (taskData: Omit<Task, 'id'>) => {
-  const { id } = await api.createTask({
-    ...taskData,
-    startDate: (taskData.startDate as Date).toISOString()
-  })
+  const { id } = await api.createTask(taskData)
   tasks.value.push({ ...taskData, id })
 }
 
@@ -67,18 +64,15 @@ const onTaskMove = ({ id, startDate }: { id: string; startDate: Date }) => {
   const task = tasks.value.find(t => t.id === id)
   if (!task) return
   task.startDate = startDate
-  api.updateTask(id, { startDate: startDate.toISOString() })
+  api.updateTask(id, { startDate })
     .then(() => message.success('保存成功'))
     .catch(() => message.error('保存失败'))
 }
 
-const onUpdateTask = async (changes: Pick<Task, 'id' | 'qty' | 'jobchange' | 'startDate' | 'duration' | 'display'>) => {
+const onUpdateTask = async (changes: Pick<Task, 'id' | 'qty' | 'jobchange' | 'startDate' | 'duration' | 'remark'>) => {
   const task = tasks.value.find(t => t.id === changes.id)
   if (!task) return
-  await api.updateTask(changes.id, {
-    ...changes,
-    startDate: (changes.startDate as Date).toISOString()
-  })
+  await api.updateTask(changes.id, changes)
   Object.assign(task, changes)
   selectedTask.value = null
   message.success('保存成功')

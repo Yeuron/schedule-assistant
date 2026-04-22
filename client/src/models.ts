@@ -5,7 +5,7 @@ export interface Resource {
 
 export interface Task {
   id: string;
-  display: string; // 任务条显示内容，默认 "{product} ({qty}片)"
+  remark: string; // 用户备注
   product: string;
   machine: string;
   startDate: Date; // Date 对象

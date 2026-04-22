@@ -22,7 +22,10 @@
       rx="4"
       :fill="color"
     />
-    <text class="task-text" :x="jobchangeWidth + 10" :y="textY">{{ task.display }}</text>
+    <text class="task-text" :x="jobchangeWidth + 10">
+      <tspan :y="textY1">{{ task.product }} - {{ task.qty }}SH</tspan>
+      <tspan :x="jobchangeWidth + 10" :y="textY2">{{ task.remark }}</tspan>
+    </text>
   </g>
 </template>
 
@@ -89,7 +92,10 @@ function onPointerUp() {
   if (!isDragging.value) return
   isDragging.value = false
   if (hasDragged && dragDeltaMinutes.value !== 0) {
-    const newStartDate = new Date(props.task.startDate.getTime() + dragDeltaMinutes.value * 60000)
+    // 计算新的开始时间，并确保对齐到30分钟边界
+    const baseMs = props.task.startDate.getTime() + dragDeltaMinutes.value * 60000
+    const alignedMs = Math.round(baseMs / 1800000) * 1800000  // 对齐到30分钟
+    const newStartDate = new Date(alignedMs)
     emit('move', { id: props.task.id, startDate: newStartDate })
   }
   dragDeltaMinutes.value = 0
@@ -118,7 +124,8 @@ const width          = computed(() => minutesToWidth(props.task.duration))
 const jobchangeWidth = computed(() => minutesToWidth(props.task.jobchange || 0))
 const y              = computed(() => resourceIndex.value * props.options.rowHeight + props.options.barPaddingY)
 const height         = computed(() => props.options.rowHeight - props.options.barPaddingY * 2)
-const textY          = computed(() => props.options.rowHeight / 2 - props.options.barPaddingY + 5)
+const textY1         = computed(() => props.options.rowHeight / 2 - props.options.barPaddingY - 3)
+const textY2         = computed(() => props.options.rowHeight / 2 - props.options.barPaddingY + 12)
 </script>
 
 <style scoped>

@@ -75,10 +75,10 @@
           />
         </n-form-item>
 
-        <n-form-item label="显示名称">
+        <n-form-item label="备注">
           <n-input
-            v-model:value="form.display"
-            placeholder="任务条显示内容"
+            v-model:value="form.remark"
+            placeholder="可选备注"
             :disabled="!form.product"
           />
         </n-form-item>
@@ -98,7 +98,7 @@
             type="datetime"
             :disabled="!canSelectTime"
             :max="maxDateTime"
-            :time-picker-props="{ minutes: [0, 30], seconds: [0], isSecondDisabled: () => true }"
+            :time-picker-props="{ minutes: [0, 30], format: 'HH:mm' }"
             format="yyyy-MM-dd HH:mm"
           />
         </n-form-item>
@@ -163,7 +163,7 @@ const form = ref({
   qty: 0,
   jobchange: 0,
   startTime: null,
-  display: ''
+  remark: ''
 })
 
 // 获取所有产品列表
@@ -208,9 +208,13 @@ const selectedConfig = computed(() => {
 const endDateValue = computed(() => {
   if (!selectedConfig.value || form.value.qty == null || !form.value.startTime) return null
   const { tt, utilization } = selectedConfig.value
-  const productionMinutes = (form.value.qty * tt) / utilization / 60
-  const productionEnd = snapToHalfHour(form.value.startTime + productionMinutes * 60000)
-  return new Date(productionEnd + form.value.jobchange * 60000)
+  // 生产时长（毫秒）：qty × tt(秒) / 稼动率 × 1000
+  const productionMs = (form.value.qty * tt / utilization) * 1000
+  // JC 按用户原始输入（毫秒），不做任何取整
+  const jcMs = (form.value.jobchange || 0) * 60000
+  // 生产 + JC 的总结束时间，最后对齐到 30 分钟
+  const rawEnd = form.value.startTime + productionMs + jcMs
+  return new Date(Math.ceil(rawEnd / 1800000) * 1800000)
 })
 
 // 结束时间显示字符串
@@ -228,7 +232,6 @@ const endTime = computed(() => {
 const canSubmit = computed(() => {
   return form.value.product && form.value.machine && form.value.type &&
          form.value.startTime !== null &&
-         form.value.display.trim() !== '' &&
          endDateValue.value !== null &&
          endDateValue.value.getTime() > form.value.startTime
 })
@@ -244,7 +247,6 @@ const maxDateTime = computed(() => {
 const onProductChange = () => {
   form.value.machine = ''
   form.value.type = ''
-  form.value.display = form.value.product ? `${form.value.product} (${form.value.qty}片)` : ''
 }
 
 const onMachineChange = () => {
@@ -291,13 +293,14 @@ const addTask = () => {
 
   const { tt, utilization } = selectedConfig.value
   const start = form.value.startTime  // number (ms)
-  const rawProductionEnd = start + (form.value.qty * tt) / utilization / 60 * 60000
-  const snappedProductionEnd = snapToHalfHour(rawProductionEnd)
-  const productionDuration = (snappedProductionEnd - start) / 60000
-  const totalDuration = form.value.jobchange + productionDuration
+  const productionMs = (form.value.qty * tt / utilization) * 1000
+  const jcMs = (form.value.jobchange || 0) * 60000
+  // 生产 + JC 的总结束时间，最后对齐到 30 分钟
+  const alignedEnd = Math.ceil((start + productionMs + jcMs) / 1800000) * 1800000
+  const totalDuration = (alignedEnd - start) / 60000
 
   emit('add-task', {
-    display: form.value.display,
+    remark: form.value.remark,
     product: form.value.product,
     machine: form.value.machine,
     type: form.value.type,
@@ -318,7 +321,7 @@ const addTask = () => {
     qty: 0,
     jobchange: 0,
     startTime: null,
-    display: ''
+    remark: ''
   }
 }
 </script>

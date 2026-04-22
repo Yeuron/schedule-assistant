@@ -26,14 +26,16 @@
           />
         </n-form-item>
 
-        <n-form-item label="显示名称">
-          <n-input v-model:value="form.display" />
+        <n-form-item label="备注">
+          <n-input v-model:value="form.remark" placeholder="可选备注" />
         </n-form-item>
 
         <n-form-item label="开始时间">
           <n-date-picker
             v-model:value="form.startTime"
             type="datetime"
+            :time-picker-props="{ minutes: [0, 30], format: 'HH:mm' }"
+            format="yyyy-MM-dd HH:mm"
           />
         </n-form-item>
 
@@ -61,7 +63,7 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue'
 import { NCard, NForm, NFormItem, NInput, NInputNumber, NButton, NDatePicker, NPopconfirm } from 'naive-ui'
-import { api } from '../api'
+import { api, timeUtils } from '../api'
 
 const props = defineProps({
   task: { type: Object, required: true },
@@ -85,7 +87,7 @@ const form = ref({
   qty: props.task.qty,
   jobchange: props.task.jobchange || 0,
   startTime: props.task.startDate instanceof Date ? props.task.startDate.getTime() : (props.task.startDate || null),
-  display: props.task.display
+  remark: props.task.remark || ''
 })
 
 const utilization = computed(() =>
@@ -100,11 +102,12 @@ const minQty = computed(() => Math.ceil(30 * utilization.value * 60 / props.task
 
 const endTime = computed(() => {
   if (!form.value.qty || !form.value.startTime) return ''
-  const productionMinutes = (form.value.qty * props.task.tt) / utilization.value / 60
-  const startMs = form.value.startTime
-  const productionEnd = new Date(Math.ceil((startMs + productionMinutes * 60000) / 1800000) * 1800000)
-  const end = new Date(productionEnd.getTime() + form.value.jobchange * 60000)
-  return end.toLocaleString('zh-CN', {
+  const productionMs = (form.value.qty * props.task.tt / utilization.value) * 1000
+  const jcMs = (form.value.jobchange || 0) * 60000
+  // 生产 + JC 的总结束时间，最后对齐到 30 分钟
+  const rawEnd = form.value.startTime + productionMs + jcMs
+  const alignedEnd = new Date(Math.ceil(rawEnd / 1800000) * 1800000)
+  return alignedEnd.toLocaleString('zh-CN', {
     year: 'numeric', month: '2-digit', day: '2-digit',
     hour: '2-digit', minute: '2-digit'
   })
@@ -114,17 +117,19 @@ const canSave = computed(() => form.value.qty >= minQty.value && form.value.star
 
 const save = () => {
   const start = new Date(form.value.startTime)
-  const rawProductionEnd = new Date(start.getTime() + (form.value.qty * props.task.tt) / utilization.value / 60 * 60000)
-  const snappedProductionEnd = new Date(Math.ceil(rawProductionEnd.getTime() / 1800000) * 1800000)
-  const productionDuration = (snappedProductionEnd.getTime() - start.getTime()) / 60000
-  const duration = form.value.jobchange + productionDuration
+  const productionMs = (form.value.qty * props.task.tt / utilization.value) * 1000
+  const jcMs = (form.value.jobchange || 0) * 60000
+  // 生产 + JC 的总结束时间，最后对齐到 30 分钟
+  const alignedEnd = Math.ceil((start.getTime() + productionMs + jcMs) / 1800000) * 1800000
+  const duration = (alignedEnd - start.getTime()) / 60000
+  
   emit('update-task', {
     id: props.task.id,
     qty: form.value.qty,
     jobchange: form.value.jobchange,
     startDate: start,
     duration,
-    display: form.value.display
+    remark: form.value.remark
   })
 }
 
